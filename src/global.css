@@ -1,0 +1,54 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+
+@font-face {
+    font-family: "DMSerif";
+    src: url(./media/fonts/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "DMSans";
+    src: url(./media/fonts/DMSans-Italic-VariableFont_opsz\wght.ttf);
+}
+@font-face {
+    font-family: "PD900";
+    src: url(./media/fonts/PlayfairDisplay-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "PD800";
+    src: url(./media/fonts/PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: "MMedium";
+    src: url(./media/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "MRegular";
+    src: url(./media/fonts/Montserrat-Regular.ttf);
+}
+
+.PD900 {
+    font-family: "PD900";
+}
+.PD800 {
+    font-family: "PD800";
+}
+
+.MMedium {
+    font-family: "MMedium";
+}
+
+.MRegular {
+    font-family: "MRegular";
+}
+
+.DMSerif {
+    font-family: "DMSerif";
+    letter-spacing: 3px;
+}
+
+.DMSans {
+    font-family: "DMSans";
+}
+
+.inset-l-full {
+    left: 100%;
+}

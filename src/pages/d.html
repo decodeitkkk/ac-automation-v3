@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>allProducts template page</title>
+        <link rel="stylesheet" href="/src/output.css" />
+        <link rel="stylesheet" href="/src/global.css" />
+    </head>
+    <body>
+        <section id="dash"></section>
+
+        <script src="/src/components/header.js"></script>
+        <script src="/src/components/footer.js"></script>
+        <script src="/src/components/d.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+            document.body.insertAdjacentHTML("afterbegin", header);
+            document.body.insertAdjacentHTML("beforeend", footer);
+
+            let productsData2 = [
+                {
+                    brand: "AIREKA",
+                    categories: [
+                        { title: "AIR COOLERS", img: "/src/media/images/aireka.jpg" },
+                        { title: "AIR KNIVES", img: "/src/media/images/aireka.jpg" },
+                        {
+                            title: "ELECTRONICALLY CONTROLLED AIR COOLERS",
+                            img: "/src/media/images/aireka.jpg",
+                        },
+                        {
+                            title: "AIR AMPLIFIERS",
+                            img: "/src/media/images/aireka.jpg",
+                        },
+                        {
+                            title: "SPECIAL NOZZLES",
+                            img: "/src/media/images/aireka.jpg",
+                        },
+                    ],
+                    img: [
+                        "/src/images/aireka.jpg",
+                        "/src/images/aireka.jpg",
+                        "/src/images/aireka.jpg",
+                        "/src/images/aireka.jpg",
+                        "/src/images/aireka.jpg",
+                    ],
+                },
+            ];
+            let pd2 = [
+                {
+                    brand: "FEZER VACUUM LIFTERS",
+                    categories: [
+                        "AUTOMOTIVE",
+                        "SHEET METAL",
+                        "COILS/SLIT STRIPS",
+                        "DRUMS/CONTAINERS",
+                        "GLASS",
+                        "WOOD",
+                        "LOGISTICS/CARDBOARDS",
+                        "AEROSPACE",
+                        "BAGS",
+                        "STONES",
+                        "PIPES/RODS",
+                        "CRANES",
+                    ],
+                },
+                {
+                    brand: "STABILUS/HAHN",
+                    categories: [
+                        "GAS SPRINGS",
+                        "TENSION SPRINGS",
+                        "LOCKING GAS SPRINGS",
+                        "DAMPERS",
+                        "DOUBLE STROKE GAS SPRINGS",
+                        "SLIDING DOOR DAMPER",
+                        "GAS SPRINGS WITH BALL POINT PRINCIPLE",
+                        "ACCESSORIES",
+                    ],
+                },
+                {
+                    brand: "IZMAC SHOCK ABSORBERS",
+                    categories: [
+                        "SELF COMPENSATING MINI SERIES (M4 - M16)",
+                        "ADJUSTABLE MINI SERIES (M4 - M16)",
+                        "SELF COMPENSATING MID SERIES (M20 - M36)",
+                        "ADJUSTABLE MID SERIES (M20 - M36)",
+                        "SELF COMPENSATING MAX SERIES (M42 - M115)",
+                        "ADJUSTABLE MAX SERIES (M42 - M115)",
+                        "HEAVEY DUTY CRANE BUFFERS",
+                        "SPEED CONTROL SERIES",
+                        "CRASH DAMPERS",
+                        "RATE CONTROL",
+                        "SHORT STROKE SHOCK ABSORBER",
+                    ],
+                },
+                {
+                    brand: "DESCHNER",
+                    categories: [
+                        "SLIMLINE MINI-K SPEED REGULATORS",
+                        "SLIMLINE KINECHEK SPEED REGULATOR",
+                        "SUPER-K SPEED REGULATOR",
+                        "PECKCHEK CONTROLS",
+                        "ACCESSORIES",
+                        "IMPACTA SHOCK ABSORBERS (M14 - M27)",
+                    ],
+                },
+                {
+                    brand: "MEDAN",
+                    categories: [
+                        "PNEUMATIC RODLESS CYLINDER",
+                        "GUIDED RODLESS CYLINDER",
+                    ],
+                },
+                {
+                    brand: "VUOTOTECNICA VACUUM",
+                    categories: [
+                        "SUCTION CUPS",
+                        "SUCTION CUPS HOLDERS",
+                        "VACUUM MEASUREMENTS/INTRUMENTS",
+                        "VACUUM VALVES/SOLENOID VALVES",
+                    ],
+                },
+            ];
+            document
+                .getElementById("dash")
+                .insertAdjacentHTML(
+                    "afterbegin",
+                    productsDashboard(productsData2)
+                );
+
+            let toggleBtn = document.getElementById("toggleBtn");
+            let toggleBtn2 = document.getElementById("toggleBtn2");
+            let toggleItem = document.getElementById("toggleItem");
+            let innerBody = document.getElementById("innerBody");
+
+            toggleBtn.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+            toggleBtn2.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+            document.querySelectorAll("a").forEach((item) => {
+                item.addEventListener(
+                    "click",
+                    () => {
+                        console.log(item.innerText);
+                        let innerBody = document.getElementById("title-card");
+                        innerBody.innerText = item.innerText;
+                    },
+                    false
+                );
+                item.addEventListener(
+                    "click",
+                    () => {
+                        toggleItem.classList.toggle("hidden");
+                        innerBody.classList.toggle("hidden");
+                    },
+                    false
+                );
+            });
+        </script>
+    </body>
+</html>

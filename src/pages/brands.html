@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brands</title>
+        <link href="/src/output.css" rel="stylesheet" />
+        <link href="/src/global.css" rel="stylesheet" />
+    </head>
+    <body class="p-0 m-0">
+        <section class="bg-gray-100">
+            <div
+                id="container"
+                class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"
+            ></div>
+        </section>
+
+        <script src="/src/components/header.js"></script>
+        <script src="/src/components/footer.js"></script>
+        <script src="/src/components/card.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+            // lucide Icons
+            lucide.createIcons();
+            let title = [
+                "aireka",
+                "deschner",
+                "fezer",
+                "hahn",
+                "izmac",
+                "kinechecks",
+                "medan",
+                "vuototecnica",
+                "ypc",
+            ];
+            let img = [
+                "/src/media/images/aireka.jpg",
+                "/src/media/images/deschner.png",
+                "/src/media/images/fezer.jpg",
+                "/src/media/images/hahn.jpg",
+                "/src/media/images/izmac.png",
+                "/src/media/images/kinechecks.png",
+                "/src/media/images/medan.jpg",
+                "/src/media/images/voutatechnia.jpg",
+                "/src/media/images/ypc.png",
+            ];
+            let desc = [
+                "Atque architecto illum perferendis eius, iste molestias minima excepturi iusto placeat ab?  minus nemo hic dignissimos debitis sint repellendus?",
+            ];
+            let container = document.getElementById("container");
+            document.body.insertAdjacentHTML("beforeend", footer);
+            document.body.insertAdjacentHTML("afterbegin", header);
+            for (let a = 0; a < img.length; a++) {
+                container.insertAdjacentHTML(
+                    "afterbegin",
+                    card(img[a], title[a], desc)
+                );
+            }
+        </script>
+    </body>
+</html>
