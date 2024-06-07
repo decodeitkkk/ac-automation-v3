@@ -18,9 +18,11 @@ let productsDashboard = (productData) => `
                 </svg>
             </div>
             <ul class="mt-6 space-y-2">
-                ${productData .map( (item) => `
+                ${productData
+                    .map(
+                        (item) => `
                 <li class="border-b-2 border-cyan-900">
-                    <details class="group [&_summary::-webkit-details-marker]:hidden" open >
+                    <details class="group [&_summary::-webkit-details-marker]:hidden" open>
                         <summary
                             class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-white hover:bg-gray-100 hover:text-gray-700">
                             <span class="text-sm font-medium">
@@ -38,18 +40,24 @@ let productsDashboard = (productData) => `
                         </summary>
 
                         <ul class="mt-2 space-y-1 px-4">
-                            ${item.categories .map( (scat) => `
+                            ${item.categories
+                                .map(
+                                    (scat) => `
                             <li>
                                 <a href=${scat.page_link}
                                     class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-100 hover:text-gray-700">
                                     ${scat.title}
                                 </a>
                             </li>
-                            ` ) .join("")}
+                            `
+                                )
+                                .join("")}
                         </ul>
                     </details>
                 </li>
-                ` ) .join("")}
+                `
+                    )
+                    .join("")}
             </ul>
         </div>
     </div>
@@ -64,14 +72,17 @@ let productsDashboard = (productData) => `
             </svg>
         </div>
 
-        ${productData.map((item) => `
+        ${productData.map(
+            (item) => `
         <div class="font-medium text-2xl PD800 my-2 mb-5 mx-auto text-center">
             Products of
             <span id="title-card" class="capitalize">${item.brand}</span>
         </div>
 
         <div class="flex flex-wrap gap-4 justify-center">
-            ${item.categories.map((scat)=>`
+            ${item.categories
+                .map(
+                    (scat) => `
             <div class="w-40 sm:w-52 rounded-md bg-white shadow-lg border border-slate-300 p-1">
                 <a href=${scat.page_link}>
                     <img src=${scat.img} alt="Laptop" class="h-36 w-full rounded-md object-contain" />
@@ -82,10 +93,13 @@ let productsDashboard = (productData) => `
                     </div>
                 </a>
             </div>
-            `).join("")}
+            `
+                )
+                .join("")}
 
         </div>
-        `)}
+        `
+        )}
 
 
     </div>
