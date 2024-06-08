@@ -11,35 +11,29 @@ let card = (img, title, desc, btn = true, w = "w-80") => `
         <p class="text-xs text-gray-900">
             ${desc}
         </p>
-    
-    
+
+
         ${
-            btn
-                ? `
+        btn
+        ? `
         <div class="flex items-center justify-end">
-            <button
-                type="button"
-                class="w-10 h-10 text-base font-medium text-white bg-sky-500 rounded-full hover:bg-sky-700"
-            >
+            <button type="button"
+                class="w-10 h-10 text-base font-medium text-white bg-sky-500 rounded-full hover:bg-sky-700">
                 →
             </button>
         </div>
-    `
-                : ""
+        `
+        : ""
         }
-        
+
     </div>
 </div>
 `;
 
 let card2 = (Img) => `
 ${Img.map(
-    (img) =>
-        `<div class="   mx-2  " >
-    <img
-        src="${img}"
-        alt="Slide 1"
-        class="  object-contain     "
-    />
-    </div>`
+(img) =>
+`<div class="   mx-2  ">
+    <img src="${img}" alt="Slide 1" class="  object-contain     " />
+</div>`
 ).join("")} `;
