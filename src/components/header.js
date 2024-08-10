@@ -8,7 +8,7 @@ const productsData = [
             "AIR KNIVES",
             "SPECIAL NOZZLES",
         ],
-        link: "#    ",
+        link: "/src/pages/aireka.html",
         img: "/src/images/aireka.jpg",
     },
     {
@@ -182,7 +182,7 @@ let header = `
                                     d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
                                 </path>
                             </svg>
-                            <span class="ml-2">Brands</span>
+                            <span class="ml-2">Our Customers</span>
                         </a>
                         <a href="#" id="application"
                             class="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
@@ -304,7 +304,7 @@ let header = `
                             d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
                         </path>
                     </svg>
-                    <span class="ml-2">Brands</span>
+                    <span class="ml-2">Our Customers</span>
                 </a>
                 <a id="application" href="#"
                     class="flex flex-row items-center px-3 py-2 mt-1 text-base font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
