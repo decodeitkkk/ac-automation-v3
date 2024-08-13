@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>allProducts template page</title>
+        <link rel="stylesheet" href="/src/output.css" />
+        <link rel="stylesheet" href="/src/global.css" />
+    </head>
+    <body>
+        <section id="dash"></section>
+
+        <script src="/src/components/header.js"></script>
+        <script src="/src/components/footer.js"></script>
+        <script src="/src/components/d.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+            document.body.insertAdjacentHTML("afterbegin", header);
+            document.body.insertAdjacentHTML("beforeend", footer);
+
+            let productsData2 = [
+                {
+                    brand: "FEZER ",
+                    categories: [
+                        {
+                            title: "Metal Sheets",
+                            img: "/src/media/images/fezer/fezer-head-image.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/metal-sheets.html",
+                        },
+                        {
+                            title: "Cardboard Boxes",
+                            img: "/src/media/images/fezer/fezer-cardboard-boxes.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/cardboard-boxes.html",
+                        },
+                        {
+                            title: "Sacks",
+                            img: "/src/media/images/fezer/fezer-sacks.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/sacks.html",
+                        },
+                        {
+                            title: "Wood",
+                            img: "/src/media/images/fezer/fezer-wood.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/wood.html",
+                        },
+                        {
+                            title: "Glass",
+                            img: "/src/media/images/fezer/fezer-glass.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/glass.html",
+                        },
+                        {
+                            title: "Coils / Split strips",
+                            img: "/src/media/images/fezer/fezer-coils-split-strips.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/coils-split-strips.html",
+                        },
+                        {
+                            title: "Pipes, Tubes",
+                            img: "/src/media/images/fezer/fezer-pipes-tubes.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/pipes-tubes.html",
+                        },
+                        {
+                            title: "Stone, Concrete",
+                            img: "/src/media/images/fezer/fezer-stone.jpg",
+                            page_link: "/src/product/fezer-vaccum-lifters/stone-concrete.html",
+                        },
+                        
+                        
+                    ],
+                },
+            ];
+            
+            document
+                .getElementById("dash")
+                .insertAdjacentHTML(
+                    "afterbegin",
+                    productsDashboard(productsData2)
+                );
+
+            let toggleBtn = document.getElementById("toggleBtn");
+            let toggleBtn2 = document.getElementById("toggleBtn2");
+            let toggleItem = document.getElementById("toggleItem");
+            let innerBody = document.getElementById("innerBody");
+
+            toggleBtn.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+            toggleBtn2.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+            document.querySelectorAll("a").forEach((item) => {
+                item.addEventListener(
+                    "click",
+                    () => {
+                        console.log(item.innerText);
+                        // let innerBody = document.getElementById("title-card");
+                        // innerBody.innerText = item.innerText;
+                    },
+                    false
+                );
+                item.addEventListener(
+                    "click",
+                    () => {
+                        toggleItem.classList.toggle("hidden");
+                        innerBody.classList.toggle("hidden");
+                    },
+                    false
+                );
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glass</title>
+    <link rel="stylesheet" href="/src/global.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+
+
+
+
+    <section class="bg-gray-100">
+        <div class="text-2xl text-center font-bold py-10 uppercase ">
+            <!-- Title -->
+            Glass and window elements handle safely
+
+        </div>
+        <img class="mx-auto rounded my-5" src="/src/media/images/fezer/fezer-glass.jpg" alt="Product Image">
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"> </div>
+            <p>
+                Glass and window elements are absolutely vacuum-tight and therefore ideally suited for handling with vacuum technology.
+            </p>
+        </div>
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3">Description</div>
+            <p>
+                That is why FEZER offers you a wide range of application options for the automated and manual transport of these materials. Regardless of whether glass elements have to be transported horizontally, rotated or swivelled.
+
+                FEZER offers you the ideal handling devices for glass elements with the VacuBoy, Mobilift and VacuPowerLift device series. These device series are so variably designed that they cover almost every requirement. Even for use on construction sites, FEZER offers you redundant device versions with dual-circuit vacuum systems in accordance with DIN EN 13155.
+                
+                In addition, all manually controlled vacuum handling devices have the unique "main switch monitoring". FEZER thus sets new standards for the safety of your employees.
+
+Customised suction spiders are available for automated production processes, which can be flanged to robot systems and linear axes. Depending on the requirements, the suction spiders are designed with simple control via solenoid valves up to bus control via valve terminal technology.
+
+Common to all handling tasks are FEZER's high safety requirements. Largely dimensioned vacuum reservoirs and intelligent monitoring of the vacuum circuits via electronic vacuum switches guarantee safe and rational transport with maximum operational safety.
+            </p>
+            <p class="my-4">
+                Our selection of vacuum lifters offers effective solutions for a wide range of applications. However,
+                even if our standard products are not exactly tailored to your specific requirements, we do not
+                compromise. We offer custom solutions alongside our rugged and durable standard vacuum lifters to best
+                support your individual work process.
+
+                Our goal on this website is to present you our diverse products and their numerous application
+                possibilities. Each of our high-quality and, above all, durable vacuum lifters reflects our efforts to
+                develop the perfect solution for you.
+
+                Sounds exciting? We would be happy to have one of our highly qualified employees visit you on site and
+                discuss ways and possibilities for more efficiency, ergonomics and safety.
+            </p>
+            <div class="w-full">
+                <img class="mx-auto" src="/src/media/images/fezer/fezer-pdf-images.jpg" alt="">
+                <p>
+                <ul class="m-5 list-disc ">
+                    <li>
+                        <a href="/src/media/images/fezer/vacuum_handling_complete_catalog.pdf"
+                            class="hover:text-red-800" download="">Vaccum Handling Complete Catalog</a>
+                    </li>
+                    <li>
+                        <a href="/src/media/images/fezer/vacuum_handling_industry_solutions.pdf"
+                            class="hover:text-red-800" download="">Vaccum Handling industry solution</a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        // lucide Icons
+        lucide.createIcons();
+        document.body.insertAdjacentHTML("beforeend", footer);
+        document.body.insertAdjacentHTML("afterbegin", header);
+
+        function showTab(tabId, tabContent, tabButton) {
+            const tabs = document.querySelectorAll(`.${tabContent}`);
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll(`.${tabButton}`);
+            buttons.forEach(button => {
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            event.target.classList.remove('bg-gray-300', 'text-gray-800',);
+            event.target.classList.add('bg-gray-800', 'text-white');
+        }
+
+
+    </script>
+</body>
+
+</html>

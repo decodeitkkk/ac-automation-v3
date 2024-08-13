@@ -27,6 +27,7 @@ const productsData = [
             "PIPES/RODS",
             "CRANES",
         ],
+        link: "/src/pages/fezer.html",
     },
     {
         brand: "STABILUS/HAHN",
