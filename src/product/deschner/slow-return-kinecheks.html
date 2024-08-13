@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Slow Return Kinecheks </title>
+    <link rel="stylesheet" href="/src/global.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+
+
+
+
+    <section class="bg-gray-100">
+        <div class="text-2xl text-center font-bold py-10 uppercase ">
+            <!-- Title -->
+            Slow Return Kinecheks
+
+
+        </div>
+        <img class="mx-auto rounded my-5 px-1 w-1/3" src="/src/media/images/deschner/Slow-Return-343x500.jpg"
+            alt="Product Image">
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"> </div>
+            <p>
+                <!-- Superior shock absorbers for all industrial uses -->
+            </p>
+        </div>
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"></div>
+            <p>
+                The SLOW RETURN KINECHEK will control the speed of a load pushing on the plunger rod exactly the same as
+                a regular KINECHEK. However, the automatic return action of the plunger rod is slowed by a fixed
+                restricting orifice added to the unit’s internal flow passages.
+
+                The time required for the plunger rod to fully extend can range from 6 seconds to 22 seconds per inch of
+                stroke. This return time depends on the size of the orifice in the restrictor and is measured at the
+                slowest adjustment. The restricting orifice is not adjustable but the return time is affected by where
+                the unit adjustment is set i.e. the plunger rod extends quicker at the faster settings.
+
+                This model was first developed for a manufacturer to address the requirements of a second operation
+                lathe. The instantaneous extension of the plunger rod on a STANDARD KINECHEK was interfering with one of
+                the operation sequences on the machine. By slowing down the plunger rod extension on the Kinechek, the
+                manufacturer was able to program the sequence to move into the work piece, complete its operation, and
+                retract before the plunger rod fully extended to repeat the operaion. Available return times are shown
+                in Kinechek bulletin S-66.
+
+            </p>
+
+            <div class="w-full">
+                <div class="text-2xl my-3">Product Specifications</div>
+                <p class="my-3">
+                    Slow Return Kinechek Specs
+
+                </p>
+                <img class="mx-auto w-1/2 " src="/src/media/images/deschner/Slow-Return-ali-500x375.jpg"
+                    alt="">
+                <p>
+                <ul class="m-5 list-disc ">
+                    <li>
+                        <a href="/src/media/images/deschner/CushionStart-Slow-Return-Spec-Sheets.pdf"
+                            class="hover:text-red-800" download="">Cushion-Start Kinechek Specs
+                        </a>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        // lucide Icons
+        lucide.createIcons();
+        document.body.insertAdjacentHTML("beforeend", footer);
+        document.body.insertAdjacentHTML("afterbegin", header);
+
+        function showTab(tabId, tabContent, tabButton) {
+            const tabs = document.querySelectorAll(`.${tabContent}`);
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll(`.${tabButton}`);
+            buttons.forEach(button => {
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            event.target.classList.remove('bg-gray-300', 'text-gray-800',);
+            event.target.classList.add('bg-gray-800', 'text-white');
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -61,6 +61,7 @@ const productsData = [
     },
     {
         brand: "DESCHNER",
+        link:"/src/pages/deschner.html",
         categories: [
             "SLIMLINE MINI-K SPEED REGULATORS",
             "SLIMLINE KINECHEK SPEED REGULATOR",

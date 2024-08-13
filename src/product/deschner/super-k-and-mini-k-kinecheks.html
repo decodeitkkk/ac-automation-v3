@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Super K and Mini K Kinecheks </title>
+    <link rel="stylesheet" href="/src/global.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+
+    <section class="bg-gray-100">
+        <div class="text-2xl text-center font-bold py-10 uppercase ">
+            <!-- Title -->
+            Super K and Mini K Kinecheks
+        </div>
+        <img class="mx-auto rounded my-5 px-1 w-1/3" src="/src/media/images/deschner/superKminiK.png"
+            alt="Product Image">
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"> </div>
+            <p>
+                <!-- Superior shock absorbers for all industrial uses -->
+            </p>
+        </div>
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"></div>
+            <p>
+            <p class="my-2">
+
+                The original SLIMLINE KINICHEK line of hydraulic speed regulators feature a wide variety of over 100
+                models to meet the needs of almost any application requiring constant speed/feed control. But for larger
+                or smaller application needs, we developed the Super-K and Mini-K Kinechek.
+            </p> <br>
+
+            <p class="my-2">
+                The main advantage of the Super K Kinechek is that it has a significantly longer stroke; 4 inch or 6
+                inches versus the 3 inch Slimline. Like the Slimline models, Super-K Kinecheks are Leak-Proof, Durable,
+                and can handle loads up to 1200 lbs. Super Ks can also be customized to your specific application. For
+                example, a PECKCHEK adapter can be added to increase the functionality of a drilling operation. Super
+                K’s are used extensively in robotics, drilling, food processing equipment and packaging machines.
+            </p> <br>
+            <p class="my-2">
+
+                Mini K Kinecheks are the smallest in our line of Speed Regulators. They are light weight and have a load
+                capacity of 400 lbs. As with all our Speed Regulators, they are also Leak proof and fully adjustable.
+                Mini Ks are available in ½ inch, 1 inch, 1¼ and 1 ½ inch stroke lengths. They are widely used to control
+                the feed rate of hand held drills, compact automated machinery and other applications requiring a
+                portable, light weight, and easy to install unit. As with all Kinecheks, a PECKCHEK adapter can be added
+                to increase efficiency.
+            </p>
+            <br>
+
+            <p class="my-2">
+
+                Both Super K and Mini K Kinecheks are made with the same patented, leak proof technology and high
+                quality construction as our original SLIMLINE KINICHEK: The hardened tool steel high pressure cylinder
+                has a single adjustable orifice through which all fluid is metered. The tool steel cylinder, mirror
+                finished, is mated to an all metal piston with no sliding seals. This makes the plunger rod on all
+                Kinecheks move smoothly at a constant rate throughout the entire stroke.
+
+                Absolutely leak proof in any position because the plunger rod is hermetically sealed by a patented
+                frictionless rolling diaphragm seal. Kinecheks contain super clean silicone fluid sealed inside for life
+                — no dirt, dust or other particles can contaminate the fluid to compromise the Kinecheks smooth,
+                dependable speed control.
+
+                Precise speed control — set the speed/feed rate of all Kinecheks with a simple turn of the adjustment knob — over a 300 degree range— that allows for smooth, gradual and infinitely adjustable control of the plunger rod.
+
+                NEW!  The newest member of our Kinechek Family has arrived!  The DUAL SPEED MINI K speed regulator.  It is is specially designed for drilling carbon fiber and other composite materials. With it’s 2 speed functionality, it increases worker efficiency while reducing burring, splintering, and delamination.
+                
+                
+
+            </p>
+
+
+            </p>
+
+            <div class="w-full">
+                <div class="text-2xl my-3">Product Specifications</div>
+                <p class="my-3">
+
+
+                </p>
+
+                <img class="mx-auto w-1/2 " src="#" alt="">
+                <p>
+                <ul class="m-5 list-disc ">
+                    <li>
+                        <a href="/src/media/images/deschner/SuperK-Spec-Sheets.pdf"
+                            class="hover:text-red-800" download="">Super K SpecsSheet
+                        </a>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        // lucide Icons
+        lucide.createIcons();
+        document.body.insertAdjacentHTML("beforeend", footer);
+        document.body.insertAdjacentHTML("afterbegin", header);
+
+        function showTab(tabId, tabContent, tabButton) {
+            const tabs = document.querySelectorAll(`.${tabContent}`);
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll(`.${tabButton}`);
+            buttons.forEach(button => {
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            event.target.classList.remove('bg-gray-300', 'text-gray-800',);
+            event.target.classList.add('bg-gray-800', 'text-white');
+        }
+
+
+    </script>
+</body>
+
+</html>

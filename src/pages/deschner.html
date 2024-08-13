@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deschner</title>
+        <link rel="stylesheet" href="/src/output.css" />
+        <link rel="stylesheet" href="/src/global.css" />
+    </head>
+    <body>
+        <section id="dash"></section>
+
+        <script src="/src/components/header.js"></script>
+        <script src="/src/components/footer.js"></script>
+        <script src="/src/components/d.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+            document.body.insertAdjacentHTML("afterbegin", header);
+            document.body.insertAdjacentHTML("beforeend", footer);
+
+            let productsData2 = [
+                {
+                    brand: "DESCHNER ",
+                    categories: [
+                        {
+                            title: "Cushioneer Shock Absorbers",
+                            img: "/src/media/images/deschner/cushioneer.jpg",
+                            page_link:"/src/product/deschner/cushioneer-shock-absorbers.html",
+                        },
+                        {
+                            title: "Impacta Series Shock Absorbers",
+                            img: "/src/media/images/deschner/impacta-main-image3.jpg",
+                            page_link:"/src/product/deschner/impacta-series-shock-absorbers.html",
+                        },
+                        {
+                            title: "Kinechek Speed Regulators",
+                            img: "/src/media/images/deschner/kinechek.jpg",
+                            page_link:"/src/product/deschner/kinechek-speed-regulators.html",
+                        },
+                        {
+                            title: "Cushion-Start Kinechek",
+                            img: "/src/media/images/deschner/Cushion-Start-ali.jpg",
+                            page_link:"/src/product/deschner/cushion-start-kinechek.html",
+                        },
+                        {
+                            title: "Slow Return Kinecheks",
+                            img: "/src/media/images/deschner/Slow-Return-343x500.jpg",
+                            page_link:"/src/product/deschner/slow-return-kinecheks.html",
+                        },
+                        {
+                            title: "Skipchek Kinecheks",
+                            img: "/src/media/images/deschner/sk-SKIPCHEK-FUNCTION-DIAGRAM.jpg",
+                            page_link:"/src/product/deschner/skipchek-kinecheks.html",
+                        },
+                        {
+                            title: "Peckchek Kinecheks",
+                            img: "/src/media/images/deschner/peck-control-blogger2-sm--500x355.jpg",
+                            page_link:"/src/product/deschner/peckchek-kinecheks.html",
+                        },
+                        {
+                            title: "Dual Speed Mini-K Kinechek",
+                            img: "/src/media/images/deschner/ds-DUAL-SPEED-MINI-K_main_img-387x500.jpg",
+                            page_link:"/src/product/deschner/dual-speed-mini-K-kinechek.html",
+                        },
+                        {
+                            title:"Super K and Mini K Kinecheks",
+                            img:"/src/media/images/deschner/superKminiK.png",
+                            page_link:"/src/product/deschner/super-k-and-mini-k-kinecheks.html"
+                        }
+                        
+                        
+                    ],
+                },
+            ];
+            
+            document
+                .getElementById("dash")
+                .insertAdjacentHTML(
+                    "afterbegin",
+                    productsDashboard(productsData2)
+                );
+
+            let toggleBtn = document.getElementById("toggleBtn");
+            let toggleBtn2 = document.getElementById("toggleBtn2");
+            let toggleItem = document.getElementById("toggleItem");
+            let innerBody = document.getElementById("innerBody");
+
+            toggleBtn.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+            toggleBtn2.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+            document.querySelectorAll("a").forEach((item) => {
+                item.addEventListener(
+                    "click",
+                    () => {
+                        console.log(item.innerText);
+                        // let innerBody = document.getElementById("title-card");
+                        // innerBody.innerText = item.innerText;
+                    },
+                    false
+                );
+                item.addEventListener(
+                    "click",
+                    () => {
+                        toggleItem.classList.toggle("hidden");
+                        innerBody.classList.toggle("hidden");
+                    },
+                    false
+                );
+            });
+        </script>
+    </body>
+</html>
