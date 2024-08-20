@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> ISO Cylinder </title>
+    <link rel="stylesheet" href="/src/global.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+
+
+
+
+    <section class="bg-gray-100">
+        <div class="text-2xl text-center font-bold py-10 uppercase ">
+            <!-- Title -->
+            ISO cylinder
+
+        </div>
+        <img class="mx-auto rounded my-5" src="/src/media/images/medan/iso-cylinder.jpg" alt="Product Image">
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"> </div>
+            <p>
+
+
+
+            </p>
+        </div>
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3">Description</div>
+            <p>
+                Here you will find our portfolio of ISO cylinders. Whether you are looking for a profile tube cylinder according to ISO-15552, a round cylinder according to ISO-6432, a compact cylinder according to ISO-21287 or a tie rod cylinder according to ISO-6431 - we have a product series for every need.
+            </p>
+
+            <div class="mx-10 py-5">
+                <div class="text-2xl my-3">Products</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Product 1 -->
+                    <a href="/src/media/images/medan/E-MCQI2.pdf" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/medan/MCQI2_280x280.jpg" alt="Product 1"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">Profile Cylinder MCQI2</h3>
+                    </a>
+                    <!-- Product 2 -->
+                    <a href="/src/media/images/medan/E-MCMI.pdf" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/medan/mcmi_280x280.jpg" alt="Product 2"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">ISO-6432 Miniature Cylinder </h3>
+                    </a>
+                    <!-- Product 3 -->
+                    <a href="/src/media/images/medan/E-MCQV.pdf" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/medan/MCQV2_280x280.jpg" alt="Product 3"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">ISO-VDMA Standard Cylinder</h3>
+                    </a>
+                    <!-- Product 4 -->
+                    <a href="/src/media/images/medan/E-MCJI.pdf" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/medan/mcji_280x280.jpg" alt="Product 4"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">Compact Cylinder MCJI</h3>
+                    </a>
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        // lucide Icons
+        lucide.createIcons();
+        document.body.insertAdjacentHTML("beforeend", footer);
+        document.body.insertAdjacentHTML("afterbegin", header);
+
+        function showTab(tabId, tabContent, tabButton) {
+            const tabs = document.querySelectorAll(`.${tabContent}`);
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll(`.${tabButton}`);
+            buttons.forEach(button => {
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            event.target.classList.remove('bg-gray-300', 'text-gray-800',);
+            event.target.classList.add('bg-gray-800', 'text-white');
+        }
+
+
+    </script>
+</body>
+
+</html>

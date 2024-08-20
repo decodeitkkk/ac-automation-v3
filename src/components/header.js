@@ -73,6 +73,7 @@ const productsData = [
     },
     {
         brand: "MEDAN",
+        link:"/src/pages/medan.html",
         categories: ["PNEUMATIC RODLESS CYLINDER", "GUIDED RODLESS CYLINDER"],
     },
     {

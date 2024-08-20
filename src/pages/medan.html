@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medan Products </title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+</head>
+
+<body>
+    <section id="dash"></section>
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="/src/components/d.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        document.body.insertAdjacentHTML("afterbegin", header);
+        document.body.insertAdjacentHTML("beforeend", footer);
+
+        let productsData2 = [
+            {
+                brand: "MEDAN ",
+                categories: [
+                    {
+                        title: "Rodless cylinders",
+                        img: "/src/media/images/medan/rodless-cylinder.jpg",
+                        page_link: "/src/product/medan/rodless-cylinder.html",
+                    },
+                    {
+                        title: "ISO cylinder",
+                        img: "/src/media/images/medan/iso-cylinder.jpg",
+                        page_link: "/src/product/medan/iso-cylinder.html",
+                    },
+                    {
+                        title: "Clamping cylinder",
+                        img: "/src/media/images/medan/clamping-cylinder.jpg",
+                        page_link: "/src/product/medan/clamping-cylinder.html",
+                    },
+                    {
+                        title: "Stopper cylinder",
+                        img: "/src/media/images/medan/stopper-cylinder.jpg",
+                        page_link: "/src/product/medan/stopper-cylinder.html",
+                    },
+                    {
+                        title: "Rotary actuators",
+                        img: "/src/media/images/medan/rotary-actuators.jpg",
+                        page_link: "/src/product/medan/rotary-actuators.html",
+                    },
+                    {
+                        title: "Gripper",
+                        img: "/src/media/images/medan/gripper.jpg",
+                        page_link: "/src/product/medan/gripper.html",
+                    },
+                    {
+                        title: "Timing belt axes",
+                        img: "/src/media/images/medan/timing_belt_axes_280x280.png",
+                        page_link: "/src/product/medan/timing-belt-axes.html",
+                    },
+                    {
+                        title: "Spindle axes",
+                        img: "/src/media/images/medan/spindle-axes_280x280.png",
+                        page_link: "/src/product/medan/spindle-axes.html",
+                    },
+                    {
+                        title: "Heavy-duty axles",
+                        img: "/src/media/images/medan/heavy-duty-axles_280x280.png",
+                        page_link: "/src/product/medan/heavy-duty-axles.html",
+                    },
+                    {
+                        title: "Boom axles",
+                        img: "/src/media/images/medan/boom-axles_280x280.png",
+                        page_link: "/src/product/medan/boom-axles.html",
+                    },
+                    {
+                        title: "Pneumatic hoses",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Pneumatic fittings",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Functional screw connections",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Foot valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Hand lever valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Lever valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "ISO valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Solenoid valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Namur valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Pilot valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Start valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Heavy-duty axles",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Touch valves",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Pressure regulator",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "filter",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Filter regulator",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Combi maintenance unit",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Proportional pressure regulator",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Precision pressure regulator",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+                    {
+                        title: "Accesories",
+                        img: "#",
+                        page_link: "/src/product/medan/#",
+                    },
+
+
+                ],
+            },
+        ];
+
+        document
+            .getElementById("dash")
+            .insertAdjacentHTML(
+                "afterbegin",
+                productsDashboard(productsData2)
+            );
+
+        let toggleBtn = document.getElementById("toggleBtn");
+        let toggleBtn2 = document.getElementById("toggleBtn2");
+        let toggleItem = document.getElementById("toggleItem");
+        let innerBody = document.getElementById("innerBody");
+
+        toggleBtn.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        toggleBtn2.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        document.querySelectorAll("a").forEach((item) => {
+            item.addEventListener(
+                "click",
+                () => {
+                    console.log(item.innerText);
+                    // let innerBody = document.getElementById("title-card");
+                    // innerBody.innerText = item.innerText;
+                },
+                false
+            );
+            item.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+        });
+    </script>
+</body>
+
+</html>
