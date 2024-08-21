@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Precision Pressure Regulator </title>
+    <link rel="stylesheet" href="/src/global.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+
+
+
+
+    <section class="bg-gray-100">
+        <div class="text-2xl text-center font-bold py-10 uppercase ">
+            <!-- Title -->
+            Precision Pressure Regulator
+
+        </div>
+        <img class="mx-auto rounded my-5" src="/src/media/images/medan/MAIR-MP43_280x280.jpg" alt="Product Image">
+
+        <div class="mx-10 py-5">
+
+
+            <div class="mx-10 py-5">
+                <div class="text-2xl my-3">Products</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                    <!-- Product 1 -->
+                    <a href="/src/media/images/medan/MAIR-100-200.pdf" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/medan/MAIR-MP43_280x280.jpg" alt="MAFR100"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold"> Proportional Pressure </h3>
+                    </a>
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        // lucide Icons
+        lucide.createIcons();
+        document.body.insertAdjacentHTML("beforeend", footer);
+        document.body.insertAdjacentHTML("afterbegin", header);
+
+        function showTab(tabId, tabContent, tabButton) {
+            const tabs = document.querySelectorAll(`.${tabContent}`);
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll(`.${tabButton}`);
+            buttons.forEach(button => {
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            event.target.classList.remove('bg-gray-300', 'text-gray-800',);
+            event.target.classList.add('bg-gray-800', 'text-white');
+        }
+
+
+    </script>
+</body>
+
+</html>
