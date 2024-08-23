@@ -13,7 +13,7 @@ let footer = `
 
         <ul class="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
           <li>
-            <a href="/" rel="noopener noreferrer" target="_blank"
+            <a href="https://www.facebook.com/profile.php?id=100003508294732&ref=tn_tnmn" rel="noopener noreferrer" target="_blank"
               class="text-teal-500 transition hover:text-teal-500/75">
               <span class="sr-only">Facebook</span>
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -70,7 +70,7 @@ let footer = `
 
           <ul class="mt-8 space-y-4 text-sm">
             <li>
-              <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="/">
+              <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="mailto:sales@acautomation.in">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white shrink-0" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -83,7 +83,7 @@ let footer = `
             </li>
 
             <li>
-              <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="/">
+              <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="tel:+911141472715">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white shrink-0" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -105,8 +105,8 @@ let footer = `
               </svg>
 
               <address class="-mt-0.5 not-italic text-white">
-                301, 3rd Floor, Mukund House
-                Commercial Complex, Azadpur
+                301, 3rd Floor,  Mukund House
+                Commercial Complex, <br/> Azadpur
                 Delhi, India 110033
               </address>
             </li>
@@ -132,7 +132,7 @@ let footer = `
         </p>
 
         <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-          &copy; 2022 A. C. Automation
+          &copy; 2024 A. C. Automation
         </p>
       </div>
     </div>
@@ -187,7 +187,7 @@ let footer2 = `
 
         <ul class="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
           <li>
-            <a href="/" rel="noopener noreferrer" target="_blank"
+            <a href="https://www.facebook.com/profile.php?id=100003508294732&ref=tn_tnmn" rel="noopener noreferrer" target="_blank"
               class="text-teal-500 transition hover:text-teal-500/75">
               <span class="sr-only">Facebook</span>
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -387,7 +387,7 @@ let footer2 = `
 
               <address class="-mt-0.5 not-italic text-white">
                 301, 3rd Floor, Mukund House
-                Commercial Complex, Azadpur
+                Commercial Complex, <br/> Azadpur
                 Delhi, India 110033
               </address>
             </li>
@@ -413,7 +413,7 @@ let footer2 = `
         </p>
 
         <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-          &copy; 2022 Company Name
+          &copy; 2024 A.C. Automation
         </p>
       </div>
     </div>

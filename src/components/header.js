@@ -43,22 +43,22 @@ const productsData = [
             "ACCESSORIES",
         ],
     },
-    {
-        brand: "IZMAC SHOCK ABSORBERS",
-        categories: [
-            "SELF COMPENSATING MINI SERIES (M4 - M16)",
-            "ADJUSTABLE MINI SERIES (M4 - M16)",
-            "SELF COMPENSATING MID SERIES (M20 - M36)",
-            "ADJUSTABLE MID SERIES (M20 - M36)",
-            "SELF COMPENSATING MAX SERIES (M42 - M115)",
-            "ADJUSTABLE MAX SERIES (M42 - M115)",
-            "HEAVEY DUTY CRANE BUFFERS",
-            "SPEED CONTROL SERIES",
-            "CRASH DAMPERS",
-            "RATE CONTROL",
-            "SHORT STROKE SHOCK ABSORBER",
-        ],
-    },
+    // {
+    //     brand: "IZMAC SHOCK ABSORBERS",
+    //     categories: [
+    //         "SELF COMPENSATING MINI SERIES (M4 - M16)",
+    //         "ADJUSTABLE MINI SERIES (M4 - M16)",
+    //         "SELF COMPENSATING MID SERIES (M20 - M36)",
+    //         "ADJUSTABLE MID SERIES (M20 - M36)",
+    //         "SELF COMPENSATING MAX SERIES (M42 - M115)",
+    //         "ADJUSTABLE MAX SERIES (M42 - M115)",
+    //         "HEAVEY DUTY CRANE BUFFERS",
+    //         "SPEED CONTROL SERIES",
+    //         "CRASH DAMPERS",
+    //         "RATE CONTROL",
+    //         "SHORT STROKE SHOCK ABSORBER",
+    //     ],
+    // },
     {
         brand: "DESCHNER",
         link:"/src/pages/deschner.html",
@@ -76,15 +76,15 @@ const productsData = [
         link:"/src/pages/medan.html",
         categories: ["PNEUMATIC RODLESS CYLINDER", "GUIDED RODLESS CYLINDER"],
     },
-    {
-        brand: "VUOTOTECNICA VACUUM",
-        categories: [
-            "SUCTION CUPS",
-            "SUCTION CUPS HOLDERS",
-            "VACUUM MEASUREMENTS/INTRUMENTS",
-            "VACUUM VALVES/SOLENOID VALVES",
-        ],
-    },
+    // {
+    //     brand: "VUOTOTECNICA VACUUM",
+    //     categories: [
+    //         "SUCTION CUPS",
+    //         "SUCTION CUPS HOLDERS",
+    //         "VACUUM MEASUREMENTS/INTRUMENTS",
+    //         "VACUUM VALVES/SOLENOID VALVES",
+    //     ],
+    // },
 ];
 
 let header = `
