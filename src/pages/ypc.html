@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YPC </title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+</head>
+
+<body>
+    <section id="dash"></section>
+
+    <script src="/src/components/header.js"></script>
+    <script src="/src/components/footer.js"></script>
+    <script src="/src/components/d.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        document.body.insertAdjacentHTML("afterbegin", header);
+        document.body.insertAdjacentHTML("beforeend", footer);
+
+        let productsData2 = [
+            {
+                brand: "MEDAN ",
+                categories: [
+                    {
+                        title: "YSV Series",
+                        img: "/src/media/images/ypc/YSV200.jpg",
+                        page_link: "/src/product/ypc/ysv-series.html",
+                    },
+                    {
+                        title: "SF Series",
+                        img: "/src/media/images/ypc/SF1000.jpg",
+                        page_link: "/src/product/ypc/sf-series.html",
+                    },
+                    {
+                        title: "SC Series",
+                        img: "/src/media/images/ypc/SC200.jpg",
+                        page_link: "/src/product/ypc/sc-series.html",
+                    },
+                    {
+                        title: "Converter & Booster ",
+                        img: "/src/media/images/ypc/precompressed_booster.jpg",
+                        page_link: "/src/product/ypc/converter-booster.html",
+                    },
+                    {
+                        title: "SN Series ( Namur Valve )",
+                        img: "/src/media/images/ypc/SN3000.jpg",
+                        page_link: "/src/product/ypc/sn-series.html",
+                    },
+                    {
+                        title: "SIV Series (ISO Valves) ",
+                        img: "/src/media/images/ypc/SIV200.jpg",
+                        page_link: "/src/product/ypc/siv-series.html",
+                    },
+                ],
+            },
+        ];
+
+        document
+            .getElementById("dash")
+            .insertAdjacentHTML(
+                "afterbegin",
+                productsDashboard(productsData2)
+            );
+
+        let toggleBtn = document.getElementById("toggleBtn");
+        let toggleBtn2 = document.getElementById("toggleBtn2");
+        let toggleItem = document.getElementById("toggleItem");
+        let innerBody = document.getElementById("innerBody");
+
+        toggleBtn.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        toggleBtn2.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        document.querySelectorAll("a").forEach((item) => {
+            item.addEventListener(
+                "click",
+                () => {
+                    console.log(item.innerText);
+                    // let innerBody = document.getElementById("title-card");
+                    // innerBody.innerText = item.innerText;
+                },
+                false
+            );
+            item.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+        });
+    </script>
+</body>
+
+</html>

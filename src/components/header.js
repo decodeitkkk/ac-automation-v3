@@ -43,6 +43,20 @@ const productsData = [
             "ACCESSORIES",
         ],
     },
+    {
+        brand: "YPC",
+        link: "/src/pages/ypc.html",
+        categories: [
+            "GAS SPRINGS",
+            "TENSION SPRINGS",
+            "LOCKING GAS SPRINGS",
+            "DAMPERS",
+            "DOUBLE STROKE GAS SPRINGS",
+            "SLIDING DOOR DAMPER",
+            "GAS SPRINGS WITH BALL POINT PRINCIPLE",
+            "ACCESSORIES",
+        ],
+    },
     // {
     //     brand: "IZMAC SHOCK ABSORBERS",
     //     categories: [
