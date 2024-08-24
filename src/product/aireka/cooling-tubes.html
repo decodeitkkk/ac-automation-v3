@@ -10,7 +10,36 @@
 </head>
 
 <body>
-
+    <nav class="flex bg-gray-100 p-2" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+                <a href="/src/index.html"
+                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-house">
+                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                        <path
+                            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    &nbsp;&nbsp; > &nbsp;&nbsp;
+                    <a href="/src/pages/aireka.html"
+                        class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Aireka</a>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    &nbsp;&nbsp; > &nbsp;&nbsp;
+                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Cooling Tube</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
 
 
 
@@ -50,1158 +79,109 @@
             <div class="text-2xl my-3 ">
             </div>
 
-            <div class="text-2xl my-3 font-bold "> </div>
-            <div>
-                <div class="tabs">
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-white bg-gray-800 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table1','tab-content','tab-button')">VR-100</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table2','tab-content','tab-button')">VR-200</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table3','tab-content','tab-button')">VR-300T</button>
-                   
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table5','tab-content','tab-button')">VR-300U</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table6','tab-content','tab-button')">VR-200U</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table7','tab-content','tab-button')">VR-400U</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table8','tab-content','tab-button')">VR-400G</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table9','tab-content','tab-button')">VR-600U</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table10','tab-content','tab-button')">VR-600G</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table11','tab-content','tab-button')">VRX-100</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table12','tab-content','tab-button')">VRX-300</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table13','tab-content','tab-button')">VRX-500</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table14','tab-content','tab-button')">VRX-1000</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table15','tab-content','tab-button')">Part numbers</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table16','tab-content','tab-button')">Accessories</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table17','tab-content','tab-button')">CONTROL UNITS - XTRONIC
-                        C-EV-1S/C-2EV-1S</button>
-                    <button
-                        class="tab-button px-2 py-2 text-[10px] md:text-base  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('table18','tab-content','tab-button')">CONTROL UNITS - XTRONIC
-                        345 B</button>
-                </div>
-                <div id="table1" class="tab-content border bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full">
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Part number</td>
-                                <td class="border px-4 py-2">VR-100</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">General characteristics</td>
-                                <td class="border px-4 py-2">Materials: Body and cover - Nylon 6.6, Air attachment and
-                                    nozzles - Brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Air supply connection</td>
-                                <td class="border px-4 py-2">G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Input connection (cold fraction)</td>
-                                <td class="border px-4 py-2">G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Exhaust connection (hot fraction)</td>
-                                <td class="border px-4 py-2">G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Recommended tube</td>
-                                <td class="border px-4 py-2">Ø-8x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Supply pressure</td>
-                                <td class="border px-4 py-2">3 ÷ 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Cooling power *</td>
-                                <td class="border px-4 py-2">120 W - 100 Kcal/h - 400 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Optional magnetic support</td>
-                                <td class="border px-4 py-2">KACM-VR100</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-bold">Size dimensions</td>
-                                <td class="border px-4 py-2"><a href="#">↓ download</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                    <table class="table-auto w-full">
-                        <thead>
-                            <tr class="bg-gray-200">
-                                <th class="border px-4 py-2 text-left">Pressure [bar]</th>
-                                <th class="border px-4 py-2 text-left">Temperature cold fraction output [°C]</th>
-                                <th class="border px-4 py-2 text-left">Consumption [Nl/min]</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2">1</td>
-                                <td class="border px-4 py-2">-1.5</td>
-                                <td class="border px-4 py-2">32</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">2</td>
-                                <td class="border px-4 py-2">-8</td>
-                                <td class="border px-4 py-2">53</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">3</td>
-                                <td class="border px-4 py-2">-15</td>
-                                <td class="border px-4 py-2">74</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">4</td>
-                                <td class="border px-4 py-2">-21.5</td>
-                                <td class="border px-4 py-2">94</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">5</td>
-                                <td class="border px-4 py-2">-24.5</td>
-                                <td class="border px-4 py-2">115</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">6</td>
-                                <td class="border px-4 py-2">-26.5</td>
-                                <td class="border px-4 py-2">135</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">7</td>
-                                <td class="border px-4 py-2">-28</td>
-                                <td class="border px-4 py-2">154</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
+            <div class="mx-10 py-5">
+                <div class="text-2xl my-3">Products</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Product 1 -->
+                    <a href="/src/media/images/aireka/control-unit.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/control-unit.png" alt="Control Unit"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">Control Unit</h3>
+                    </a>
+                    <!-- Product 2 -->
+                    <a href="/src/media/images/aireka/KACM-1-150x150.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/KACM-1-150x150.png" alt="KACM-1"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">KACM-1</h3>
+                    </a>
+                    <!-- Product 3 -->
+                    <a href="/src/media/images/aireka/vr100-300x300.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/vr100-300x300.png" alt="VR100"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR100</h3>
+                    </a>
+                    <!-- Product 4 -->
+                    <a href="/src/media/images/aireka/vr200-300x300.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/vr200-300x300.png" alt="VR200"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR200</h3>
+                    </a>
+                    <!-- Product 5 -->
+                    <a href="/src/media/images/aireka/vr300-300x300.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/vr300-300x300.png" alt="VR300"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR300</h3>
+                    </a>
+                    <!-- Product 6 -->
+                    <a href="/src/media/images/aireka/vr300u-300x300.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/vr300u-300x300.png" alt="VR300U"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR300U</h3>
+                    </a>
+                    <!-- Product 7 -->
+                    <a href="/src/media/images/aireka/VR200-U-300x247.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VR200-U-300x247.png" alt="VR200-U"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR200-U</h3>
+                    </a>
+                    <!-- Product 8 -->
+                    <a href="/src/media/images/aireka/VR400-G2-300x164.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VR400-G2-300x164.png" alt="VR400-G2"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR400-G2</h3>
+                    </a>
+                    <!-- Product 9 -->
+                    <a href="/src/media/images/aireka/VR-400U-300x194.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VR-400U-300x194.png" alt="VR-400U"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VR-400U</h3>
+                    </a>
+                    <!-- Product 10 -->
+                    <a href="/src/media/images/aireka/VRX100-300x200.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VRX100-300x200.png" alt="VRX100"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VRX100</h3>
+                    </a>
+                    <!-- Product 11 -->
+                    <a href="/src/media/images/aireka/VRX300-150x150.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VRX300-150x150.png" alt="VRX300"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VRX300</h3>
+                    </a>
+                    <!-- Product 12 -->
+                    <a href="/src/media/images/aireka/VRX500-300x200.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VRX500-300x200.png" alt="VRX500"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VRX500</h3>
+                    </a>
+                    <!-- Product 13 -->
+                    <a href="/src/media/images/aireka/VRX1000-300x200.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/VRX1000-300x200.png" alt="VRX1000"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">VRX1000</h3>
+                    </a>
+                    <!-- Product 14 -->
+                    <a href="/src/media/images/aireka/XTRONIC-345T-300x242.png" target="_blank"
+                        class="block bg-white rounded shadow p-5 hover:bg-gray-200">
+                        <img src="/src/media/images/aireka/XTRONIC-345T-300x242.png" alt="XTRONIC-345T"
+                            class="w-full h-auto mb-3 rounded">
+                        <h3 class="text-lg font-semibold">XTRONIC-345T</h3>
+                    </a>
                 </div>
 
-                <div id="table2" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full">
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Part number</td>
-                                <td class="border px-4 py-2">VR-200</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Materials</td>
-                                <td class="border px-4 py-2">Body and cover: technopolymer<br>Air attachment and nozzles: brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Air supply connection</td>
-                                <td class="border px-4 py-2">Push-in fitting Ø-8x6</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Input connection (cold fraction)</td>
-                                <td class="border px-4 py-2">2 x G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Exhaust connection (hot fraction)</td>
-                                <td class="border px-4 py-2">2 x G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Recommended tube</td>
-                                <td class="border px-4 py-2">Ø-8x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Supply pressure</td>
-                                <td class="border px-4 py-2">3 ÷ 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Cooling power *</td>
-                                <td class="border px-4 py-2">240 W - 200 Kcal/h - 800 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Optional magnetic support</td>
-                                <td class="border px-4 py-2">KACM-VR200</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Size dimensions</td>
-                                <td class="border px-4 py-2">
-                                    <a href="#" class="text-blue-500">↓ download</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="px-4 py-2">Pressure [bar]</th>
-                                    <th class="px-4 py-2">Temperature cold fraction output [°C]</th>
-                                    <th class="px-4 py-2">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">-1.5</td>
-                                    <td class="border px-4 py-2">64</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-8</td>
-                                    <td class="border px-4 py-2">106</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-15</td>
-                                    <td class="border px-4 py-2">148</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-21.5</td>
-                                    <td class="border px-4 py-2">196</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-24.5</td>
-                                    <td class="border px-4 py-2">230</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-26.5</td>
-                                    <td class="border px-4 py-2">270</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">308</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                </div>
-
-                <div id="table3" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full">
-                        <thead>
-                            <tr class="bg-gray-200">
-                                <th class="px-4 py-2">Property</th>
-                                <th class="px-4 py-2">Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2">Part number</td>
-                                <td class="border px-4 py-2">VR-300T</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Materials</td>
-                                <td class="border px-4 py-2">Body and cover: Nylon 6.6<br>Air connection and nozzles: brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Air supply connection</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Outlet port (cold fraction)</td>
-                                <td class="border px-4 py-2">3 x G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Exhaust connection (hot fraction)</td>
-                                <td class="border px-4 py-2">3 x G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Recommended tube</td>
-                                <td class="border px-4 py-2">Ø-8x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Supply pressure</td>
-                                <td class="border px-4 py-2">3 ÷ 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Cooling power *</td>
-                                <td class="border px-4 py-2">360 W - 300 Kcal/h - 1200 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Size dimensions</td>
-                                <td class="border px-4 py-2"><a href="#">↓ download</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="border px-4 py-2">Pressure [bar]</th>
-                                    <th class="border px-4 py-2">Temperature cold fraction output [°C]</th>
-                                    <th class="border px-4 py-2">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">-15</td>
-                                    <td class="border px-4 py-2">96</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-8</td>
-                                    <td class="border px-4 py-2">159</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-15</td>
-                                    <td class="border px-4 py-2">222</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-21,5</td>
-                                    <td class="border px-4 py-2">282</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-24,5</td>
-                                    <td class="border px-4 py-2">345</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-26,5</td>
-                                    <td class="border px-4 py-2">405</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">462</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-
-                <div id="table5" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full border-collapse border border-gray-300">
-                        <thead>
-                            <tr class="bg-gray-200">
-                                <th class="border px-4 py-2">Part number</th>
-                                <th class="border px-4 py-2">VR-300U</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2">Materials</td>
-                                <td class="border px-4 py-2">Body and cover: Nylon 6.6<br>Air attachment and nozzles: brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Air inlet port</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Outlet port (cold flow)</td>
-                                <td class="border px-4 py-2">1 x G-1/2" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Exhaust port (hot fraction)</td>
-                                <td class="border px-4 py-2">3 x G-1/8" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Recommended tube</td>
-                                <td class="border px-4 py-2">Ø-8x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Supply pressure</td>
-                                <td class="border px-4 py-2">3 ÷ 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Cooling power *</td>
-                                <td class="border px-4 py-2">360 W - 300 Kcal/h - 1200 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Optional magnetic support</td>
-                                <td class="border px-4 py-2">KACM-VR300</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Size dimensions</td>
-                                <td class="border px-4 py-2"><a href="#" class="text-blue-500 underline">↓ download</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="border px-4 py-2">Pressure [bar]</th>
-                                    <th class="border px-4 py-2">Temperature cold fraction output [°C]</th>
-                                    <th class="border px-4 py-2">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">-1.5</td>
-                                    <td class="border px-4 py-2">96</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-8</td>
-                                    <td class="border px-4 py-2">159</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-15</td>
-                                    <td class="border px-4 py-2">222</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-21.5</td>
-                                    <td class="border px-4 py-2">282</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-24.5</td>
-                                    <td class="border px-4 py-2">345</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-26.5</td>
-                                    <td class="border px-4 py-2">405</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">462</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-                <div id="table6" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full border-collapse border border-gray-300">
-                        <thead>
-                            <tr class="bg-gray-200">
-                                <th class="border px-4 py-2">Property</th>
-                                <th class="border px-4 py-2">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2">Part number</td>
-                                <td class="border px-4 py-2">VR-200</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Materials</td>
-                                <td class="border px-4 py-2">Body and cover: Delrin<br>Air attachment and nozzles: brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Air inlet port</td>
-                                <td class="border px-4 py-2">G-1/4” F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Outlet port (cold flow)</td>
-                                <td class="border px-4 py-2">G-1/4” F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Exhaust port (hot fraction)</td>
-                                <td class="border px-4 py-2">G-1/4” F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Recommended tube</td>
-                                <td class="border px-4 py-2">Ø-8x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Supply pressure</td>
-                                <td class="border px-4 py-2">Max 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Cooling power *</td>
-                                <td class="border px-4 py-2">264 W - 220 Kcal/h - 880 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Optional magnetic support</td>
-                                <td class="border px-4 py-2">By means of 2 threads M6 on the body</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2">Size dimensions</td>
-                                <td class="border px-4 py-2">↓ download</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="border px-4 py-2">Pressure [bar]</th>
-                                    <th class="border px-4 py-2">Temperature cold fraction output [°C]</th>
-                                    <th class="border px-4 py-2">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">64</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-12</td>
-                                    <td class="border px-4 py-2">106</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-18</td>
-                                    <td class="border px-4 py-2">148</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-23</td>
-                                    <td class="border px-4 py-2">188</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-26</td>
-                                    <td class="border px-4 py-2">230</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">270</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-31</td>
-                                    <td class="border px-4 py-2">308</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-                <div id="table7" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full border-collapse border border-gray-300">
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Part number</td>
-                                <td class="border px-4 py-2">VR-400U</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Materials</td>
-                                <td class="border px-4 py-2">Body and cover: Delrin</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Ports and nozzles</td>
-                                <td class="border px-4 py-2">Brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Air inlet port</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Exhaust port (hot flow)</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Recommended hose</td>
-                                <td class="border px-4 py-2">Ø-10x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Supply pressure</td>
-                                <td class="border px-4 py-2">Max 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Cooling power *</td>
-                                <td class="border px-4 py-2">528 W - 440 Kcal/h - 1760 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Optional magnetic support</td>
-                                <td class="border px-4 py-2">By means of 2 thread M6 on the body</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Size dimensions</td>
-                                <td class="border px-4 py-2">↓ download</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="border px-4 py-2">Pressure [bar]</th>
-                                    <th class="border px-4 py-2">Temperature cold fraction output [°C]</th>
-                                    <th class="border px-4 py-2">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">-15</td>
-                                    <td class="border px-4 py-2">96</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-8</td>
-                                    <td class="border px-4 py-2">159</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-15</td>
-                                    <td class="border px-4 py-2">222</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-21,5</td>
-                                    <td class="border px-4 py-2">282</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-24,5</td>
-                                    <td class="border px-4 py-2">345</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-26,5</td>
-                                    <td class="border px-4 py-2">405</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">462</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-
-                <div id="table8" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full border-collapse border border-gray-300">
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Part number</td>
-                                <td class="border px-4 py-2">VR-400G</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Materials</td>
-                                <td class="border px-4 py-2">Body: Delrin<br>Clamps: ABS (other materials on request)<br>Inner spindles: Brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Air inlet port</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Clamps width (cold flow)</td>
-                                <td class="border px-4 py-2">5 mm (customized dimensions on request)</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Outlet port (hot flow)</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Recommended hose</td>
-                                <td class="border px-4 py-2">Ø-10x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Air supply pressure</td>
-                                <td class="border px-4 py-2">Max 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Cooling power *</td>
-                                <td class="border px-4 py-2">528 W - 440 Kcal/h - 1760 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Fastening</td>
-                                <td class="border px-4 py-2">By means of 2 threads M6 on the body</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Size dimensions</td>
-                                <td class="border px-4 py-2"><a href="#">↓ download</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="border px-4 py-2">Pressure [bar]</th>
-                                    <th class="border px-4 py-2">Temperature cold fraction output [°C]</th>
-                                    <th class="border px-4 py-2">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">-2</td>
-                                    <td class="border px-4 py-2">192</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-12</td>
-                                    <td class="border px-4 py-2">318</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-18</td>
-                                    <td class="border px-4 py-2">444</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-23</td>
-                                    <td class="border px-4 py-2">564</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-26</td>
-                                    <td class="border px-4 py-2">690</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">810</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-31</td>
-                                    <td class="border px-4 py-2">924</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-                <div id="table9" class="tab-content hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="table-auto w-full border-collapse border border-gray-300">
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Part number</td>
-                                <td class="border px-4 py-2">VR-600U</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Materials</td>
-                                <td class="border px-4 py-2">Body: Delrin<br>Ports and nozzles: Brass</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Air inlet port</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Clamps width (cold flow)</td>
-                                <td class="border px-4 py-2">G-1/2” F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Outlet port (hot flow)</td>
-                                <td class="border px-4 py-2">G-1/4" F</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Recommended hose</td>
-                                <td class="border px-4 py-2">Ø-10x1</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Air supply pressure</td>
-                                <td class="border px-4 py-2">Max 7 bar</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Cooling power *</td>
-                                <td class="border px-4 py-2">720 W - 600 Kcal/h - 2400 BTUH</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Fastening</td>
-                                <td class="border px-4 py-2">By means of two M6 threads on body</td>
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 font-semibold">Size dimensions</td>
-                                <td class="border px-4 py-2"><a href="#">↓ download</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class=" px-2 text-gray-700 text-sm my-3">* with inlet pressure 7 bar air supply and inlet temperature
-                        20°C</p>
-
-                    <div class="text-2xl mt-10 mb-5 font-bold text-center "> Performance and consumption table
-                        (WITH 20°C INPUT TEMPERATURE) </div>
-                        <table class="table-auto w-full border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="bg-gray-200">
-                                    <th class="border px-4 py-2 text-left">Pressure [bar]</th>
-                                    <th class="border px-4 py-2 text-left">Temperature cold fraction output [°C]</th>
-                                    <th class="border px-4 py-2 text-left">Consumption [Nl/min]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="border px-4 py-2">1</td>
-                                    <td class="border px-4 py-2">-2</td>
-                                    <td class="border px-4 py-2">192</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">2</td>
-                                    <td class="border px-4 py-2">-12</td>
-                                    <td class="border px-4 py-2">318</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">3</td>
-                                    <td class="border px-4 py-2">-18</td>
-                                    <td class="border px-4 py-2">444</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">4</td>
-                                    <td class="border px-4 py-2">-23</td>
-                                    <td class="border px-4 py-2">564</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">5</td>
-                                    <td class="border px-4 py-2">-26</td>
-                                    <td class="border px-4 py-2">690</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">6</td>
-                                    <td class="border px-4 py-2">-28</td>
-                                    <td class="border px-4 py-2">810</td>
-                                </tr>
-                                <tr>
-                                    <td class="border px-4 py-2">7</td>
-                                    <td class="border px-4 py-2">-31</td>
-                                    <td class="border px-4 py-2">924</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-
-                <!-- DONE UNTILL 600U TABLE 9 -->
-
-                <!-- STAINLESS STEEL V2A  -->
-                <div class="text-2xl my-3 font-bold "> Stainless Steel V2A </div>
-                <div class="tabs">
-                    <button
-                        class="tab-button2 px-2 py-2 text-xs  text-white bg-gray-800 rounded-t-lg focus:outline-none"
-                        onclick="showTab('V2A1','tab-content2','tab-button2')">Gas Spring</button>
-                    <button
-                        class="tab-button2 px-2 py-2 text-xs  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('V2A2','tab-content2','tab-button2')">Gas Spring with damping</button>
-                    <button
-                        class="tab-button2 px-2 py-2 text-xs  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                        onclick="showTab('V2A3','tab-content2','tab-button2')">Gas Spring Lockable</button>
-                </div>
-                <div id="V2A1" class="tab-content2   bg-white overflow-auto rounded-b-lg">
-                    <table class="min-w-full bg-white">
-                        <thead class="bg-gray-800 text-white">
-                            <tr>
-                                <th
-                                    class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Type</th>
-                                <th
-                                    class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Ø Piston Rod</th>
-                                <th
-                                    class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Ø Cylinder Tube</th>
-                                <th
-                                    class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Extension Force</th>
-                                <th
-                                    class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Progression</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-gray-700">
-                            <tr class="bg-gray-100">
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"> <a href="G02-06-V4.pdf"
-                                        target="_blank"
-                                        class="text-blue-500 hover:text-blue-700 hover:underline text-xs sm:text-sm">Z06-19
-                                        V2</a></td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">6 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">19 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">30 - 330 N</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10%</td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"> <a href="G02-06-V4.pdf"
-                                        target="_blank"
-                                        class="text-blue-500 hover:text-blue-700 hover:underline text-xs sm:text-sm">Z10-28
-                                        V2</a></td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">150 - 1200 N</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">20%</td>
-                            </tr>
-                            <tr class="bg-gray-100">
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"> <a href="G02-06-V4.pdf"
-                                        target="_blank"
-                                        class="text-blue-500 hover:text-blue-700 hover:underline text-xs sm:text-sm">Z10-40
-                                        V2</a></td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">40 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">200 - 2000 N</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">78%</td>
-                            </tr>
-                            <tr class="bg-white">
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"> <a href="G02-06-V4.pdf"
-                                        target="_blank"
-                                        class="text-blue-500 hover:text-blue-700 hover:underline text-xs sm:text-sm">Z28-40
-                                        V2</a></td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">40 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">500 - 5000 N</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">40%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="V2A2" class="tab-content2 hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="min-w-full bg-white">
-                        <thead class="bg-gray-800 text-white">
-                            <tr>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Type</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Ø Piston Rod</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Ø Cylinder Tube</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Extension Force</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Progression</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-gray-700">
-                            <tr class="bg-gray-100">
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">ZD10-28V2</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">100 - 1200 N</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">36%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div id="V2A3" class="tab-content2 hidden bg-white overflow-auto rounded-b-lg">
-                    <table class="min-w-full bg-white">
-                        <thead class="bg-gray-800 text-white">
-                            <tr>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Type</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Ø Piston Rod</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Ø Cylinder Tube</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Extension Force</th>
-                                <th
-                                    class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                    Progression</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-gray-700">
-                            <tr class="bg-gray-100">
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">ZX10-28 V2</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">250 - 1200 N</td>
-                                <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">60%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="text-2xl my-3 font-bold "> Stainless Steel V4A </div>
-                <div>
-                    <div class="tabs">
-                        <button
-                            class="tab-button3 px-2 py-2 text-xs  text-white bg-gray-800 rounded-t-lg focus:outline-none"
-                            onclick="showTab('V4A1','tab-content3','tab-button3')">Gas Spring</button>
-                        <button
-                            class="tab-button3 px-2 py-2 text-xs  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                            onclick="showTab('V4A2','tab-content3','tab-button3')">Gas Spring with damping</button>
-                        <button
-                            class="tab-button3 px-2 py-2 text-xs  text-gray-800 bg-gray-300 rounded-t-lg focus:outline-none"
-                            onclick="showTab('V4A3','tab-content3','tab-button3')">Gas Spring Lockable</button>
-                    </div>
-                    <div id="V4A1" class="tab-content3   bg-white  rounded-b-lg overflow-auto">
-                        <table class="min-w-full bg-white  ">
-                            <thead class="bg-gray-800 text-white ">
-                                <tr>
-                                    <th class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase  text-xs sm:text-sm">Type
-                                    </th>
-                                    <th class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase  text-xs sm:text-sm">Ø Piston
-                                        Rod</th>
-                                    <th class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase  text-xs sm:text-sm">Ø
-                                        Zylinderrohr</th>
-                                    <th class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase  text-xs sm:text-sm">
-                                        Extension Force</th>
-                                    <th class="w-1/6 text-left py-3 px-2 sm:px-4 uppercase  text-xs sm:text-sm">
-                                        Progression</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-gray-700">
-                                <tr class="bg-gray-100">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"><a href="G04-15-V4.pdf"
-                                            target="_blank"
-                                            class="text-blue-500 hover:text-blue-700 hover:underline">With 04-15 V4</a>
-                                    </td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">4 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">15 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">50 - 300 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">20 %</td>
-                                </tr>
-                                <tr class="bg-white">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"><a href="G06-19-V4.pdf"
-                                            target="_blank"
-                                            class="text-blue-500 hover:text-blue-700 hover:underline">With 06-19 V4</a>
-                                    </td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">6 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">19 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">30 - 330 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 %</td>
-                                </tr>
-                                <tr class="bg-gray-100">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"><a href="G10-28-V4.pdf"
-                                            target="_blank"
-                                            class="text-blue-500 hover:text-blue-700 hover:underline">With 10-28 V4</a>
-                                    </td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">150 - 1200 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">20 %</td>
-                                </tr>
-                                <tr class="bg-white">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"><a href="G10-40-V4.pdf"
-                                            target="_blank"
-                                            class="text-blue-500 hover:text-blue-700 hover:underline">With the 10-40
-                                            V4</a></td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">40 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">200 - 2000 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">78 %</td>
-                                </tr>
-                                <tr class="bg-gray-100">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm"><a href="#"
-                                            class="text-blue-500 hover:text-blue-700 hover:underline">With 28-40 V4
-                                            (Upon request)</a></td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">40 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">500 - 5000 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">40 %</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="V4A2" class="tab-content3 hidden bg-white overflow-scroll rounded-b-lg">
-                        <table class="min-w-full bg-white">
-                            <thead class="bg-gray-800 text-white">
-                                <tr>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Type</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Ø Piston Rod</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Ø Zylinderrohr</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Extension Force</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Progression</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-gray-700">
-                                <tr class="bg-gray-100">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">ZD 10-28 V4 (upon
-                                        request) </td>
-
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">100 - 1200 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">36 %</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                    <div id="V4A3" class="tab-content3 hidden bg-white overflow-scroll rounded-b-lg">
-                        <table class="min-w-full bg-white">
-                            <thead class="bg-gray-800 text-white">
-                                <tr>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Type</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Ø Piston Rod</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Ø Zylinderrohr</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Extension Force</th>
-                                    <th
-                                        class="w-1/5 text-left py-3 px-2 sm:px-4 uppercase font-semibold text-xs sm:text-sm">
-                                        Progression</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-gray-700">
-                                <tr class="bg-gray-100">
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">ZX 10-28 V4 (upon
-                                        request) </td>
-
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">10 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">28 mm</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">250 - 1200 N</td>
-                                    <td class="text-left py-3 px-2 sm:px-4 text-xs sm:text-sm">60 %</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
     </section>
 
     <script src="/src/components/header.js"></script>

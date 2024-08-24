@@ -46,16 +46,36 @@
                 "/src/media/images/voutatechnia.jpg",
                 "/src/media/images/ypc.png",
             ];
+            let link = [
+                "/src/pages/aireka.html",
+                "/src/pages/deschner.html",
+                "/src/pages/fezer.html",
+                "/src/pages/hahn.html",
+                "/src/product/izmac/izmac.html",
+                "/src/pages/aireka.html",
+                "/src/pages/medan.html",
+                "/src/product/vuototecnica/vuototecnica.html",
+                "/src/pages/ypc.html"
+            ]
             let desc = [
-                "Atque architecto illum perferendis eius, iste molestias minima excepturi iusto placeat ab?  minus nemo hic dignissimos debitis sint repellendus?",
+                "The company is specialised in the sectors of compressed air, vacuum technology, fluid control and linear electric actuators.",
+                "Vuototecnica®, as its second generation, is leader in Europe in technologies for creating and handling vacuum.",   
+                "FEZER is one of the leading suppliers of innovative and ergonomic handling equipment in the field of vacuum technology.",
+                "Take a few minutes and get to know HAHN Gasfedern GmbH and its innovative products in more detail.",
+                "IZMAC CO., LTD. would acheive the best instead become Top-level in competition We would express our sincerely thanks in advance to our worldwide izmac customers.",
+                "",
+                "MEDAN is a professional in the field of pneumatically and electrically operated linear technology. ",
+                "Vuototecnica®, as its second generation, is leader in Europe in technologies for creating and handling vacuum.",
+                "We truly believe that customers like you have been the ultimate source of strength And encouragement for us to become today’s Yonwoo Pneumatic Co.",
             ];
+
             let container = document.getElementById("container");
             document.body.insertAdjacentHTML("beforeend", footer);
             document.body.insertAdjacentHTML("afterbegin", header);
             for (let a = 0; a < img.length; a++) {
                 container.insertAdjacentHTML(
                     "afterbegin",
-                    card(img[a], title[a], desc)
+                    card(img[a], title[a], desc[a], true, "w-80", link[a])
                 );
             }
         </script>
