@@ -1,4 +1,44 @@
-let productsDashboard = (productData) => `
+let productsList = [
+    {
+        brand: "A. C. Automation Products ",
+        categories: [
+            {
+                title: "Aireka",
+                page_link: "/src/pages/aireka.html",
+            },
+            {
+                title: "FEZER VACUUM LIFTERS",
+                page_link: "/src/pages/fezer.html",
+            },
+            {
+                title: "STABILUS/HAHN",
+                page_link: "/src/pages/hahn.html",
+            },
+            {
+                title: "YPC",
+                page_link: "/src/pages/ypc.html",
+            },
+            {
+                title: "IZMAC SHOCK ABSORBERS",
+                page_link: "/src/product/izmac/izmac.html",
+            },
+            {
+                title: "DESCHNER",
+                page_link: "/src/pages/deschner.html",
+            },
+            {
+                title: "MEDAN",
+                page_link: "/src/pages/medan.html",
+            },
+            {
+                title: "VUOTOTECNICA VACUUM",
+                page_link: "/src/product/vuototecnica/vuototecnica.html",
+            },
+        ],
+    },
+];
+
+let productsDashboard = (productData, productList = productsList) => `
 <div class="flex bg-gray-700 z-20 h-screen">
     <div id="toggleItem"
         class="flex h-full w-full hidden sm:block sm:w-2/5 flex-col justify-between bg-gray-800 sm:ml-0 z-20">
@@ -18,7 +58,7 @@ let productsDashboard = (productData) => `
                 </svg>
             </div>
             <ul class="mt-6 space-y-2">
-                ${productData
+                ${productsList
                     .map(
                         (item) => `
                 <li class="border-b-2 border-cyan-900">
