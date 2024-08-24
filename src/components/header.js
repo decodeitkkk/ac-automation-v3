@@ -57,25 +57,26 @@ const productsData = [
             "ACCESSORIES",
         ],
     },
-    // {
-    //     brand: "IZMAC SHOCK ABSORBERS",
-    //     categories: [
-    //         "SELF COMPENSATING MINI SERIES (M4 - M16)",
-    //         "ADJUSTABLE MINI SERIES (M4 - M16)",
-    //         "SELF COMPENSATING MID SERIES (M20 - M36)",
-    //         "ADJUSTABLE MID SERIES (M20 - M36)",
-    //         "SELF COMPENSATING MAX SERIES (M42 - M115)",
-    //         "ADJUSTABLE MAX SERIES (M42 - M115)",
-    //         "HEAVEY DUTY CRANE BUFFERS",
-    //         "SPEED CONTROL SERIES",
-    //         "CRASH DAMPERS",
-    //         "RATE CONTROL",
-    //         "SHORT STROKE SHOCK ABSORBER",
-    //     ],
-    // },
+    {
+        brand: "IZMAC SHOCK ABSORBERS",
+        link:"/src/product/izmac/izmac.html",
+        categories: [
+            "SELF COMPENSATING MINI SERIES (M4 - M16)",
+            "ADJUSTABLE MINI SERIES (M4 - M16)",
+            "SELF COMPENSATING MID SERIES (M20 - M36)",
+            "ADJUSTABLE MID SERIES (M20 - M36)",
+            "SELF COMPENSATING MAX SERIES (M42 - M115)",
+            "ADJUSTABLE MAX SERIES (M42 - M115)",
+            "HEAVEY DUTY CRANE BUFFERS",
+            "SPEED CONTROL SERIES",
+            "CRASH DAMPERS",
+            "RATE CONTROL",
+            "SHORT STROKE SHOCK ABSORBER",
+        ],
+    },
     {
         brand: "DESCHNER",
-        link:"/src/pages/deschner.html",
+        link: "/src/pages/deschner.html",
         categories: [
             "SLIMLINE MINI-K SPEED REGULATORS",
             "SLIMLINE KINECHEK SPEED REGULATOR",
@@ -87,18 +88,19 @@ const productsData = [
     },
     {
         brand: "MEDAN",
-        link:"/src/pages/medan.html",
+        link: "/src/pages/medan.html",
         categories: ["PNEUMATIC RODLESS CYLINDER", "GUIDED RODLESS CYLINDER"],
     },
-    // {
-    //     brand: "VUOTOTECNICA VACUUM",
-    //     categories: [
-    //         "SUCTION CUPS",
-    //         "SUCTION CUPS HOLDERS",
-    //         "VACUUM MEASUREMENTS/INTRUMENTS",
-    //         "VACUUM VALVES/SOLENOID VALVES",
-    //     ],
-    // },
+    {
+        brand: "VUOTOTECNICA VACUUM",
+        link: "/src/product/vuototecnica/vuototecnica.html",
+        categories: [
+            "SUCTION CUPS",
+            "SUCTION CUPS HOLDERS",
+            "VACUUM MEASUREMENTS/INTRUMENTS",
+            "VACUUM VALVES/SOLENOID VALVES",
+        ],
+    },
 ];
 
 let header = `
@@ -300,9 +302,7 @@ let header = `
                         ${productsData
                             .map(
                                 (item) => `
-                        <a  href=${
-                            item?.link ? item?.link : "#"
-                        }
+                        <a  href=${item?.link ? item?.link : "#"}
                             class="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                             ${item.brand}
                         </a>
