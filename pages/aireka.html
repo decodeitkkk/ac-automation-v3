@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aireka</title>
+    <link rel="stylesheet" href=" /output.css" />
+    <link rel="stylesheet" href=" /global.css" />
+</head>
+
+<body>
+    <section id="dash"></section>
+
+    <script src=" /components/header.js"></script>
+    <script src=" /components/footer.js"></script>
+    <script src=" /components/d.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        document.body.insertAdjacentHTML("afterbegin", header);
+        document.body.insertAdjacentHTML("beforeend", footer);
+
+        let productsData2 = [
+            {
+                brand: "AIREKA",
+                categories: [
+                    {
+                        title: "Condensate Separators",
+                        img: " /media/images/aireka-condensate-seprators.png",
+                        page_link: " /product/aireka/condensate-separators.html",
+                    },
+                    {
+                        title: "Cooling Tubes",
+                        img: " /media/images/aireka-cooling-tubes.jpg",
+                        page_link: " /product/aireka/cooling-tubes.html",
+                    },
+                    {
+                        title: "Electronically-controlled Pneumatic Coolers",
+                        img: " /media/images/aireka-ec.png",
+                        page_link: " /product/aireka/electrically-controlled-pneumatic-cooler.html",
+                    },
+                    {
+                        title: "Air Amplifiers",
+                        img: " /media/images/aireka-air-amplifiers.png",
+                        page_link: " /product/aireka/air-amplifiers.html",
+                    },
+                    {
+                        title: "Air Knife",
+                        img: " /media/images/aireka-air-knife.jpg",
+                        page_link: " /product/aireka/air-knife.html",
+                    },
+                    {
+                        title: "Special Nozzles",
+                        img: " /media/images/aireka-special-noz.png",
+                        page_link: " /product/aireka/special-nozzles.html",
+                    },
+
+                ],
+            },
+        ];
+
+        document
+            .getElementById("dash")
+            .insertAdjacentHTML(
+                "afterbegin",
+                productsDashboard(productsData2)
+            );
+
+        let toggleBtn = document.getElementById("toggleBtn");
+        let toggleBtn2 = document.getElementById("toggleBtn2");
+        let toggleItem = document.getElementById("toggleItem");
+        let innerBody = document.getElementById("innerBody");
+
+        toggleBtn.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        toggleBtn2.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        document.querySelectorAll("a").forEach((item) => {
+            item.addEventListener(
+                "click",
+                () => {
+                    console.log(item.innerText);
+                    // let innerBody = document.getElementById("title-card");
+                    // innerBody.innerText = item.innerText;
+                },
+                false
+            );
+            item.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+        });
+    </script>
+</body>
+
+</html>
