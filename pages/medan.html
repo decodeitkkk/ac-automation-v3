@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medan</title>
+    <link rel="stylesheet" href=" /output.css" />
+    <link rel="stylesheet" href=" /global.css" />
+</head>
+
+<body>
+    <section id="dash"></section>
+
+    <script src=" /components/header.js"></script>
+    <script src=" /components/footer.js"></script>
+    <script src=" /components/d.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        document.body.insertAdjacentHTML("afterbegin", header);
+        document.body.insertAdjacentHTML("beforeend", footer);
+
+        let productsData2 = [
+            {
+                brand: "MEDAN ",
+                categories: [
+                    {
+                        title: "Rodless cylinders",
+                        img: " /media/images/medan/rodless-cylinder.jpg",
+                        page_link: " /product/medan/rodless-cylinder.html",
+                    },
+                    {
+                        title: "ISO cylinder",
+                        img: " /media/images/medan/iso-cylinder.jpg",
+                        page_link: " /product/medan/iso-cylinder.html",
+                    },
+                    {
+                        title: "Clamping cylinder",
+                        img: " /media/images/medan/clamping-cylinder.jpg",
+                        page_link: " /product/medan/clamping-cylinder.html",
+                    },
+                    {
+                        title: "Stopper cylinder",
+                        img: " /media/images/medan/stopper-cylinder.jpg",
+                        page_link: " /product/medan/stopper-cylinder.html",
+                    },
+                    {
+                        title: "Rotary actuators",
+                        img: " /media/images/medan/rotary-actuators.jpg",
+                        page_link: " /product/medan/rotary-actuators.html",
+                    },
+                    {
+                        title: "Gripper",
+                        img: " /media/images/medan/gripper.jpg",
+                        page_link: " /product/medan/gripper.html",
+                    },
+                    {
+                        title: "Timing belt axes",
+                        img: " /media/images/medan/timing_belt_axes_280x280.png",
+                        page_link: " /product/medan/timing-belt-axes.html",
+                    },
+                    {
+                        title: "Spindle axes",
+                        img: " /media/images/medan/spindle-axes_280x280.png",
+                        page_link: " /product/medan/spindle-axes.html",
+                    },
+                    {
+                        title: "Heavy-duty axles",
+                        img: " /media/images/medan/heavy-duty-axles_280x280.png",
+                        page_link: " /product/medan/heavy-duty-axles.html",
+                    },
+                    {
+                        title: "Boom axles",
+                        img: " /media/images/medan/boom-axles_280x280.png",
+                        page_link: " /product/medan/boom-axles.html",
+                    },
+                    {
+                        title: "Pneumatic hoses",
+                        img: " /media/images/medan/UM_Tube_280x280.png",
+                        page_link: " /product/medan/pneumatic-hoses.html",
+                    },
+                    {
+                        title: "Pneumatic fittings",
+                        img: " /media/images/medan/pisco-standard-fittings.png",
+                        page_link: " /product/medan/pneumatic-fittings.html",
+                    },
+                    {
+                        title: "Functional screw connections",
+                        img: " /media/images/medan/pisco-regulators_280x280.png",
+                        page_link: " /product/medan/functional-screw-connections.html",
+                    },
+                    {
+                        title: "Foot valves",
+                        img: " /media/images/medan/MVFA_280x280.png",
+                        page_link: " /product/medan/foot-valves.html",
+                    },
+                    {
+                        title: "Hand lever valves",
+                        img: " /media/images/medan/MVHB-220_280x280.jpg",
+                        page_link: " /product/medan/hand-lever-valves.html",
+                    },
+                    {
+                        title: "Lever valves",
+                        img: " /media/images/medan/MVMA-260_280x280.jpg",
+                        page_link: " /product/medan/lever-valves.html",
+                    },
+                    {
+                        title: "ISO valves",
+                        img: " /media/images/medan/MVSI-260_280x280.jpg",
+                        page_link: " /product/medan/iso-valves.html",
+                    },
+                    {
+                        title: "Solenoid valves",
+                        img: " /media/images/medan/MVSC1-150_280x280.jpg",
+                        page_link: " /product/medan/solenoid-valves.html",
+                    },
+                    {
+                        title: "Namur valves",
+                        img: " /media/images/medan/MVSN-220_280x280.jpg",
+                        page_link: " /product/medan/namur-valves.html",
+                    },
+                    {
+                        title: "Pilot valves",
+                        img: " /media/images/medan/MPC_280x280.jpg",
+                        page_link: " /product/medan/pilot-valves.html",
+                    },
+                    {
+                        title: "Start valves",
+                        img: " /media/images/medan/MVHR-2_280x280.jpg",
+                        page_link: " /product/medan/start-valves.html",
+                    },
+                    {
+                        title: "Touch valves",
+                        img: " /media/images/medan/MVHA-2-3_280x280.jpg",
+                        page_link: " /product/medan/touch-valves.html",
+                    },
+                    {
+                        title: "Pressure regulator",
+                        img: " /media/images/medan/MAR100_280x280.jpg",
+                        page_link: " /product/medan/pressure-regulator.html",
+                    },
+                    {
+                        title: "Filter",
+                        img: " /media/images/medan/MAF200_280x280.jpg",
+                        page_link: " /product/medan/filter.html",
+                    },
+                    {
+                        title: "Filter regulator",
+                        img: " /media/images/medan/MAFR100_280x280.jpg",
+                        page_link: " /product/medan/filter-regulator.html",
+                    },
+                    {
+                        title: "Combi maintenance unit",
+                        img: " /media/images/medan/MACP200_280x280.jpg",
+                        page_link: " /product/medan/combi-maintenance-unit.html",
+                    },
+                    {
+                        title: "Proportional pressure regulator",
+                        img: " /media/images/medan/MAER_side_application_280x280.jpg",
+                        page_link: " /product/medan/proportional-pressure-regulator.html",
+                    },
+                    {
+                        title: "Precision pressure regulator",
+                        img: " /media/images/medan/MAIR-MP43_280x280.jpg",
+                        page_link: " /product/medan/precision-pressure-regulator.html",
+                    },
+                    // {
+                    //     title: "Accesories",
+                    //     img: "#",
+                    //     page_link: " /product/medan/accesories.html",
+                    // },
+
+
+                ],
+            },
+        ];
+
+        document
+            .getElementById("dash")
+            .insertAdjacentHTML(
+                "afterbegin",
+                productsDashboard(productsData2)
+            );
+
+        let toggleBtn = document.getElementById("toggleBtn");
+        let toggleBtn2 = document.getElementById("toggleBtn2");
+        let toggleItem = document.getElementById("toggleItem");
+        let innerBody = document.getElementById("innerBody");
+
+        toggleBtn.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        toggleBtn2.addEventListener(
+            "click",
+            () => {
+                toggleItem.classList.toggle("hidden");
+                innerBody.classList.toggle("hidden");
+            },
+            false
+        );
+        document.querySelectorAll("a").forEach((item) => {
+            item.addEventListener(
+                "click",
+                () => {
+                    console.log(item.innerText);
+                    // let innerBody = document.getElementById("title-card");
+                    // innerBody.innerText = item.innerText;
+                },
+                false
+            );
+            item.addEventListener(
+                "click",
+                () => {
+                    toggleItem.classList.toggle("hidden");
+                    innerBody.classList.toggle("hidden");
+                },
+                false
+            );
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Cushion-Start Kinechek </title>
+    <link rel="stylesheet" href=" /global.css" />
+    <link rel="stylesheet" href=" /output.css" />
+</head>
+
+<body>
+    <nav class="flex bg-gray-100 p-2" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+                <a href=" /index.html"
+                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-house">
+                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                        <path
+                            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    </svg>
+                    &nbsp; Home
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    &nbsp;&nbsp; > &nbsp;&nbsp;
+                    <a href=" /pages/deschner.html"
+                        class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2  ">
+                        Deschner </a>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    &nbsp;&nbsp; > &nbsp;&nbsp;
+                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">
+                        Start Kinechek
+                    </span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+    <section class="bg-gray-100">
+        <div class="text-2xl text-center font-bold py-10 uppercase ">
+            <!-- Title -->
+            Cushion-Start Kinechek
+        </div>
+        <img class="mx-auto rounded my-5 px-1 w-1/3" src=" /media/images/deschner/Cushion-Start-ali.jpg"
+            alt="Product Image">
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"> </div>
+            <p>
+                <!-- Superior shock absorbers for all industrial uses -->
+            </p>
+        </div>
+        <div class="mx-10 py-5">
+            <div class="text-2xl my-3"></div>
+            <p>
+                The easiest way to regard the CUSHION-START KINECHEK is to think of it as a combination shock absorber
+                and hydraulic speed regulator, both in one.
+
+                The impact absorbing feature called “CUSHION-START” is a safeguard for those applications where a fast
+                moving load exerts an impact force beyond the rated capacity of the Kinechek. Approximately 25 percent
+                of the beginning of the stroke is used for cushioning, then the remaining portion of the stroke will
+                control the load with the same constant uniformity as a regular Kinechek Speed Regulator. At the end of
+                the stroke, the rod automatically extends instantaneously as the load is removed and awaits the next
+                impact.
+            </p>
+
+            <div class="w-full">
+                <div class="text-2xl my-3">Product Specifications</div>
+                <p class="my-3">
+
+
+                </p>
+                <img class="mx-auto w-1/2 " src=" /media/images/deschner/Cushion-Start-TECHTIPS-W-FREE-TRAVEL.jpg"
+                    alt="">
+                <p>
+                <ul class="m-5 list-disc ">
+                    <li>
+                        <a href=" /media/images/deschner/CushionStart-Slow-Return-Spec-Sheets.pdf"
+                            class="hover:text-red-800" download="">Cushion-Start Kinechek Specs
+                        </a>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <script src=" /components/header.js"></script>
+    <script src=" /components/footer.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script>
+        // lucide Icons
+        lucide.createIcons();
+        document.body.insertAdjacentHTML("beforeend", footer);
+        document.body.insertAdjacentHTML("afterbegin", header);
+
+        function showTab(tabId, tabContent, tabButton) {
+            const tabs = document.querySelectorAll(`.${tabContent}`);
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll(`.${tabButton}`);
+            buttons.forEach(button => {
+                button.classList.remove('bg-gray-800', 'text-white');
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            event.target.classList.remove('bg-gray-300', 'text-gray-800',);
+            event.target.classList.add('bg-gray-800', 'text-white');
+        }
+
+
+    </script>
+</body>
+
+</html>
