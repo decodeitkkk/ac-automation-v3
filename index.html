@@ -356,12 +356,60 @@
                 "We truly believe that customers like you have been the ultimate source of strength And encouragement for us to become today’s Yonwoo Pneumatic Co.",
             ];
 
+            let imagesArray = [
+                // Images for "aireka"
+                [
+                    "/media/images/aireka-air-knife.jpg",
+                    "/media/images/aireka-condensate-seprators.png",
+                    "/media/images/aireka-cooling-tubes.jpg",
+                ], [
+                    "/media/images/deschner/cushioneer.jpg",
+                    "/media/images/deschner/Cushioneer-for-Cushi-Web-Page.jpg",
+                    "/media/images/deschner/Cushion-Start-TECHTIPS-W-FREE-TRAVEL.jpg"
+                ], [
+                    "media/images/fezer/fezer-cardboard-boxes.jpg ",
+                    "media/images/fezer/fezer-coils-split-strips.jpg ",
+                    "media/images/fezer/fezer-glass.jpg",
+                ], [
+                    "media/images/hahn_02.jpg",
+                    "media/images/hahn_06.jpg",
+                    "media/images/HAHN_ACC_CONNECTORS1.jpg",
+                ], [
+                    "media/images/izmac/shock-absorber.jpg",
+                    "media/images/izmac/Hydraulic-Buffer.jpg",
+                    "media/images/izmac/shock-Damper-Rate-Control.jpg",
+                ], [
+                    "media/images/medan/MCRQ-1b_280x280.jpg",
+                    "media/images/medan/MPC_280x280.jpg",
+                    "media/images/medan/MRTb_280x280.jpg"
+                ], [
+                    "media/images/medan/MCRQ-1b_280x280.jpg",
+                    "media/images/medan/MPC_280x280.jpg",
+                    "media/images/medan/MRTb_280x280.jpg"
+                ], [
+                    "media/images/vuototecnica/Adjustable_Vacuum_Generators.jpg",
+                    "media/images/vuototecnica/bellow_vaccum_cups.jpg",
+                    "media/images/vuototecnica/Degassing_Unit.jpg",
+                ], [
+                    "media/images/ypc/precompressed_booster.jpg",
+                    "media/images/ypc/SC200.jpg",
+                    "media/images/ypc/SC300.jpg",
+                ],
+
+            ]
             for (let a = 0; a < img.length; a++) {
                 container.insertAdjacentHTML(
                     "afterbegin",
-                    card(img[a], title[a], desc[a], true, "w-80", link[a])
+                    card(img[a],
+                        title[a],
+                        imagesArray[a][0],
+                        imagesArray[a][1],
+                        imagesArray[a][2],
+                        true,
+                        "w-80",
+                        link[a])
                 );
-            } 
+            }
 
 
 
