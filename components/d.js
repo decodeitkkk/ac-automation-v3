@@ -96,58 +96,58 @@ let productsList = [
                 page_link: " /pages/hahn.html",
                 categories: [
                     {
-                        title: "GAS SPRINGS",
+                        title: "Gas Springs",
                         img: " /media/images/hahn_gas_spring.png",
                         page_link: " /pages/hahn_gas_spring.html",
                     },
                     {
-                        title: "TENSION SPRINGS",
+                        title: "Tension Springs",
                         img: " /media/images/hahn_tension_spring.png",
                         page_link: " /pages/hahn_tension_spring.html",
                     },
                     {
-                        title: "LOCKING GAS SPRINGS",
+                        title: "Locking Gas Springs",
                         img: " /media/images/lockable_gas_spring.png",
                         page_link: " /pages/hahn_lockable_gas_spring.html",
                     },
                     {
-                        title: "DAMPERS",
+                        title: "Dampers",
                         img: " /media/images/dampers.png",
                         page_link: " /pages/hahn_dampers.html",
                     },
                     {
-                        title: "DOUBLE STROKE GAS SPRINGS",
+                        title: "Double Stroke Gas Springs",
                         img: " /media/images/double_stroke_gas_spring.png",
                         page_link: " /pages/hahn_double_stroke_gas_spring.html",
                     },
                     {
-                        title: "SLIDING DOOR DAMPER",
+                        title: "Sliding Door Dampers",
                         img: " /media/images/sliding_door.jpg",
                         page_link: " /pages/hahn_sliding_door.html",
                     },
                     {
-                        title: "GAS SPRINGS WITH BALL POINT PRINCIPLE",
+                        title: "Gas Springs With Ball Point Principle",
                         img: " /media/images/ballpointpen.jpg",
                         page_link:
                             " /pages/gas-springs-with-ballpoint-pen-principle.html",
                     },
                     {
-                        title: "CONNECTORS",
+                        title: "Connectors",
                         img: " /media/images/HAHN_ACC_CONNECTORS1.jpg",
                         page_link: " /pages/hahn-connectors.html",
                     },
                     {
-                        title: "MOUNTING BRACKETS",
+                        title: "Mounting Brackets",
                         img: " /media/images/hahn_acc_mounting_brackets_05.jpg",
                         page_link: " /pages/hahn-mounting-brackets.html",
                     },
                     {
-                        title: "RELEASE SYSTEM",
+                        title: "Release System",
                         img: " /media/images/hahn_accessries.jpg",
                         page_link: " /pages/hahn-release-system.html",
                     },
                     {
-                        title: "EXTRAS",
+                        title: "Extras",
                         img: " /media/images/hahn_acc_extras_10.jpg",
                         page_link: " /pages/hahn-extra.html",
                     },
