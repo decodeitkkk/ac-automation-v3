@@ -556,77 +556,65 @@ let productsDashboard = (productData, productList = productsList) => `
                             </span>
                         </summary>
 
-                        <ul class="mt-2 space-y-1 px-4">
-                            ${item.categories
-                                .map((scat) => {
-                                    const currentPageName = scat.page_link
-                                        .split("/")
-                                        .pop();
-                                    const regex = new RegExp(
-                                        `${currentPageName}$`,
-                                        "i"
-                                    );
-                                    const isActive = regex.test(
-                                        window.location.pathname
-                                    );
+                       <ul class="mt-2 space-y-1 px-4">
+    ${item.categories
+        .map((scat) => {
+            const currentPageName = scat.page_link.split("/").pop();
+            const regex = new RegExp(`${currentPageName}$`, "i");
+            const isActive = regex.test(window.location.pathname);
 
-                                    // Check if the category has sub-categories
-                                    const subCategories = scat.categories
-                                        ? `<ul class="mt-2 space-y-1 px-4">
-                                            ${scat.categories
-                                                .map((subCat) => {
-                                                    const subPageName =
-                                                        subCat.page_link
-                                                            .split("/")
-                                                            .pop();
-                                                    const subRegex = new RegExp(
-                                                        `${subPageName}$`,
-                                                        "i"
-                                                    );
-                                                    const isSubActive =
-                                                        subRegex.test(
-                                                            window.location
-                                                                .pathname
-                                                        );
+            // Check if the category has sub-categories
+            const subCategories = scat.categories
+                ? `<ul class="mt-2 space-y-1 px-4">
+                    ${scat.categories
+                        .map((subCat) => {
+                            const subPageName = subCat.page_link.split("/").pop();
+                            const subRegex = new RegExp(`${subPageName}$`, "i");
+                            const isSubActive = subRegex.test(window.location.pathname);
 
-                                                    return `
-                                                    <li>
-                                                        <a href="${
-                                                            subCat.page_link
-                                                        }"
-                                                            class="block rounded-lg px-4 py-2 text-sm font-medium ${
-                                                                isSubActive
-                                                                    ? "text-gray-700 bg-gray-100"
-                                                                    : "text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-                                                            }">
-                                                            ${subCat.title}
-                                                        </a>
-                                                    </li>`;
-                                                })
-                                                .join("")}
-                                          </ul>`
-                                        : "";
+                            return `
+                            <li>
+                                <a href="${subCat.page_link}"
+                                    class="block rounded-lg px-4 py-2 text-sm font-medium ${
+                                        isSubActive
+                                            ? "text-gray-700 bg-gray-100"
+                                            : "text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+                                    }">
+                                    ${subCat.title}
+                                </a>
+                            </li>`;
+                        })
+                        .join("")}
+                  </ul>`
+                : "";
 
-                                    return `
-                                    <li>
-                                        <details class="group [&_summary::-webkit-details-marker]:hidden" ${
-                                            subCategories ? "" : "open"
-                                        }>
-                                            <summary
-                                                class="block rounded-lg px-4 py-2 text-sm font-medium ${
-                                                    isActive
-                                                        ? "text-gray-700 bg-gray-100"
-                                                        : "text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-                                                }">
-                                                ${scat.title}
-                                            </summary>
-                                            ${subCategories}
-                                        </details>
-                                    </li>
-                                    `;
-                                })
-                                .join("")}
-                        </ul>
+            return `
+            <li>
+                <details class="group" ${subCategories ? "" : "open"}>
+                    <summary
+                        class="flex items-center justify-between block rounded-lg px-4 py-2 text-sm font-medium ${
+                            isActive
+                                ? "text-gray-700 bg-gray-100"
+                                : "text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+                        } cursor-pointer">
+                        ${scat.title}
+                        <span class="ml-2 transition-transform transform group-open:rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </summary>
+                    ${subCategories}
+                </details>
+            </li>
+            `;
+        })
+        .join("")}
+</ul>
+
+
 
                     </details>
                 </li>
