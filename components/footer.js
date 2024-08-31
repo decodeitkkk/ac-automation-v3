@@ -56,11 +56,7 @@ let footer = `
                 </a>
               </li>
 
-              <li>
-                <a class="text-white transition hover:text-white/75" href="#">
-                  Products
-                </a>
-              </li>
+              
             </ul>
           </nav>
         </div>
