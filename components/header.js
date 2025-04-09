@@ -14,9 +14,9 @@ const productsData = [
     {
         brand: "FEZER VACUUM LIFTERS",
         categories: [
-            "AUTOMOTIVE",
-            "SHEET METAL",
-            "COILS/SLIT STRIPS",
+            "VacuQuicklift",
+            "VacuPowerlift",
+            "Board handling",
             "DRUMS/CONTAINERS",
             "GLASS",
             "WOOD",

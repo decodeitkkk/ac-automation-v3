@@ -100,61 +100,7 @@
 
 
                 <div class="text-2xl my-3">Products</div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <!-- Product 1 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/AM10T-300x247.png" alt="AM10T"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">AM10T</h3>
-                    </a>
-                    <!-- Product 2 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/AM15T-300x190.png" alt="AM15T"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">AM15T</h3>
-                    </a>
-                    <!-- Product 3 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/AM20T-300x190.png" alt="AM20T"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">AM20T</h3>
-                    </a>
-                    <!-- Product 4 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/AM30T-300x190.png" alt="AM30T"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">AM30T</h3>
-                    </a>
-                    <!-- Product 5 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/AM40T-300x190.png" alt="AM40T"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">AM40T</h3>
-                    </a>
-                    <!-- Product 6 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/AM50T-300x190.png" alt="AM50T"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">AM50T</h3>
-                    </a>
-                    <!-- Product 7 -->
-                    <a target="_blank" class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/raccordo-dritto-maschio-sprint-per-alimentazione-aria-300x300.png"
-                            alt="Raccordo Dritto Maschio Sprint" class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">Raccordo Dritto Maschio Sprint</h3>
-                    </a>
-                    <!-- Product 8 -->
-                    <a target="_blank" class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/Raccordo-gomito-maschio-sprint-girevole-per-alimentazione-300x300.png"
-                            alt="Raccordo Gomito Maschio Sprint Girevole" class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">Raccordo Gomito Maschio Sprint Girevole</h3>
-                    </a>
-                    <!-- Product 9 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/staffa-fissaggio-300x300.png" alt="Staffa Fissaggio"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">Staffa Fissaggio</h3>
-                    </a>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="productList">
                 </div>
             </div>
 
@@ -162,6 +108,7 @@
 
     <script src=" /components/header.js"></script>
     <script src=" /components/footer.js"></script>
+    <script src="/components/CardWithPdfLink.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
@@ -186,6 +133,80 @@
             event.target.classList.add('bg-gray-800', 'text-white');
         }
 
+        // pdf card link
+        const products = [
+            {
+                name: "AM10T",
+                image: "/media/images/aireka/AM10T-300x247.png",
+                alt: "AM10T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-33.pdf"
+            },
+            {
+                name: "AM15T",
+                image: "/media/images/aireka/AM15T-300x190.png",
+                alt: "AM15T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-33.pdf"
+            },
+            {
+                name: "AM20T",
+                image: "/media/images/aireka/AM20T-300x190.png",
+                alt: "AM20T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-34.pdf"
+            },
+            {
+                name: "AM25T",
+                image: "/media/images/aireka/AM20T-300x190.png",
+                alt: "AM25T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-34.pdf"
+            },
+            {
+                name: "AM30T",
+                image: "/media/images/aireka/AM30T-300x190.png",
+                alt: "AM30T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-35.pdf"
+            },
+            {
+                name: "AM40T",
+                image: "/media/images/aireka/AM40T-300x190.png",
+                alt: "AM40T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-35.pdf"
+            },
+            {
+                name: "AM50T",
+                image: "/media/images/aireka/AM50T-300x190.png",
+                alt: "AM50T",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-36.pdf"
+            },
+            {
+                name: "Accessories",
+                image: "/media/images/aireka/AM50T-300x190.png",
+                alt: "Accessories",
+                link: "/media/pdf/aireka/cooling-tubes/aireka_catalogue-36.pdf"
+            },
+            {
+                name: "Raccordo Dritto Maschio Sprint",
+                image: "/media/images/aireka/raccordo-dritto-maschio-sprint-per-alimentazione-aria-300x300.png",
+                alt: "Raccordo Dritto Maschio Sprint",
+                link: "#"
+            },
+            {
+                name: "Raccordo Gomito Maschio Sprint Girevole",
+                image: "/media/images/aireka/Raccordo-gomito-maschio-sprint-girevole-per-alimentazione-300x300.png",
+                alt: "Raccordo Gomito Maschio Sprint Girevole",
+                link: "#"
+            },
+            {
+                name: "Staffa Fissaggio",
+                image: "/media/images/aireka/staffa-fissaggio-300x300.png",
+                alt: "Staffa Fissaggio",
+                link: "#"
+            }
+        ];
+
+        products.forEach(product => {
+            let card = CardWithPdfLink(product.link, product.image, product.name);
+            productList.appendChild(card);
+        });
 
     </script>
 </body>
