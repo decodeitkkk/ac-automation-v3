@@ -42,52 +42,85 @@ let productsList = [
             },
             {
                 title: "FEZER VACUUM LIFTERS",
-                page_link: " /pages/fezer.html",
+                desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid reiciendis dolores cumque rem ex est, repellat exercitationem omnis asperiores. ",
+
+                page_link: "/pages/fezer.html",
                 categories: [
                     {
-                        title: "Metal Sheets",
-                        img: " /media/images/fezer/fezer-head-image.jpg",
-                        page_link:
-                            " /product/fezer-vaccum-lifters/metal-sheets.html",
+                        title: "VaccuQuicklift",
+                        img: "/media/images/fezer/VacuQuicklift-70kg.png",
+                        page_link: "/media/pdf/fezer/VacuQuicklift.pdf",
                     },
                     {
-                        title: "Cardboard Boxes",
-                        img: " /media/images/fezer/fezer-cardboard-boxes.jpg",
-                        page_link:
-                            " /product/fezer-vaccum-lifters/cardboard-boxes.html",
+                        title: "VacuPowerlift",
+                        img: " /media/images/fezer/VacuPowerlift-200kg.png",
+                        page_link: "/media/pdf/fezer/vhcc_12-17.pdf",
                     },
                     {
-                        title: "Sacks",
-                        img: " /media/images/fezer/fezer-sacks.jpg",
-                        page_link: " /product/fezer-vaccum-lifters/sacks.html",
+                        title: "Board handling",
+                        img: " /media/images/fezer/fezer-VacuBoyTube.png",
+                        page_link: "/media/pdf/fezer/vhcc_22.pdf",
                     },
                     {
-                        title: "Wood",
-                        img: " /media/images/fezer/fezer-wood.jpg",
-                        page_link: " /product/fezer-vaccum-lifters/wood.html",
+                        title: "VacuBoy",
+                        img: " /media/images/fezer/fezer-VacuBoyTube.png",
+                        page_link: "/media/pdf/fezer/vhcc_23-33.pdf",
                     },
                     {
-                        title: "Glass",
+                        title: "VacuGiant",
                         img: " /media/images/fezer/fezer-glass.jpg",
-                        page_link: " /product/fezer-vaccum-lifters/glass.html",
+                        page_link: "/media/pdf/fezer/vhcc_34-37.pdf",
                     },
                     {
-                        title: "Coils / Split strips",
+                        title: "VacuCoil",
                         img: " /media/images/fezer/fezer-coils-split-strips.jpg",
-                        page_link:
-                            " /product/fezer-vaccum-lifters/coils-split-strips.html",
+                        page_link: "/media/pdf/fezer/vhcc_38-41.pdf",
                     },
                     {
-                        title: "Pipes, Tubes",
+                        title: "VacuPoro",
                         img: " /media/images/fezer/fezer-pipes-tubes.jpg",
-                        page_link:
-                            " /product/fezer-vaccum-lifters/pipes-tubes.html",
+                        page_link: "/media/pdf/fezer/vhcc_42-43.pdf",
                     },
                     {
-                        title: "Stone, Concrete",
+                        title: "VacuWood",
                         img: " /media/images/fezer/fezer-stone.jpg",
-                        page_link:
-                            " /product/fezer-vaccum-lifters/stone-concrete.html",
+                        page_link: "/media/pdf/fezer/vhcc_44-45.pdf",
+                    },
+
+                    {
+                        title: "Elevated rail systems",
+                        img: " /media/images/fezer/fezer-head-image.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_46-54.pdf",
+                    },
+                    {
+                        title: "Jib cranes",
+                        img: " /media/images/fezer/fezer-cardboard-boxes.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_55-59.pdf",
+                    },
+                    {
+                        title: "Electric chain hoists",
+                        img: " /media/images/fezer/fezer-sacks.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_60.pdf",
+                    },
+                    {
+                        title: "Installation",
+                        img: " /media/images/fezer/fezer-wood.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_61.pdf",
+                    },
+                    {
+                        title: "VacuStand",
+                        img: " /media/images/fezer/fezer-glass.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_62.pdf",
+                    },
+                    {
+                        title: "Stationary systems",
+                        img: " /media/images/fezer/fezer-coils-split-strips.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_63-65.pdf",
+                    },
+                    {
+                        title: "Mobilift",
+                        img: " /media/images/fezer/fezer-coils-split-strips.jpg",
+                        page_link: "/media/pdf/fezer/vhcc_66-67.pdf",
                     },
                 ],
             },
@@ -335,7 +368,8 @@ let productsList = [
                     {
                         title: "Functional screw connections",
                         img: " /media/images/medan/pisco-regulators_280x280.png",
-                        page_link: " /product/medan/functional-screw-connections.html",
+                        page_link:
+                            " /product/medan/functional-screw-connections.html",
                     },
                     {
                         title: "Foot valves",
@@ -400,17 +434,20 @@ let productsList = [
                     {
                         title: "Combi maintenance unit",
                         img: " /media/images/medan/MACP200_280x280.jpg",
-                        page_link: " /product/medan/combi-maintenance-unit.html",
+                        page_link:
+                            " /product/medan/combi-maintenance-unit.html",
                     },
                     {
                         title: "Proportional pressure regulator",
                         img: " /media/images/medan/MAER_side_application_280x280.jpg",
-                        page_link: " /product/medan/proportional-pressure-regulator.html",
+                        page_link:
+                            " /product/medan/proportional-pressure-regulator.html",
                     },
                     {
                         title: "Precision pressure regulator",
                         img: " /media/images/medan/MAIR-MP43_280x280.jpg",
-                        page_link: " /product/medan/precision-pressure-regulator.html",
+                        page_link:
+                            " /product/medan/precision-pressure-regulator.html",
                     },
                 ],
             },
@@ -545,7 +582,7 @@ let productsDashboard = (productData, productList = productsList) => `
                             <span class="text-sm font-medium">
                                 ${item.brand}
                             </span>
-
+                            
                             <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -568,9 +605,13 @@ let productsDashboard = (productData, productList = productsList) => `
                 ? `<ul class="mt-2 space-y-1 px-4">
                     ${scat.categories
                         .map((subCat) => {
-                            const subPageName = subCat.page_link.split("/").pop();
+                            const subPageName = subCat.page_link
+                                .split("/")
+                                .pop();
                             const subRegex = new RegExp(`${subPageName}$`, "i");
-                            const isSubActive = subRegex.test(window.location.pathname);
+                            const isSubActive = subRegex.test(
+                                window.location.pathname
+                            );
 
                             return `
                             <li>
@@ -643,13 +684,27 @@ let productsDashboard = (productData, productList = productsList) => `
             
             <span id="title-card" class="capitalize  ">${item.brand}  </span>
         </div>
+        <div class="my-2 flex flex-col justify-center mx-10 " >
+        <div>
+        ${item.desc}
+        
+        </div>
+
+<div>
+    Product Cataglogue : <span> 
+        <a href=${item.pdf_link} class=" text-blue-900 hover:text-blue-500" >
+            Product catalouge  
+        </a>
+    </span>
+</div>
+                            </div>
 
         <div class="flex flex-wrap gap-4 justify-center">
             ${item.categories
                 .map(
                     (scat) => `
             <div class="w-40 sm:w-52 rounded-md bg-white shadow-lg border border-slate-300 p-1">
-                <a href=${scat.page_link}>
+                <a href=${scat.page_link} target="_blank">
                     <img src=${scat.img} alt="Laptop" class="h-36 w-full rounded-md object-contain" />
                     <div class="p-4">
                         <h1 class="text-sm font-medium MMedium">

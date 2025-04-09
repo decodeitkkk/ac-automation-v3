@@ -88,46 +88,8 @@
 
             <div class="mx-10 py-5">
                 <div class="text-2xl my-3">Products</div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <!-- Product 1 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/VR200-U-XTRONIC-300x200.png" alt="VR200-U XTRONIC"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">VR200-U XTRONIC</h3>
-                    </a>
-                    <!-- Product 2 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/VRX1000-XTRONIC-300x200.png" alt="VRX1000 XTRONIC"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">VRX1000 XTRONIC</h3>
-                    </a>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="productList">
 
-                    <!-- Product 3 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/VRX100-XTRONIC-300x200.png" alt="VRX100 XTRONIC"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">VRX100 XTRONIC</h3>
-                    </a>
-                    <!-- Product 4 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/VRX300-XTRONIC-300x200.png" alt="VRX300 XTRONIC"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">VRX300 XTRONIC</h3>
-                    </a>
-                    <!-- Product 5 -->
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/VRX500-XTRONIC-300x200.png" alt="VRX500 XTRONIC"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">VRX500 XTRONIC</h3>
-                    </a>
-                    <!-- Product 6 -->
-
-
-                    <a class="block bg-white rounded shadow p-5 hover:bg-gray-200">
-                        <img src=" /media/images/aireka/VR400U-XTRONIC-300x252.jpg" alt="VR400U XTRONIC"
-                            class="w-full h-auto mb-3 rounded">
-                        <h3 class="text-lg font-semibold">VR400U XTRONIC</h3>
-                    </a>
                 </div>
             </div>
 
@@ -135,6 +97,7 @@
 
     <script src=" /components/header.js"></script>
     <script src=" /components/footer.js"></script>
+    <script src="/components/CardWithPdfLink.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
@@ -159,6 +122,56 @@
             event.target.classList.add('bg-gray-800', 'text-white');
         }
 
+
+
+        // Card with pdf links
+
+        const products = [
+            {
+                name: "VRX100 XTRONIC",
+                image: "/media/images/aireka/VRX100-XTRONIC-300x200.png",
+                alt: "VRX100 XTRONIC",
+                link: "/media/pdf/aireka/cooler/aireka_catalogue-16.pdf"
+            },
+            {
+                name: "VR200 U  XTRONIC",
+                image: "/media/images/aireka/VR200-U-XTRONIC-300x200.png",
+                alt: "VR200 XTRONIC ",
+                link: "/media/pdf/aireka/cooler/aireka_catalogue-17.pdf"
+            },
+            {
+                name: "VRX300 XTRONIC",
+                image: "/media/images/aireka/VRX300-XTRONIC-300x200.png",
+                alt: "VRX300 XTRONIC",
+                link: "/media/pdf/aireka/cooler/aireka_catalogue-17.pdf"
+
+            },
+            {
+                name: "VR400U XTRONIC",
+                image: "/media/images/aireka/VR400U-XTRONIC-300x252.jpg",
+                alt: "VR400U XTRONIC",
+
+                link: "/media/pdf/aireka/cooler/aireka_catalogue-18.pdf"
+            },
+            {
+                name: "VRX500 XTRONIC",
+                image: "/media/images/aireka/VRX500-XTRONIC-300x200.png",
+                alt: "VRX500 XTRONIC",
+link: "/media/pdf/aireka/cooler/aireka_catalogue-18.pdf"
+            },
+            {
+                name: "VRX1000 XTRONIC",
+                image: "/media/images/aireka/VRX1000-XTRONIC-300x200.png",
+                alt: "VRX1000 XTRONIC",
+                link: "/media/pdf/aireka/cooler/aireka_catalogue-19.pdf"
+
+            },
+        ];
+
+        products.forEach(product => {
+            let card = CardWithPdfLink(product.link, product.image, product.name);
+            productList.appendChild(card);
+        });
 
     </script>
 </body>
