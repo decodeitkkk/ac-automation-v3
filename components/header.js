@@ -1,3 +1,4 @@
+// this is for headers in navbar. remember that.
 const productsData = [
     {
         brand: "AIREKA",
@@ -9,6 +10,18 @@ const productsData = [
             "SPECIAL NOZZLES",
         ],
         link: " /pages/aireka.html",
+        img: " /images/aireka.jpg",
+    },
+    {
+        brand: "GAMM",
+        categories: [
+            "AIR COOLERS",
+            "ELECTRONICALLY CONTROLLED AIR COOLERS",
+            "AIR AMPLIFIERS",
+            "AIR KNIVES",
+            "SPECIAL NOZZLES",
+        ],
+        link: "/pages/gamm.html",
         img: " /images/aireka.jpg",
     },
     {
@@ -92,8 +105,8 @@ const productsData = [
         categories: ["PNEUMATIC RODLESS CYLINDER", "GUIDED RODLESS CYLINDER"],
     },
     {
-        brand: "VUOTOTECNICA VACUUM",
-        link: " /product/vuototecnica/vuototecnica.html",
+        brand: "VUOTOTECNICA VACCUM ",
+        link: "/media/images/vuototecnica/production_programme.pdf",
         categories: [
             "SUCTION CUPS",
             "SUCTION CUPS HOLDERS",
