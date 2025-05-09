@@ -1,3 +1,5 @@
+// page serves as side navigation
+
 let productsList = [
     {
         brand: "A. C. Automation Products ",
@@ -37,6 +39,94 @@ let productsList = [
                         title: "Special Nozzles",
                         img: " /media/images/aireka-special-noz.png",
                         page_link: " /product/aireka/special-nozzles.html",
+                    },
+                ],
+            },
+            {
+                title: "GAMM",
+                page_link: "/pages/gamm.html",
+                categories: [
+                    {
+                        title: "Antivibration Adjustable feet",
+                        img: "/media/images/gamm/antivibration-feet.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Antivibration_n_Adjustable_Feet.6214340.pdf",
+                    },
+                    {
+                        title: "Articulated & Adjustable feet",
+                        img: "/media/images/gamm/articulated-adjustable.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Articulated_n_Adjustable_Feet.6214409.pdf",
+                    },
+                    {
+                        title: "HandWheels",
+                        img: "/media/images/gamm/handwheel.jpg",
+                        page_link: "/media/pdf/gamm/Handwheels.6214451.pdf",
+                    },
+                    {
+                        title: "Handles",
+                        img: "/media/images/gamm/handles.jpg",
+                        page_link: "/media/pdf/gamm/Handles.6214528.pdf",
+                    },
+                    {
+                        title: "Adjustable clamping levers",
+                        img: "/media/images/gamm/adjustable-clamping-levers.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Adjustable_Handles.6214555.pdf",
+                    },
+                    {
+                        title: "Locking Knobs",
+                        img: "/media/images/gamm/locking-knobs.jpg",
+                        page_link: "/media/pdf/gamm/Locking_Knobs.6214707.pdf",
+                    },
+                    {
+                        title: "Measuring & Control Instruments",
+                        img: "/media/images/gamm/measuring-control-instruments.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Measuring_n_Control_instruments.6214733.pdf",
+                    },
+                    {
+                        title: "Hinges",
+                        img: "/media/images/gamm/hinges.jpg",
+                        page_link: "/media/pdf/gamm/Hinges.6214806.pdf",
+                    },
+                    {
+                        title: "Indexing & Spring Plungers",
+                        img: "/media/images/gamm/indexing-spring.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Indexing_n_Spring_Plungers.6214841.pdf",
+                    },
+                    {
+                        title: "Oil Plugs",
+                        img: "/media/images/gamm/oil-plugs.jpg",
+                        page_link: "/media/pdf/gamm/Oil_Plugs.6214900.pdf",
+                    },
+                    {
+                        title: "Handles",
+                        img: "/media/images/gamm/handles-1.jpg",
+                        page_link: "/media/pdf/gamm/Handles.6214528.pdf", // same PDF, different image
+                    },
+                    {
+                        title: "Thermoplastic Protections",
+                        img: "/media/images/gamm/thermoplasti.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Thermoplastic_Protections.6215016.pdf",
+                    },
+                    {
+                        title: "Tools",
+                        img: "/media/images/gamm/tools.jpg",
+                        page_link: "/media/pdf/gamm/Millet_tools.6215038.pdf",
+                    },
+                    {
+                        title: "Electrical Equipments",
+                        img: "/media/images/gamm/electrical-equipments.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Electrical_Accessories.6215058.pdf",
+                    },
+                    {
+                        title: "PVC Handles",
+                        img: "/media/images/gamm/pvc-handles.jpg",
+                        page_link: "/media/pdf/gamm/PVC_Handles.6215121.pdf",
                     },
                 ],
             },
@@ -229,18 +319,19 @@ let productsList = [
                     {
                         title: "Hydraulic Buffer",
                         img: " /media/images/izmac/Hydraulic-Buffer.jpg",
-                        page_link: "#",
+                        page_link: "/media/pdf/izmac/hydrolic_buffer.pdf",
                     },
                     {
                         title: "Shock Absorber",
                         img: " /media/images/izmac/shock-absorber.jpg",
-                        page_link: "#",
+                        page_link: "/media/pdf/izmac/shock_absorber.pdf",
                     },
                     {
                         title: "Shock Damper Rate Control",
                         img: " /media/images/izmac/shock-Damper-Rate-Control.jpg",
-                        page_link: "#",
+                        page_link: "/media/pdf/izmac/damper.pdf",
                     },
+
                 ],
             },
             {
@@ -452,99 +543,10 @@ let productsList = [
                 ],
             },
             {
-                title: "VUOTOTECNICA VACUUM",
+                title: "VUOTOTECNICA VACCUM",
                 page_link: " /product/vuototecnica/vuototecnica.html",
                 categories: [
-                    {
-                        title: "Vacuum Cups",
-                        img: " /media/images/vuototecnica/vaccum_cups.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vacuum Cups with Support",
-                        img: " /media/images/vuototecnica/vaccum_cups_with_support.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vacuum Switches",
-                        img: " /media/images/vuototecnica/Vacuum_Switch.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Direct Operating Vacuum Valves ",
-                        img: " /media/images/vuototecnica/direct_operating_vaccum_valves.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vacuum Solenoid Valves 3/2way",
-                        img: " /media/images/vuototecnica/vaccum_solenoid.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Suction Filters ",
-                        img: " /media/images/vuototecnica/suction_filters.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Long Operation Suction Filters",
-                        img: " /media/images/vuototecnica/long_operation_suction_filters.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Integrated Vacuum Handling Systems",
-                        img: " /media/images/vuototecnica/integrated_vaccum_handling_systems.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vacuum Cylinders",
-                        img: " /media/images/vuototecnica/vaccum_cyilnders.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Bellow Vacuum Cups",
-                        img: " /media/images/vuototecnica/bellow_vaccum_cups.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vane type Dry Vacuum Pumps",
-                        img: " /media/images/vuototecnica/vane_type_Vacuum_Pump.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Oil-Bath Vacuum Pumps",
-                        img: " /media/images/vuototecnica/oil_bath_vaccum_pump.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vacuum Pumpsets",
-                        img: " /media/images/vuototecnica/vaccum_pumpset.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Pneumatic Vacuum Pumpsets",
-                        img: " /media/images/vuototecnica/pneumatic_vaccum_pumpset.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Vacuum Generators",
-                        img: " /media/images/vuototecnica/vaccum_generators.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Pneumatic Vacuum Pumps",
-                        img: " /media/images/vuototecnica/Pneumatic_Vacuum_Pumps.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Adjustable Vacuum Generators",
-                        img: " /media/images/vuototecnica/Adjustable_Vacuum_Generators.jpg",
-                        page_link: "#",
-                    },
-                    {
-                        title: "Degassing Unit",
-                        img: " /media/images/vuototecnica/Degassing_Unit.jpg",
-                        page_link: "#",
-                    },
+                  
                 ],
             },
         ],
@@ -580,7 +582,7 @@ let productsDashboard = (productData, productList = productsList) => `
                         <summary
                             class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-white hover:bg-gray-100 hover:text-gray-700">
                             <span class="text-sm font-medium">
-                                ${item.brand}
+                                ${item.brand}--
                             </span>
                             
                             <span class="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -599,8 +601,9 @@ let productsDashboard = (productData, productList = productsList) => `
             const currentPageName = scat.page_link.split("/").pop();
             const regex = new RegExp(`${currentPageName}$`, "i");
             const isActive = regex.test(window.location.pathname);
+            console.log(currentPageName, regex, isActive);
 
-            // Check if the category has sub-categories
+            /* Check if the category has sub-categories
             const subCategories = scat.categories
                 ? `<ul class="mt-2 space-y-1 px-4">
                     ${scat.categories
@@ -627,28 +630,40 @@ let productsDashboard = (productData, productList = productsList) => `
                         })
                         .join("")}
                   </ul>`
-                : "";
+                : ""; */
 
             return `
             <li>
-                <details class="group" ${subCategories ? "" : "open"}>
+                <details class="group  " close >
                     <summary
-                        class="flex items-center justify-between block rounded-lg px-4 py-2 text-sm font-medium ${
+                        class="flex items-center justify-between block rounded-lg px-4 py-2 text-sm font-medium transform duration-300  ${
                             isActive
                                 ? "text-gray-700 bg-gray-100"
-                                : "text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+                                : "text-gray-400 hover:bg-gray-100 hover:text-gray-700 "
                         } cursor-pointer">
                         ${scat.title}
-                        <span class="ml-2 transition-transform transform group-open:rotate-180">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </span>
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-90">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
                     </summary>
-                    ${subCategories}
-                </details>
+                    <div class="bg-gray-700 rounded-lg ml-5" >
+                    ${scat.categories
+                        .map(
+                            (i) =>
+                                `<div class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-100 transform duration-300 hover:bg-gray-900 my-2 hover:cursor-pointer  " >
+                            <a href="${i.page_link}" >
+                            ${i.title}
+                            </a>
+                            </div>    `
+                        )
+                        .join("")}
+                        </div>
+                        </details>
             </li>
             `;
         })
