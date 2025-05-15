@@ -704,14 +704,16 @@ let productsDashboard = (productData, productList = productsList) => `
         ${item.desc}
         
         </div>
-
+${item.pdf_link ? `
 <div>
-    Product Cataglogue : <span> 
-        <a href=${item.pdf_link} class=" text-blue-900 hover:text-blue-500" >
-            Product catalouge  
+    Product Catalogue : <span> 
+        <a href="${item.pdf_link}" class="text-blue-900 hover:text-blue-500">
+            Product catalogue  
         </a>
     </span>
 </div>
+` : ''}
+
                             </div>
 
         <div class="flex flex-wrap gap-4 justify-center">
