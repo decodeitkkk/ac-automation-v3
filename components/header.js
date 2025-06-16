@@ -43,7 +43,7 @@ const productsData = [
         link: " /pages/fezer.html",
     },
     {
-        brand: "STABILUS/HAHN",
+        brand: "HAHN",
         link: " /pages/hahn.html",
         categories: [
             "GAS SPRINGS",
