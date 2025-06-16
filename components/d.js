@@ -11,34 +11,32 @@ let productsList = [
                     {
                         title: "Condensate Separators",
                         img: " /media/images/aireka-condensate-seprators.png",
-                        page_link:
-                            " /product/aireka/condensate-separators.html",
+                        page_link: "/media/pdf/aireka/condensate_seprators.pdf",
                     },
                     {
                         title: "Cooling Tubes",
                         img: " /media/images/aireka-cooling-tubes.jpg",
-                        page_link: " /product/aireka/cooling-tubes.html",
+                        page_link: "/media/pdf/aireka/pneumatic_coolers.pdf",
                     },
                     {
                         title: "Electronically-controlled Pneumatic Coolers",
                         img: " /media/images/aireka-ec.png",
-                        page_link:
-                            " /product/aireka/electrically-controlled-pneumatic-cooler.html",
+                        page_link: "/media/pdf/aireka/e-coolers.pdf",
                     },
                     {
                         title: "Air Amplifiers",
                         img: " /media/images/aireka-air-amplifiers.png",
-                        page_link: " /product/aireka/air-amplifiers.html",
+                        page_link: "/media/pdf/aireka/air_amplifiers.pdf",
                     },
                     {
                         title: "Air Knife",
                         img: " /media/images/aireka-air-knife.jpg",
-                        page_link: " /product/aireka/air-knife.html",
+                        page_link: "/media/pdf/aireka/air_knives.pdf",
                     },
                     {
                         title: "Special Nozzles",
                         img: " /media/images/aireka-special-noz.png",
-                        page_link: " /product/aireka/special-nozzles.html",
+                        page_link: "/media/pdf/aireka/special_nozzle.pdf",
                     },
                 ],
             },
@@ -215,13 +213,13 @@ let productsList = [
                 ],
             },
             {
-                title: "STABILUS/HAHN",
+                title: "HAHN",
                 page_link: " /pages/hahn.html",
                 categories: [
                     {
                         title: "GAS SPRINGS",
                         img: " /media/images/hahn_gas_spring.png",
-                        page_link: " /pages/hahn_gas_spring.html",
+                        page_link: "/media/pdf/hahn/gas-spring.pdf",
                     },
                     {
                         title: "TENSION SPRINGS",
@@ -546,7 +544,11 @@ let productsList = [
                 title: "VUOTOTECNICA VACCUM",
                 page_link: " /product/vuototecnica/vuototecnica.html",
                 categories: [
-                  
+                    {
+                        title: "All Products",
+                        img: "#",
+                        page_link: "/media/images/vuototecnica/production_programme.pdf",
+                    },
                 ],
             },
         ],
