@@ -5,7 +5,7 @@ let productsList = [
         brand: "A. C. Automation Products ",
         categories: [
             {
-                title: "Aireka",
+                title: "Aireka ",
                 page_link: " /pages/aireka.html",
                 categories: [
                     {
@@ -41,93 +41,64 @@ let productsList = [
                 ],
             },
             {
-                title: "GAMM",
-                page_link: "/pages/gamm.html",
+                title: "DESCHNER",
+                page_link: " /pages/deschner.html",
                 categories: [
                     {
-                        title: "Antivibration Adjustable feet",
-                        img: "/media/images/gamm/antivibration-feet.jpg",
+                        title: "Cushioneer Shock Absorbers",
+                        img: " /media/images/deschner/cushioneer.jpg",
                         page_link:
-                            "/media/pdf/gamm/Antivibration_n_Adjustable_Feet.6214340.pdf",
+                            " /product/deschner/cushioneer-shock-absorbers.html",
                     },
                     {
-                        title: "Articulated & Adjustable feet",
-                        img: "/media/images/gamm/articulated-adjustable.jpg",
+                        title: "Impacta Series Shock Absorbers",
+                        img: " /media/images/deschner/impacta-main-image3.jpg",
                         page_link:
-                            "/media/pdf/gamm/Articulated_n_Adjustable_Feet.6214409.pdf",
+                            " /product/deschner/impacta-series-shock-absorbers.html",
                     },
                     {
-                        title: "HandWheels",
-                        img: "/media/images/gamm/handwheel.jpg",
-                        page_link: "/media/pdf/gamm/Handwheels.6214451.pdf",
-                    },
-                    {
-                        title: "Handles",
-                        img: "/media/images/gamm/handles.jpg",
-                        page_link: "/media/pdf/gamm/Handles.6214528.pdf",
-                    },
-                    {
-                        title: "Adjustable clamping levers",
-                        img: "/media/images/gamm/adjustable-clamping-levers.jpg",
+                        title: "Kinechek Speed Regulators",
+                        img: " /media/images/deschner/kinechek.jpg",
                         page_link:
-                            "/media/pdf/gamm/Adjustable_Handles.6214555.pdf",
+                            " /product/deschner/kinechek-speed-regulators.html",
                     },
                     {
-                        title: "Locking Knobs",
-                        img: "/media/images/gamm/locking-knobs.jpg",
-                        page_link: "/media/pdf/gamm/Locking_Knobs.6214707.pdf",
-                    },
-                    {
-                        title: "Measuring & Control Instruments",
-                        img: "/media/images/gamm/measuring-control-instruments.jpg",
+                        title: "Cushion-Start Kinechek",
+                        img: " /media/images/deschner/Cushion-Start-ali.jpg",
                         page_link:
-                            "/media/pdf/gamm/Measuring_n_Control_instruments.6214733.pdf",
+                            " /product/deschner/cushion-start-kinechek.html",
                     },
                     {
-                        title: "Hinges",
-                        img: "/media/images/gamm/hinges.jpg",
-                        page_link: "/media/pdf/gamm/Hinges.6214806.pdf",
-                    },
-                    {
-                        title: "Indexing & Spring Plungers",
-                        img: "/media/images/gamm/indexing-spring.jpg",
+                        title: "Slow Return Kinecheks",
+                        img: " /media/images/deschner/Slow-Return-343x500.jpg",
                         page_link:
-                            "/media/pdf/gamm/Indexing_n_Spring_Plungers.6214841.pdf",
+                            " /product/deschner/slow-return-kinecheks.html",
                     },
                     {
-                        title: "Oil Plugs",
-                        img: "/media/images/gamm/oil-plugs.jpg",
-                        page_link: "/media/pdf/gamm/Oil_Plugs.6214900.pdf",
+                        title: "Skipchek Kinecheks",
+                        img: " /media/images/deschner/sk-SKIPCHEK-FUNCTION-DIAGRAM.jpg",
+                        page_link: " /product/deschner/skipchek-kinecheks.html",
                     },
                     {
-                        title: "Handles",
-                        img: "/media/images/gamm/handles-1.jpg",
-                        page_link: "/media/pdf/gamm/Handles.6214528.pdf", // same PDF, different image
+                        title: "Peckchek Kinecheks",
+                        img: " /media/images/deschner/peck-control-blogger2-sm--500x355.jpg",
+                        page_link: " /product/deschner/peckchek-kinecheks.html",
                     },
                     {
-                        title: "Thermoplastic Protections",
-                        img: "/media/images/gamm/thermoplasti.jpg",
+                        title: "Dual Speed Mini-K Kinechek",
+                        img: " /media/images/deschner/ds-DUAL-SPEED-MINI-K_main_img-387x500.jpg",
                         page_link:
-                            "/media/pdf/gamm/Thermoplastic_Protections.6215016.pdf",
+                            " /product/deschner/dual-speed-mini-K-kinechek.html",
                     },
                     {
-                        title: "Tools",
-                        img: "/media/images/gamm/tools.jpg",
-                        page_link: "/media/pdf/gamm/Millet_tools.6215038.pdf",
-                    },
-                    {
-                        title: "Electrical Equipments",
-                        img: "/media/images/gamm/electrical-equipments.jpg",
+                        title: "Super K and Mini K Kinecheks",
+                        img: " /media/images/deschner/superKminiK.png",
                         page_link:
-                            "/media/pdf/gamm/Electrical_Accessories.6215058.pdf",
-                    },
-                    {
-                        title: "PVC Handles",
-                        img: "/media/images/gamm/pvc-handles.jpg",
-                        page_link: "/media/pdf/gamm/PVC_Handles.6215121.pdf",
+                            " /product/deschner/super-k-and-mini-k-kinecheks.html",
                     },
                 ],
             },
+
             {
                 title: "FEZER VACUUM LIFTERS",
                 desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid reiciendis dolores cumque rem ex est, repellat exercitationem omnis asperiores. ",
@@ -213,6 +184,94 @@ let productsList = [
                 ],
             },
             {
+                title: "GAMM",
+                page_link: "/pages/gamm.html",
+                categories: [
+                    {
+                        title: "Antivibration Adjustable feet",
+                        img: "/media/images/gamm/antivibration-feet.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Antivibration_n_Adjustable_Feet.6214340.pdf",
+                    },
+                    {
+                        title: "Articulated & Adjustable feet",
+                        img: "/media/images/gamm/articulated-adjustable.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Articulated_n_Adjustable_Feet.6214409.pdf",
+                    },
+                    {
+                        title: "HandWheels",
+                        img: "/media/images/gamm/handwheel.jpg",
+                        page_link: "/media/pdf/gamm/Handwheels.6214451.pdf",
+                    },
+                    {
+                        title: "Handles",
+                        img: "/media/images/gamm/handles.jpg",
+                        page_link: "/media/pdf/gamm/Handles.6214528.pdf",
+                    },
+                    {
+                        title: "Adjustable clamping levers",
+                        img: "/media/images/gamm/adjustable-clamping-levers.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Adjustable_Handles.6214555.pdf",
+                    },
+                    {
+                        title: "Locking Knobs",
+                        img: "/media/images/gamm/locking-knobs.jpg",
+                        page_link: "/media/pdf/gamm/Locking_Knobs.6214707.pdf",
+                    },
+                    {
+                        title: "Measuring & Control Instruments",
+                        img: "/media/images/gamm/measuring-control-instruments.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Measuring_n_Control_instruments.6214733.pdf",
+                    },
+                    {
+                        title: "Hinges",
+                        img: "/media/images/gamm/hinges.jpg",
+                        page_link: "/media/pdf/gamm/hinges_gamm.pdf",
+                    },
+                    {
+                        title: "Indexing & Spring Plungers",
+                        img: "/media/images/gamm/indexing-spring.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Indexing_n_Spring_Plungers.6214841.pdf",
+                    },
+                    {
+                        title: "Oil Plugs",
+                        img: "/media/images/gamm/oil-plugs.jpg",
+                        page_link: "/media/pdf/gamm/Oil_Plugs.6214900.pdf",
+                    },
+                    {
+                        title: "Handles",
+                        img: "/media/images/gamm/handles-1.jpg",
+                        page_link: "/media/pdf/gamm/Handles.6214528.pdf", // same PDF, different image
+                    },
+                    {
+                        title: "Thermoplastic Protections",
+                        img: "/media/images/gamm/thermoplasti.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Thermoplastic_Protections.6215016.pdf",
+                    },
+                    {
+                        title: "Tools",
+                        img: "/media/images/gamm/tools.jpg",
+                        page_link: "/media/pdf/gamm/Millet_tools.6215038.pdf",
+                    },
+                    {
+                        title: "Electrical Equipments",
+                        img: "/media/images/gamm/electrical-equipments.jpg",
+                        page_link:
+                            "/media/pdf/gamm/Electrical_Accessories.6215058.pdf",
+                    },
+                    {
+                        title: "PVC Handles",
+                        img: "/media/images/gamm/pvc-handles.jpg",
+                        page_link: "/media/pdf/gamm/PVC_Handles.6215121.pdf",
+                    },
+                ],
+            },
+            {
                 title: "HAHN",
                 page_link: " /pages/hahn.html",
                 categories: [
@@ -249,7 +308,8 @@ let productsList = [
                     {
                         title: "GAS SPRINGS WITH BALL POINT PRINCIPLE",
                         img: " /media/images/ballpointpen.jpg",
-                        page_link: "/media/pdf/hahn/Gas-springs-with-ballpoint-pen-principle.pdf",
+                        page_link:
+                            "/media/pdf/hahn/Gas-springs-with-ballpoint-pen-principle.pdf",
                     },
                     {
                         title: "CONNECTORS",
@@ -273,42 +333,7 @@ let productsList = [
                     },
                 ],
             },
-            {
-                title: "YPC",
-                page_link: " /pages/ypc.html",
-                categories: [
-                    {
-                        title: "YSV Series",
-                        img: " /media/images/ypc/YSV200.jpg",
-                        page_link: " /product/ypc/ysv-series.html",
-                    },
-                    {
-                        title: "SF Series",
-                        img: " /media/images/ypc/SF1000.jpg",
-                        page_link: " /product/ypc/sf-series.html",
-                    },
-                    {
-                        title: "SC Series",
-                        img: " /media/images/ypc/SC200.jpg",
-                        page_link: " /product/ypc/sc-series.html",
-                    },
-                    {
-                        title: "Converter & Booster ",
-                        img: " /media/images/ypc/precompressed_booster.jpg",
-                        page_link: " /product/ypc/converter-booster.html",
-                    },
-                    {
-                        title: "SN Series ( Namur Valve )",
-                        img: " /media/images/ypc/SN3000.jpg",
-                        page_link: " /product/ypc/sn-series.html",
-                    },
-                    {
-                        title: "SIV Series (ISO Valves) ",
-                        img: " /media/images/ypc/SIV200.jpg",
-                        page_link: " /product/ypc/siv-series.html",
-                    },
-                ],
-            },
+
             {
                 title: "IZMAC SHOCK ABSORBERS",
                 page_link: " /product/izmac/izmac.html",
@@ -328,67 +353,9 @@ let productsList = [
                         img: " /media/images/izmac/shock-Damper-Rate-Control.jpg",
                         page_link: "/media/pdf/izmac/damper.pdf",
                     },
+                ],
+            },
 
-                ],
-            },
-            {
-                title: "DESCHNER",
-                page_link: " /pages/deschner.html",
-                categories: [
-                    {
-                        title: "Cushioneer Shock Absorbers",
-                        img: " /media/images/deschner/cushioneer.jpg",
-                        page_link:
-                            " /product/deschner/cushioneer-shock-absorbers.html",
-                    },
-                    {
-                        title: "Impacta Series Shock Absorbers",
-                        img: " /media/images/deschner/impacta-main-image3.jpg",
-                        page_link:
-                            " /product/deschner/impacta-series-shock-absorbers.html",
-                    },
-                    {
-                        title: "Kinechek Speed Regulators",
-                        img: " /media/images/deschner/kinechek.jpg",
-                        page_link:
-                            " /product/deschner/kinechek-speed-regulators.html",
-                    },
-                    {
-                        title: "Cushion-Start Kinechek",
-                        img: " /media/images/deschner/Cushion-Start-ali.jpg",
-                        page_link:
-                            " /product/deschner/cushion-start-kinechek.html",
-                    },
-                    {
-                        title: "Slow Return Kinecheks",
-                        img: " /media/images/deschner/Slow-Return-343x500.jpg",
-                        page_link:
-                            " /product/deschner/slow-return-kinecheks.html",
-                    },
-                    {
-                        title: "Skipchek Kinecheks",
-                        img: " /media/images/deschner/sk-SKIPCHEK-FUNCTION-DIAGRAM.jpg",
-                        page_link: " /product/deschner/skipchek-kinecheks.html",
-                    },
-                    {
-                        title: "Peckchek Kinecheks",
-                        img: " /media/images/deschner/peck-control-blogger2-sm--500x355.jpg",
-                        page_link: " /product/deschner/peckchek-kinecheks.html",
-                    },
-                    {
-                        title: "Dual Speed Mini-K Kinechek",
-                        img: " /media/images/deschner/ds-DUAL-SPEED-MINI-K_main_img-387x500.jpg",
-                        page_link:
-                            " /product/deschner/dual-speed-mini-K-kinechek.html",
-                    },
-                    {
-                        title: "Super K and Mini K Kinecheks",
-                        img: " /media/images/deschner/superKminiK.png",
-                        page_link:
-                            " /product/deschner/super-k-and-mini-k-kinecheks.html",
-                    },
-                ],
-            },
             {
                 title: "MEDAN",
                 page_link: " /pages/medan.html",
@@ -398,7 +365,7 @@ let productsList = [
                         img: " /media/images/medan/rodless-cylinder.jpg",
                         page_link: " /product/medan/rodless-cylinder.html",
                     },
-                    {
+                    /*{
                         title: "ISO cylinder",
                         img: " /media/images/medan/iso-cylinder.jpg",
                         page_link: " /product/medan/iso-cylinder.html",
@@ -536,7 +503,7 @@ let productsList = [
                         img: " /media/images/medan/MAIR-MP43_280x280.jpg",
                         page_link:
                             " /product/medan/precision-pressure-regulator.html",
-                    },
+                    }, */
                 ],
             },
             {
@@ -546,7 +513,44 @@ let productsList = [
                     {
                         title: "All Products",
                         img: "#",
-                        page_link: "/media/images/vuototecnica/production_programme.pdf",
+                        page_link:
+                            "/media/images/vuototecnica/production_programme.pdf",
+                    },
+                ],
+            },
+            {
+                title: "YPC",
+                page_link: " /pages/ypc.html",
+                categories: [
+                    {
+                        title: "YSV Series",
+                        img: " /media/images/ypc/YSV200.jpg",
+                        page_link: " /product/ypc/ysv-series.html",
+                    },
+                    {
+                        title: "SF Series",
+                        img: " /media/images/ypc/SF1000.jpg",
+                        page_link: " /product/ypc/sf-series.html",
+                    },
+                    {
+                        title: "SC Series",
+                        img: " /media/images/ypc/SC200.jpg",
+                        page_link: " /product/ypc/sc-series.html",
+                    },
+                    {
+                        title: "Converter & Booster ",
+                        img: " /media/images/ypc/precompressed_booster.jpg",
+                        page_link: " /product/ypc/converter-booster.html",
+                    },
+                    {
+                        title: "SN Series ( Namur Valve )",
+                        img: " /media/images/ypc/SN3000.jpg",
+                        page_link: " /product/ypc/sn-series.html",
+                    },
+                    {
+                        title: "SIV Series (ISO Valves) ",
+                        img: " /media/images/ypc/SIV200.jpg",
+                        page_link: " /product/ypc/siv-series.html",
                     },
                 ],
             },
@@ -705,7 +709,9 @@ let productsDashboard = (productData, productList = productsList) => `
         ${item.desc}
         
         </div>
-${item.pdf_link ? `
+${
+    item.pdf_link
+        ? `
 <div>
     Product Catalogue : <span> 
         <a href="${item.pdf_link}" class="text-blue-900 hover:text-blue-500">
@@ -713,7 +719,9 @@ ${item.pdf_link ? `
         </a>
     </span>
 </div>
-` : ''}
+`
+        : ""
+}
 
                             </div>
 
