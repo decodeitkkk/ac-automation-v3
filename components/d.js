@@ -5,16 +5,16 @@ let productsList = [
         brand: "A. C. Automation Products ",
         categories: [
             {
-                title: "Aireka ",
+                title: "Aireka ", 
                 page_link: " /pages/aireka.html",
                 categories: [
                     {
-                        title: "Pneumatic Cooling Tubes Series VR",
+                        title: "Pneumatic Coolers Series VR",
                         img: " /media/images/aireka-cooling-tubes.jpg",
                         page_link: "/media/pdf/aireka/pneumatic_coolers_VR.pdf",
                     },
                     {
-                        title: "Pneumatic Cooling Tubes Series VRX ",
+                        title: "Pneumatic Coolers Series VRX ",
                         img: " /media/images/vrx100.jpg",
                         page_link: "/media/pdf/aireka/pneumatic_coolers_VRX.pdf",
                     },
@@ -50,23 +50,51 @@ let productsList = [
                 page_link: " /pages/deschner.html",
                 categories: [
                     {
+                        title: "Kinechek Slimline",
+                        img: " /media/images/deschner/kinechek.jpg",
+                        page_link:
+                            "/media/pdf/deschner/Kinecheks_slimline.pdf",
+                    },
+                    {
+                        title: "Kinechek Mini K",
+                        img: " /media/images/deschner/kinechek.jpg",
+                        page_link:
+                            "/media/pdf/deschner/Kinecheck_miniK.pdf",
+                    },{
+                        title: "Kinechek Super K",
+                        img: " /media/images/deschner/kinechek.jpg",
+                        page_link:
+                            "/media/pdf/deschner/Kinecheck_superK.pdf",
+                    },{
+                        title: "Kinechek Cusion-Start Slow Return",
+                        img: " /media/images/deschner/kinechek.jpg",
+                        page_link:
+                            "/media/pdf/deschner/Kinecheck_cushion_start_slow_return.pdf",
+                    },{
+                        title: "Kinechek Skipchek",
+                        img: " /media/images/deschner/kinechek.jpg",
+                        page_link:
+                            "/media/pdf/deschner/Kinecheck_skipchek.pdf",
+                    },
+
+
+
+
+                
+                    {
                         title: "Cushioneer Shock Absorbers",
                         img: " /media/images/deschner/cushioneer.jpg",
                         page_link:
                             " /product/deschner/cushioneer-shock-absorbers.html",
-                    },
+                    }, 
+                
                     {
                         title: "Impacta Series Shock Absorbers",
                         img: " /media/images/deschner/impacta-main-image3.jpg",
                         page_link:
                             " /product/deschner/impacta-series-shock-absorbers.html",
                     },
-                    {
-                        title: "Kinechek Speed Regulators",
-                        img: " /media/images/deschner/kinechek.jpg",
-                        page_link:
-                            " /product/deschner/kinechek-speed-regulators.html",
-                    },
+                    /*
                     {
                         title: "Cushion-Start Kinechek",
                         img: " /media/images/deschner/Cushion-Start-ali.jpg",
@@ -83,12 +111,13 @@ let productsList = [
                         title: "Skipchek Kinecheks",
                         img: " /media/images/deschner/sk-SKIPCHEK-FUNCTION-DIAGRAM.jpg",
                         page_link: " /product/deschner/skipchek-kinecheks.html",
-                    },
+                    }, 
                     {
                         title: "Peckchek Kinecheks",
                         img: " /media/images/deschner/peck-control-blogger2-sm--500x355.jpg",
                         page_link: " /product/deschner/peckchek-kinecheks.html",
                     },
+                    
                     {
                         title: "Dual Speed Mini-K Kinechek",
                         img: " /media/images/deschner/ds-DUAL-SPEED-MINI-K_main_img-387x500.jpg",
@@ -100,7 +129,52 @@ let productsList = [
                         img: " /media/images/deschner/superKminiK.png",
                         page_link:
                             " /product/deschner/super-k-and-mini-k-kinecheks.html",
+                    }, */
+
+
+
+
+                    // --- New Products
+                    {
+                        title: "Lock Knob",
+                        img: " /media/images/deschner/Lock-Knobs-250x164.jpg",
+                        page_link: "/media/images/deschner/Lock-Knobs-Mini-K-Super-K.pdf",
                     },
+                    {
+                        title: "Mounting Blocks",
+                        img: "/media/images/deschner/mounting-blocks-250x190.jpg",
+                        page_link: "/media/images/deschner/Mounting-Blocks-w-Dimension-table.pdf",
+                    },
+                    {
+                        title: "Peckcheck control",
+                        img: "/media/images/deschner/peckchek-controls-250x160.jpg",
+                        page_link: "/media/images/deschner/Peckchek-Controls.pdf",
+                    },
+                    {
+                        title: "Tamperproof Kits",
+                        img: " /media/images/deschner/tamperproof-250x163-1383617946.jpg",
+                        page_link: "/media/images/deschner/Tamperproof-kits.pdf",
+                    },
+                    {
+                        title: "Threaded Mounting",
+                        img: "/media/images/deschner/mounting-options-250x163.jpg",
+                        page_link: "/media/images/deschner/Threaded-Mounting-table.pdf",
+                    },
+                    {
+                        title: "Dumore Drill Adapter",
+                        img: "/media/images/deschner/fig2-250x187.jpg",
+                        page_link: "https://deschner.com/products/accessories/dumore-adapter/",
+                    },
+                    {
+                        title: "Sugino Drill Adapter",
+                        img: "/media/images/deschner/sugino-adapter-only-sm.jpg",
+                        page_link: "https://deschner.com/products/accessories/sugino-adapter/",
+                    },
+                    {
+                        title: "Clamping and Mounting",
+                        img: "/media/images/deschner/mounting-restrictions-500x317.jpg",
+                        page_link: "/media/images/deschner/critical-clamping-dimensions.pdf",
+                    }
                 ],
             },
 
