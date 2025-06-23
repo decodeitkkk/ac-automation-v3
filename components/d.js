@@ -9,14 +9,14 @@ let productsList = [
                 page_link: " /pages/aireka.html",
                 categories: [
                     {
-                        title: "Condensate Separators",
-                        img: " /media/images/aireka-condensate-seprators.png",
-                        page_link: "/media/pdf/aireka/condensate_seprators.pdf",
+                        title: "Pneumatic Cooling Tubes Series VR",
+                        img: " /media/images/aireka-cooling-tubes.jpg",
+                        page_link: "/media/pdf/aireka/pneumatic_coolers_VR.pdf",
                     },
                     {
-                        title: "Cooling Tubes",
-                        img: " /media/images/aireka-cooling-tubes.jpg",
-                        page_link: "/media/pdf/aireka/pneumatic_coolers.pdf",
+                        title: "Pneumatic Cooling Tubes Series VRX ",
+                        img: " /media/images/vrx100.jpg",
+                        page_link: "/media/pdf/aireka/pneumatic_coolers_VRX.pdf",
                     },
                     {
                         title: "Electronically-controlled Pneumatic Coolers",
@@ -24,19 +24,24 @@ let productsList = [
                         page_link: "/media/pdf/aireka/e-coolers.pdf",
                     },
                     {
-                        title: "Air Amplifiers",
-                        img: " /media/images/aireka-air-amplifiers.png",
-                        page_link: "/media/pdf/aireka/air_amplifiers.pdf",
-                    },
-                    {
                         title: "Air Knife",
                         img: " /media/images/aireka-air-knife.jpg",
                         page_link: "/media/pdf/aireka/air_knives.pdf",
                     },
                     {
+                        title: "Air Amplifiers",
+                        img: " /media/images/aireka-air-amplifiers.png",
+                        page_link: "/media/pdf/aireka/air_amplifiers.pdf",
+                    },
+                    {
                         title: "Special Nozzles",
                         img: " /media/images/aireka-special-noz.png",
                         page_link: "/media/pdf/aireka/special_nozzle.pdf",
+                    },
+                    {
+                        title: "Condensate Separators",
+                        img: " /media/images/aireka-condensate-seprators.png",
+                        page_link: "/media/pdf/aireka/condensate_seprators.pdf",
                     },
                 ],
             },
