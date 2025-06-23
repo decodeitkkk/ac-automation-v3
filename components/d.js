@@ -136,44 +136,7 @@ let productsList = [
                             },
                             */
 
-                    // --- New Products
-                    {
-                        title: "Mounting Blocks",
-                        img: "/media/images/deschner/mounting-blocks-250x190.jpg",
-                        page_link:
-                            "/media/images/deschner/Mounting-Blocks-w-Dimension-table.pdf",
-                    },
                    
-                    {
-                        title: "Tamperproof Kits",
-                        img: " /media/images/deschner/tamperproof-250x163-1383617946.jpg",
-                        page_link:
-                            "/media/images/deschner/Tamperproof-kits.pdf",
-                    },
-                    {
-                        title: "Threaded Mounting",
-                        img: "/media/images/deschner/mounting-options-250x163.jpg",
-                        page_link:
-                            "/media/images/deschner/Threaded-Mounting-table.pdf",
-                    },
-                    {
-                        title: "Dumore Drill Adapter",
-                        img: "/media/images/deschner/fig2-250x187.jpg",
-                        page_link:
-                            "https://deschner.com/products/accessories/dumore-adapter/",
-                    },
-                    {
-                        title: "Sugino Drill Adapter",
-                        img: "/media/images/deschner/sugino-adapter-only-sm.jpg",
-                        page_link:
-                            "https://deschner.com/products/accessories/sugino-adapter/",
-                    },
-                    {
-                        title: "Clamping and Mounting",
-                        img: "/media/images/deschner/mounting-restrictions-500x317.jpg",
-                        page_link:
-                            "/media/images/deschner/critical-clamping-dimensions.pdf",
-                    },
                 ],
             },
 
