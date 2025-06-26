@@ -402,149 +402,40 @@ let productsList = [
                 page_link: " /pages/medan.html",
                 categories: [
                     {
-                        title: "Rodless cylinders",
-                        img: " /media/images/medan/rodless-cylinder.jpg",
-                        page_link: " /product/medan/rodless-cylinder.html",
-                    },
-                    /*{
-                        title: "ISO cylinder",
-                        img: " /media/images/medan/iso-cylinder.jpg",
-                        page_link: " /product/medan/iso-cylinder.html",
+                        title: "DUO The Strong One",
+                        img: " /media/images/medan/rodless-cylinder-01-the-strong-one.png",
+                        page_link: " /media/images/medan/E-Duo.pdf",
                     },
                     {
-                        title: "Clamping cylinder",
-                        img: " /media/images/medan/clamping-cylinder.jpg",
-                        page_link: " /product/medan/clamping-cylinder.html",
+                        title: "PL The Classic",
+                        img: " /media/images/medan/rodless-cylinder-04-classic.png",
+                        page_link: " /media/images/medan/E-PL.pdf",
                     },
                     {
-                        title: "Stopper cylinder",
-                        img: " /media/images/medan/stopper-cylinder.jpg",
-                        page_link: " /product/medan/stopper-cylinder.html",
+                        title: "PLF The Flat One",
+                        img: " /media/images/medan/rodless-cylinder-03-flat.png",
+                        page_link: " /media/images/medan/E-PLF.pdf",
                     },
                     {
-                        title: "Rotary actuators",
-                        img: " /media/images/medan/rotary-actuators.jpg",
-                        page_link: " /product/medan/rotary-actuators.html",
+                        title: "PLG The Quiet One",
+                        img: " /media/images/medan/rodless-cylinder-06-quiet.png",
+                        page_link: " /media/images/medan/E-PLG.pdf",
                     },
                     {
-                        title: "Gripper",
-                        img: " /media/images/medan/gripper.jpg",
-                        page_link: " /product/medan/gripper.html",
+                        title: "PLK The Robust",
+                        img: " /media/images/medan/rodless-cylinder-02-robust.png",
+                        page_link: " /media/images/medan/E-PLK.pdf",
                     },
                     {
-                        title: "Timing belt axes",
-                        img: " /media/images/medan/timing_belt_axes_280x280.png",
-                        page_link: " /product/medan/timing-belt-axes.html",
+                        title: "PLR The Runner",
+                        img: " /media/images/medan/rodless-cylinder-05-runner.png",
+                        page_link: " /media/images/medan/E-PLR.pdf",
                     },
                     {
-                        title: "Spindle axes",
-                        img: " /media/images/medan/spindle-axes_280x280.png",
-                        page_link: " /product/medan/spindle-axes.html",
-                    },
-                    {
-                        title: "Heavy-duty axles",
-                        img: " /media/images/medan/heavy-duty-axles_280x280.png",
-                        page_link: " /product/medan/heavy-duty-axles.html",
-                    },
-                    {
-                        title: "Boom axles",
-                        img: " /media/images/medan/boom-axles_280x280.png",
-                        page_link: " /product/medan/boom-axles.html",
-                    },
-                    {
-                        title: "Pneumatic hoses",
-                        img: " /media/images/medan/UM_Tube_280x280.png",
-                        page_link: " /product/medan/pneumatic-hoses.html",
-                    },
-                    {
-                        title: "Pneumatic fittings",
-                        img: " /media/images/medan/pisco-standard-fittings.png",
-                        page_link: " /product/medan/pneumatic-fittings.html",
-                    },
-                    {
-                        title: "Functional screw connections",
-                        img: " /media/images/medan/pisco-regulators_280x280.png",
-                        page_link:
-                            " /product/medan/functional-screw-connections.html",
-                    },
-                    {
-                        title: "Foot valves",
-                        img: " /media/images/medan/MVFA_280x280.png",
-                        page_link: " /product/medan/foot-valves.html",
-                    },
-                    {
-                        title: "Hand lever valves",
-                        img: " /media/images/medan/MVHB-220_280x280.jpg",
-                        page_link: " /product/medan/hand-lever-valves.html",
-                    },
-                    {
-                        title: "Lever valves",
-                        img: " /media/images/medan/MVMA-260_280x280.jpg",
-                        page_link: " /product/medan/lever-valves.html",
-                    },
-                    {
-                        title: "ISO valves",
-                        img: " /media/images/medan/MVSI-260_280x280.jpg",
-                        page_link: " /product/medan/iso-valves.html",
-                    },
-                    {
-                        title: "Solenoid valves",
-                        img: " /media/images/medan/MVSC1-150_280x280.jpg",
-                        page_link: " /product/medan/solenoid-valves.html",
-                    },
-                    {
-                        title: "Namur valves",
-                        img: " /media/images/medan/MVSN-220_280x280.jpg",
-                        page_link: " /product/medan/namur-valves.html",
-                    },
-                    {
-                        title: "Pilot valves",
-                        img: " /media/images/medan/MPC_280x280.jpg",
-                        page_link: " /product/medan/pilot-valves.html",
-                    },
-                    {
-                        title: "Start valves",
-                        img: " /media/images/medan/MVHR-2_280x280.jpg",
-                        page_link: " /product/medan/start-valves.html",
-                    },
-                    {
-                        title: "Touch valves",
-                        img: " /media/images/medan/MVHA-2-3_280x280.jpg",
-                        page_link: " /product/medan/touch-valves.html",
-                    },
-                    {
-                        title: "Pressure regulator",
-                        img: " /media/images/medan/MAR100_280x280.jpg",
-                        page_link: " /product/medan/pressure-regulator.html",
-                    },
-                    {
-                        title: "Filter",
-                        img: " /media/images/medan/MAF200_280x280.jpg",
-                        page_link: " /product/medan/filter.html",
-                    },
-                    {
-                        title: "Filter regulator",
-                        img: " /media/images/medan/MAFR100_280x280.jpg",
-                        page_link: " /product/medan/filter-regulator.html",
-                    },
-                    {
-                        title: "Combi maintenance unit",
-                        img: " /media/images/medan/MACP200_280x280.jpg",
-                        page_link:
-                            " /product/medan/combi-maintenance-unit.html",
-                    },
-                    {
-                        title: "Proportional pressure regulator",
-                        img: " /media/images/medan/MAER_side_application_280x280.jpg",
-                        page_link:
-                            " /product/medan/proportional-pressure-regulator.html",
-                    },
-                    {
-                        title: "Precision pressure regulator",
-                        img: " /media/images/medan/MAIR-MP43_280x280.jpg",
-                        page_link:
-                            " /product/medan/precision-pressure-regulator.html",
-                    }, */
+                        title: "PLS The Glider",
+                        img: " /media/images/medan/rodless-cylinder-07-glider.png",
+                        page_link: " /media/images/medan/E-PLS.pdf",
+                    }
                 ],
             },
             {
