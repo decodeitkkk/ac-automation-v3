@@ -634,7 +634,9 @@ let productsDashboard = (productData, productList = productsList) => `
             (item) => `
         <div class="font-medium text-3xl PD800 my-2 mb-5 mx-auto text-center">
             
-            <span id="title-card" class="capitalize  ">${item.brand}  </span>
+        
+        <!--     <span id="title-card" class="capitalize  ">${item.brand}  </span> -->
+         <img src="${item.brand}" alt="${item.brand}" class="mx-auto max-h-24 object-contain" />
         </div>
         <div class="my-2 flex flex-col justify-center mx-10 " >
         <div>
