@@ -4,8 +4,8 @@ let footer = `
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
         <div class="flex justify-center text-3xl font-medium text-teal-300 sm:justify-start">
-        <a href=" /index.html" >
-        A. C. Automation
+        <a href="/index.html" >
+        <img src="/media/images/aca_logo.jpg" alt="Logo" class="w-10 h-6 inline-block mr-2">
         </a>
         </div>
 
@@ -51,8 +51,8 @@ let footer = `
               </li>
 
               <li>
-                <a class="text-white transition hover:text-white/75" href=" /pages/brands.html">
-                  Brands
+                <a class="text-white transition hover:text-white/75" href=" /pages/customers.html">
+                  Customers
                 </a>
               </li>
 
@@ -105,7 +105,7 @@ let footer = `
               <address class="-mt-0.5 not-italic text-white">
                 301, 3rd Floor,  Mukund House
                 Commercial Complex, <br/> Azadpur
-                Delhi, India 110033
+                Delhi-110033, India
               </address>
             </li>
           </ul>

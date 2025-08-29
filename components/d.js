@@ -91,7 +91,8 @@ let productsList = [
                     {
                         title: "Impacta Series Shock Absorbers",
                         img: " /media/images/deschner/impacta-main-image3.jpg",
-                        page_link: "/media/pdf/deschner/impacta/impacta_full.pdf",
+                        page_link:
+                            "/media/pdf/deschner/impacta/impacta_full.pdf",
                     },
                     /*
                     {
@@ -135,8 +136,6 @@ let productsList = [
                                 page_link: "/media/images/deschner/Lock-Knobs-Mini-K-Super-K.pdf",
                             },
                             */
-
-                   
                 ],
             },
 
@@ -435,7 +434,7 @@ let productsList = [
                         title: "PLS The Glider",
                         img: " /media/images/medan/rodless-cylinder-07-glider.png",
                         page_link: " /media/images/medan/E-PLS.pdf",
-                    }
+                    },
                 ],
             },
             {
@@ -492,157 +491,26 @@ let productsList = [
 console.log(window.location.pathname);
 
 let productsDashboard = (productData, productList = productsList) => `
-<div class="flex bg-gray-700 z-20 h-screen">
-    <div id="toggleItem"
-        class="flex h-full w-full hidden sm:block sm:w-2/5 flex-col justify-between bg-gray-800 sm:ml-0 z-20">
-        <div class="px-4 py-6 h-auto sm:h-full w-full overflow-y-scroll">
-            <span
-                class="grid h-10 w-16 sm:w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600 text-center mx-auto font-medium">
-                Products
-            </span>
-
-            <div id="toggleBtn" class="sm:hidden flex justify-end text-white">
-                Close
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-x">
-                    <path d="M18 6 6 18" />
-                    <path d="m6 6 12 12" />
-                </svg>
-            </div>
-            <ul class="mt-6 space-y-2">
-                ${productsList
-                    .map(
-                        (item) => `
-                <li class="border-b-2 border-cyan-900">
-                    <details class="group [&_summary::-webkit-details-marker]:hidden" open>
-                        <summary
-                            class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-white hover:bg-gray-100 hover:text-gray-700">
-                            <span class="text-sm font-medium">
-                                ${item.brand}--
-                            </span>
-                            
-                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </summary>
-
-                       <ul class="mt-2 space-y-1 px-4">
-    ${item.categories
-        .map((scat) => {
-            const currentPageName = scat.page_link.split("/").pop();
-            const regex = new RegExp(`${currentPageName}$`, "i");
-            const isActive = regex.test(window.location.pathname);
-            console.log(currentPageName, regex, isActive);
-
-            /* Check if the category has sub-categories
-            const subCategories = scat.categories
-                ? `<ul class="mt-2 space-y-1 px-4">
-                    ${scat.categories
-                        .map((subCat) => {
-                            const subPageName = subCat.page_link
-                                .split("/")
-                                .pop();
-                            const subRegex = new RegExp(`${subPageName}$`, "i");
-                            const isSubActive = subRegex.test(
-                                window.location.pathname
-                            );
-
-                            return `
-                            <li>
-                                <a href="${subCat.page_link}"
-                                    class="block rounded-lg px-4 py-2 text-sm font-medium ${
-                                        isSubActive
-                                            ? "text-gray-700 bg-gray-100"
-                                            : "text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-                                    }">
-                                    ${subCat.title}
-                                </a>
-                            </li>`;
-                        })
-                        .join("")}
-                  </ul>`
-                : ""; */
-
-            return `
-            <li>
-                <details class="group  " close >
-                    <summary
-                        class="flex items-center justify-between block rounded-lg px-4 py-2 text-sm font-medium transform duration-300  ${
-                            isActive
-                                ? "text-gray-700 bg-gray-100"
-                                : "text-gray-400 hover:bg-gray-100 hover:text-gray-700 "
-                        } cursor-pointer">
-                        ${scat.title}
-                        <span class="shrink-0 transition duration-300 group-open:-rotate-90">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                    </summary>
-                    <div class="bg-gray-700 rounded-lg ml-5" >
-                    ${scat.categories
-                        .map(
-                            (i) =>
-                                `<div class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-100 transform duration-300 hover:bg-gray-900 my-2 hover:cursor-pointer  " >
-                            <a href="${i.page_link}" >
-                            ${i.title}
-                            </a>
-                            </div>    `
-                        )
-                        .join("")}
-                        </div>
-                        </details>
-            </li>
-            `;
-        })
-        .join("")}
-</ul>
-
-
-
-                    </details>
-                </li>
-                `
-                    )
-                    .join("")}
-            </ul>
-
-                    
-        </div>
-    </div>
+<div class="flex bg-gray-700 z-20 ">
+   
     <div id="innerBody" class="sm:block bg-gray-100 h-full overflow-auto w-full p-4 z-0 relative">
-        <div id="toggleBtn2" class="flex justify-end">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-menu">
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-        </div>
+      
 
         ${productData.map(
             (item) => `
         <div class="font-medium text-3xl PD800 my-2 mb-5 mx-auto text-center">
             
         
-        <!--     <span id="title-card" class="capitalize  ">${item.brand}  </span> -->
-         <img src="${item.brand}" alt="${item.brand}" class="mx-auto max-h-24 object-contain" />
+        
+         <img src="${item.brand}" alt="${
+                item.brand
+            }" class="mx-auto max-h-24 object-contain" />
         </div>
         <div class="my-2 flex flex-col justify-center mx-10 " >
-        <div>
+        <!--- <div>
         ${item.desc}
         
-        </div>
+        </div> --->
 ${
     item.pdf_link
         ? `

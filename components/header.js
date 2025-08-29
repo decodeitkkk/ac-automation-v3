@@ -1,5 +1,5 @@
 // this is for headers in navbar. remember that.
-const productsData =[
+const productsData = [
     {
         brand: "AIREKA",
         categories: [
@@ -88,10 +88,7 @@ const productsData =[
     {
         brand: "MEDAN",
         link: " /pages/medan.html",
-        categories: [
-            "GUIDED RODLESS CYLINDER",
-            "PNEUMATIC RODLESS CYLINDER",
-        ],
+        categories: ["GUIDED RODLESS CYLINDER", "PNEUMATIC RODLESS CYLINDER"],
     },
     {
         brand: "VUOTOTECNICA VACCUM ",
@@ -117,8 +114,7 @@ const productsData =[
             "TENSION SPRINGS",
         ],
     },
-]
-
+];
 
 let header = `
 <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-gray-800 sticky top-0 z-50  ">
@@ -127,7 +123,9 @@ let header = `
             <div class="flex items-center justify-between flex-grow">
                 <div class="flex-shrink-0">
                     <h1 class="text-lg font-semibold tracking-widest text-white uppercase">
-                        <a href=" /index.html">A.C. Automation</a>
+                        <a href=" /index.html">
+                        <image src="/media/images/aca_logo.jpg" alt="Logo" class="w-10 h-6 inline-block mr-2">
+                        </a>
                     </h1>
                 </div>
 
@@ -209,7 +207,7 @@ let header = `
                                 </div>
                             </div>
                         </div>
-                        <a href=" /pages/brands.html" id="brands"
+                        <a href=" /pages/customers.html" id="brands"
                             class="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -319,7 +317,7 @@ let header = `
 
                     </div>
                 </div>
-                <a id="brands" href=" /pages/brands.html"
+                <a id="brands" href=" /pages/customers.html"
                     class="flex flex-row items-center px-3 py-2 mt-1 text-base font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
