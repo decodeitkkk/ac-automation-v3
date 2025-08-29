@@ -92,7 +92,7 @@ const productsData = [
     },
     {
         brand: "VUOTOTECNICA VACCUM ",
-        link: "/media/images/vuototecnica/production_programme.pdf",
+        link: "/pages/vuototecnica.html",
         categories: [
             "SUCTION CUPS",
             "SUCTION CUPS HOLDERS",
