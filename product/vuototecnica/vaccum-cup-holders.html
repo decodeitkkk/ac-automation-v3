@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Vaccum Cup Holders </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Vaccum Cups Holders
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "Micro cup holders 20 80 05",
+                        "Mini vacuum cup holders",
+                        "Mini vacuum cup holders for bellow cups",
+                        "Mini vacuum cup holders with male and female threaded connectors",
+                        "Mini vacuum cup holders with built-in spring",
+                        "Mini vacuum cup holders with compact stroke",
+                        "Mini vacuum cup holders with built-in bush",
+                        "Mini vacuum cup holders with built-in bush, with male and female threaded connectors",
+                        "Mini vacuum cup holders with plunger valve",
+                        "Mini vacuum cup holders with plunger valve and built-in bush",
+                        "Mini vacuum cup holders with plunger valve with no springing",
+                        "Mini vacuum cup holders with built-in shut-off valve",
+                        "Mini anti-rotation vacuum cup holders",
+                        "Mini vacuum cup holders with magnetic sensor",
+                        "Mini vacuum cup holders fix",
+                        "Basic vacuum cup holders",
+                        "Basic vacuum cup holders for bellows cups",
+                        "Basic vacuum cup holders with male and female threaded connectors",
+                        "Basic vacuum cup holders with plunger valve",
+                        "Basic vacuum cup holders with plunger valve, with no springing",
+                        "Basic vacuum cup holders with built-in shut-off valve",
+                        "Basic articulated vacuum cup holders",
+                        "Basic anti-rotation vacuum cup holders",
+                        "Basic vacuum cup holders fix",
+                        "Special vacuum cup holders",
+                        "Special vacuum cup holders for bellows cups",
+                        "Special vacuum cup holders with male and female threaded connectors",
+                        "Special vacuum cup holders with plunger valve",
+                        "Special vacuum cup holders with push valve",
+                        "Special vacuum cup holders with built-in shut-off valve",
+                        "Special articulated vacuum cup holders",
+                        "Special articulated vacuum cup holders without GS articulated joint",
+                        "Special articulated vacuum cup holders with compact stroke",
+                        "Special stainless steel anti-rotation vacuum cup holders",
+                        "Special anti-rotation vacuum cup holders with male threaded connector",
+                        "Special anti-rotation vacuum cup holders with spherical swivel support",
+                        "Special vacuum cup holders with double springing",
+                        "Special articulated vacuum cup holders with double springing",
+                        "Spherical articulated joints",
+                        "Ball joint couplings with GSL axial vacuum connection",
+                        "Positionable ball joint couplings with axial vacuum connection",
+                        "Vacuum cup holder fixing supports",
+                        "Vacuum cup holder fixing supports"
+                ];
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/445/images/2_00.jpg",
+                        "https://www.vuototecnica.co.uk/product/83/images/2_001.jpg",
+                        "https://www.vuototecnica.co.uk/product/84/images/2_008.jpg",
+                        "https://www.vuototecnica.co.uk/product/470/images/2.17%20-%202.18.jpg",
+                        "https://www.vuototecnica.co.uk/product/86/images/2_017A.jpg",
+                        "https://www.vuototecnica.co.uk/product/87/images/2_018.jpg",
+                        "https://www.vuototecnica.co.uk/product/88/images/2_021.jpg",
+                        "https://www.vuototecnica.co.uk/product/89/images/2_023.jpg",
+                        "https://www.vuototecnica.co.uk/product/90/images/2_024.jpg",
+                        "https://www.vuototecnica.co.uk/product/91/images/2_029.jpg",
+                        "https://www.vuototecnica.co.uk/product/92/images/2_034.jpg",
+                        "https://www.vuototecnica.co.uk/product/93/images/2.40.jpg",
+                        "https://www.vuototecnica.co.uk/product/94/images/2_040.jpg",
+                        "https://www.vuototecnica.co.uk/product/95/images/2_043.jpg",
+                        "https://www.vuototecnica.co.uk/product/96/images/2_044.jpg",
+                        "https://www.vuototecnica.co.uk/product/97/images/2_058.jpg",
+                        "https://www.vuototecnica.co.uk/product/98/images/2_070.jpg",
+                        "https://www.vuototecnica.co.uk/product/99/images/2_077.jpg",
+                        "https://www.vuototecnica.co.uk/product/100/images/2_084.jpg",
+                        "https://www.vuototecnica.co.uk/product/101/images/2_095.jpg",
+                        "https://www.vuototecnica.co.uk/product/102/images/2_096.jpg",
+                        "https://www.vuototecnica.co.uk/product/103/images/2_097.jpg",
+                        "https://www.vuototecnica.co.uk/product/104/images/2_101.jpg",
+                        "https://www.vuototecnica.co.uk/product/105/images/2_102.jpg",
+                        "https://www.vuototecnica.co.uk/product/106/images/2_113.jpg",
+                        "https://www.vuototecnica.co.uk/product/107/images/2_120.jpg",
+                        "https://www.vuototecnica.co.uk/product/471/images/2.123%20-%202.124.jpg",
+                        "https://www.vuototecnica.co.uk/product/108/images/2_126.jpg",
+                        "https://www.vuototecnica.co.uk/product/109/images/2_127.jpg",
+                        "https://www.vuototecnica.co.uk/product/110/images/2_129.jpg",
+                        "https://www.vuototecnica.co.uk/product/111/images/2_130.jpg",
+                        "https://www.vuototecnica.co.uk/product/438/images/2_138.jpg",
+                        "https://www.vuototecnica.co.uk/product/112/images/2_141.jpg",
+                        "https://www.vuototecnica.co.uk/product/113/images/2_142.jpg",
+                        "https://www.vuototecnica.co.uk/product/472/images/2.146.jpg",
+                        "https://www.vuototecnica.co.uk/product/114/images/2_144.jpg",
+                        "https://www.vuototecnica.co.uk/product/115/images/2_154.jpg",
+                        "https://www.vuototecnica.co.uk/product/116/images/2_155.jpg",
+                        "https://www.vuototecnica.co.uk/product/117/images/2_162.jpg",
+                        "https://www.vuototecnica.co.uk/product/444/images/2.166.jpg",
+                        "https://www.vuototecnica.co.uk/product/38/images/1_015.jpg",
+                        "https://www.vuototecnica.co.uk/product/118/images/2.168%20-%202.170a.jpg",
+                        "https://www.vuototecnica.co.uk/product/439/images/2_165.jpg"
+                ];
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/445/en/2.01%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/83/en/2.02%20-%202.08.pdf",
+                        "https://www.vuototecnica.co.uk/product/84/en/2.09%20-%202.16.pdf",
+                        "https://www.vuototecnica.co.uk/product/470/en/2.17%20-%202.18.pdf",
+                        "https://www.vuototecnica.co.uk/product/86/en/2.18%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/87/en/2.19%20-%202.21.pdf",
+                        "https://www.vuototecnica.co.uk/product/88/en/2.22%20-%202.23.pdf",
+                        "https://www.vuototecnica.co.uk/product/89/en/2.24%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/90/en/2.25%20-%202.29.pdf",
+                        "https://www.vuototecnica.co.uk/product/91/en/2.30%20-%202.34.pdf",
+                        "https://www.vuototecnica.co.uk/product/92/en/2.35%20-%202.39.pdf",
+                        "https://www.vuototecnica.co.uk/product/93/en/2.40%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/94/en/2.41%20-%202.43.pdf",
+                        "https://www.vuototecnica.co.uk/product/95/en/2.44%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/96/en/2.45%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/97/en/2.46%20-%202.62.pdf",
+                        "https://www.vuototecnica.co.uk/product/98/en/2.63%20-%202.77.pdf",
+                        "https://www.vuototecnica.co.uk/product/99/en/2.78%20-%202.81.pdf",
+                        "https://www.vuototecnica.co.uk/product/100/en/2.82%20-%202.88.pdf",
+                        "https://www.vuototecnica.co.uk/product/101/en/2.89%20-%202.96.pdf",
+                        "https://www.vuototecnica.co.uk/product/102/en/2.97%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/103/en/2.98%20-%202.101.pdf",
+                        "https://www.vuototecnica.co.uk/product/104/en/2.102%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/105/en/2.103%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/106/en/2.104%20-%202.117.pdf",
+                        "https://www.vuototecnica.co.uk/product/107/en/2.118%20-%202.122.pdf",
+                        "https://www.vuototecnica.co.uk/product/471/en/2.123%20-%202.124.pdf",
+                        "https://www.vuototecnica.co.uk/product/108/en/2.125%20-%202.129.pdf",
+                        "https://www.vuototecnica.co.uk/product/109/en/2.130%20-%202.131.pdf",
+                        "https://www.vuototecnica.co.uk/product/110/en/2.132%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/111/en/2.133%20-%202.139.pdf",
+                        "https://www.vuototecnica.co.uk/product/438/en/2.140%20-%202.141.pdf",
+                        "https://www.vuototecnica.co.uk/product/112/en/2.142%20-%202.144.pdf",
+                        "https://www.vuototecnica.co.uk/product/113/en/2.145.pdf",
+                        "https://www.vuototecnica.co.uk/product/472/en/2.146.pdf",
+                        "https://www.vuototecnica.co.uk/product/114/en/2.147%20-%202.148.pdf",
+                        "https://www.vuototecnica.co.uk/product/115/en/2.149%20-%202.157.pdf",
+                        "https://www.vuototecnica.co.uk/product/116/en/2.158%20-%202.164.pdf",
+                        "https://www.vuototecnica.co.uk/product/117/en/2.165%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/444/en/2.166.pdf",
+                        "https://www.vuototecnica.co.uk/product/38/en/2.167%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/118/en/2.168%20-%202.170.pdf",
+                        "https://www.vuototecnica.co.uk/product/439/en/2.168%20-%202.170.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>

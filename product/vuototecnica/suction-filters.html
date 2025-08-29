@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Suction Filters </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Suction Filters
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "In-line, FCL, FPL and FIL filters",
+                        "In-line, FCL, FPL and FIL filters with cartridge",
+                        "In-line, FCL, FPL and FIL filters",
+                        "FB suction filter with metal cartridge",
+                        "Stainless steel mesh filtering cartridges for FB filters",
+                        "FC suction filtres with paper cartridge",
+                        "Paper filtering cartridges for FC filters",
+                        "FO oil-bath suction filters",
+                        "Steel wool filtering cartridges for FO filters",
+                        "FO long operation autonomy oil-bath suction filters",
+                        "FS syphon suction filters",
+                        "Syphon filter systems with automatic by-pass FS 50 BP and FS 60 BP",
+                        "Special filters",
+                        "FP series filtering cartridge containers with compression sealing",
+                        "Filtering cartridges with compression sealing",
+                        "FM series quick coupling filtering cartridge containers",
+                        "FK series quick coupling filtering cartridge containers",
+                        "Quick coupling filtering cartridges"
+                ];
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/166/images/5.01%20-%205.02.jpg",
+                        "https://www.vuototecnica.co.uk/product/167/images/503_2.jpg",
+                        "https://www.vuototecnica.co.uk/product/245/images/5.02.1.jpg",
+                        "https://www.vuototecnica.co.uk/product/168/images/5.03.jpg",
+                        "https://www.vuototecnica.co.uk/product/169/images/5.11.jpg",
+                        "https://www.vuototecnica.co.uk/product/170/images/5.12.jpg",
+                        "https://www.vuototecnica.co.uk/product/171/images/5.16.jpg",
+                        "https://www.vuototecnica.co.uk/product/172/images/5.18.jpg",
+                        "https://www.vuototecnica.co.uk/product/173/images/5.19.jpg",
+                        "https://www.vuototecnica.co.uk/product/174/images/5.20.jpg",
+                        "https://www.vuototecnica.co.uk/product/175/images/5.21.jpg",
+                        "https://www.vuototecnica.co.uk/product/176/images/5.22_.jpg",
+                        "https://www.vuototecnica.co.uk/product/474/images/5.23.jpg",
+                        "https://www.vuototecnica.co.uk/product/177/images/5.24.jpg",
+                        "https://www.vuototecnica.co.uk/product/178/images/5.25.jpg",
+                        "https://www.vuototecnica.co.uk/product/179/images/5.26.jpg",
+                        "https://www.vuototecnica.co.uk/product/180/images/5.27.jpg",
+                        "https://www.vuototecnica.co.uk/product/181/images/5.28.jpg"
+                ];
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/166/en/5.01%20-%205.02.pdf",
+                        "https://www.vuototecnica.co.uk/product/167/en/5.03.2.pdf",
+                        "https://www.vuototecnica.co.uk/product/245/en/5.02.1%20-%205.03.1.pdf",
+                        "https://www.vuototecnica.co.uk/product/168/en/5.03%20-%205.10.pdf",
+                        "https://www.vuototecnica.co.uk/product/169/en/5.11%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/170/en/5.12%20-%205.15.pdf",
+                        "https://www.vuototecnica.co.uk/product/171/en/5.16%20-%205.17.pdf",
+                        "https://www.vuototecnica.co.uk/product/172/en/5.18%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/173/en/5.19%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/174/en/5.20%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/175/en/5.21%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/176/en/5.22%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/474/en/5.23%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/177/en/5.24%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/178/en/5.25%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/179/en/5.26%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/180/en/5.27%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/181/en/5.28%20.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>

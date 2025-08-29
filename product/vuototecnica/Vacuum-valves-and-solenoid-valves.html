@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Vaccum Valves and Solenoid Valves  </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Vaccum Valves and Solenoid Valves
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+    "Vacuum and pressure unit conversion table",
+    "Vacuum and pressure gauges",
+    "Vacuum gauge with steel punch",
+    "Mini pneumatic vacuum switches",
+    "Mini electromechanical vacuum switch",
+    "Micro digital vacuum switches",
+    "Analogue vacuum switch",
+    "Digital vacuum and pressure switches",
+    "Digital vacuum switches",
+    "Digital vacuum and pressure switches",
+    "Digital vacuum and pressure switches with two-colour display",
+    "Accessories for analogue and digital vacuum and pressure switches",
+    "Vacuum adjustment valves",
+    "Vacuum regulators",
+    "Regulators for rough vacuum levels",
+    "Vacuum regulators with pneumatic adjustment",
+    "Vacuum regolators",
+    "Vacuum regulators with pneumatic adjustment",
+    "Diagrams referring to the level of vacuum according to the servo-control supply pressure",
+    "Sealing kit for vacuum reducers"
+];
+                let img = [
+    "https://www.vuototecnica.co.uk/product/119/images/3.00.jpg",
+    "https://www.vuototecnica.co.uk/product/120/images/3_001.jpg",
+    "https://www.vuototecnica.co.uk/product/121/images/3_005.jpg",
+    "https://www.vuototecnica.co.uk/product/122/images/3_006.jpg",
+    "https://www.vuototecnica.co.uk/product/123/images/3_007.jpg",
+    "https://www.vuototecnica.co.uk/product/125/images/3_009.jpg",
+    "https://www.vuototecnica.co.uk/product/126/images/3_011.jpg",
+    "https://www.vuototecnica.co.uk/product/127/images/3.12.jpg",
+    "https://www.vuototecnica.co.uk/product/461/images/3.14.jpg",
+    "https://www.vuototecnica.co.uk/product/440/images/3.16.jpg",
+    "https://www.vuototecnica.co.uk/product/463/images/3.19%20%C3%B7%203.20.jpg",
+    "https://www.vuototecnica.co.uk/product/128/images/3_017.jpg",
+    "https://www.vuototecnica.co.uk/product/133/images/3.23.jpg",
+    "https://www.vuototecnica.co.uk/product/129/images/3_019.jpg",
+    "https://www.vuototecnica.co.uk/product/130/images/3_020.jpg",
+    "https://www.vuototecnica.co.uk/product/131/images/3_021.jpg",
+    "https://www.vuototecnica.co.uk/product/313/images/3.26.1.jpg",
+    "https://www.vuototecnica.co.uk/product/316/images/3.27.1.jpg",
+    "https://www.vuototecnica.co.uk/product/132/images/3.27.jpg",
+    "https://www.vuototecnica.co.uk/product/124/images/3.28.jpg"
+];
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/119/en/3.00%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/120/en/3.01%20-%203.04.pdf",
+                        "https://www.vuototecnica.co.uk/product/121/en/3.05%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/122/en/3.06%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/123/en/3.07%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/125/en/3.08%20-%203.09.pdf",
+                        "https://www.vuototecnica.co.uk/product/126/en/3.10%20-%203.11.pdf",
+                        "https://www.vuototecnica.co.uk/product/127/en/3.12%20-%203.13.pdf",
+                        "https://www.vuototecnica.co.uk/product/461/en/3.14%20-%203.15.pdf",
+                        "https://www.vuototecnica.co.uk/product/440/en/3.16%20-%203.17.pdf",
+                        "https://www.vuototecnica.co.uk/product/463/en/3.18%20-%203.19.pdf",
+                        "https://www.vuototecnica.co.uk/product/128/en/3.20%20-%203.22.pdf",
+                        "https://www.vuototecnica.co.uk/product/133/en/3.23%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/129/en/3.24%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/130/en/3.25%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/131/en/3.26%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/313/en/3.26.1.pdf",
+                        "https://www.vuototecnica.co.uk/product/316/en/3.27.1.pdf",
+                        "https://www.vuototecnica.co.uk/product/132/en/3.27%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/124/en/3.28%20.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>
