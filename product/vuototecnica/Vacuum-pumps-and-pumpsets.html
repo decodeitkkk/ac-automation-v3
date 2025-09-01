@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Vacuum Pumps and Pumpsets </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Vacuum Pumps and Pumpsets
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "Vacuum pump questionnaire",
+                        "Membrane vacuum mini pump",
+                        "Membrane vacuum mini pumps, with dc motor",
+                        "Rotary vane vacuum pumps – General description",
+                        "Vacuum pumps VTL 2 and 4",
+                        "Vacuum pumps VTL 5 and 10",
+                        "Vacuum pumps VTLP 5 and 10, with disposable lubrication",
+                        "Vacuum pumps VTL 10/FG, 15/FG and 20/FG",
+                        "Vacuum pumps VTLP 10/FG, 15/FG and 20/FG, with disposable lubrication",
+                        "Vacuum pumps VTL 25/FG, 30/FG and 35/FG",
+                        "Vacuum pumps VTLP 25/FG, 30/FG and 35/FG, with disposable lubrication",
+                        "Vacuum pumps VTL 40/G1, 50/G1 and 65/G1",
+                        "Vacuum pump VTL 105/G1",
+                        "Vacuum pumps VTLP 40/G1, 50/G1 and 65/G1, with disposable lubrication",
+                        "Vacuum pump VTLP 105/G1, with disposable lubrication",
+                        "Lubrificated rotary vane vacuum pumps, RVP series",
+                        "Oil-bath vacuum pump RVP 15",
+                        "Oil-bath vacuum pump RVP 21",
+                        "Oil-bath vacuum pump RVP 40",
+                        "Oil-bath vacuum pump RVP 60",
+                        "Oil-bath vacuum pump RVP 100",
+                        "Oil-bath vacuum pumps RVP 160 and RVP 200",
+                        "Oil-bath vacuum pumps RVP 250 and RVP 300",
+                        "Lubricated vacuum pump accessories and spare parts",
+                        "Dry vacuum pumps VTS 2 and 4",
+                        "Dry vacuum pumps VTS 6 and 10",
+                        "Dry vacuum pumps VTS 10/FG, 15/FG and 20/FG",
+                        "Dry vacuum pumps VTS 25/FG, 30/FG and 35/FG",
+                        "Dry vacuum pump accessories and spare parts",
+                        "Mini pump sets – General description",
+                        "Mini pump sets DO 06V ... and DO 10V ... with dry vacuum pumps",
+                        "Mini pump sets DO 06V ... and DO 10V ... with lubrificated vacuum pumps",
+                        "Mini pump sets DO 20V ...",
+                        "Horizontal pump sets – General description",
+                        "Horizontal pump sets DO 25V ... and DO 50V ...",
+                        "Horizontal pump sets DO 100V ... and DO 150V ...",
+                        "Horizontal pump sets DO 300V ... and DO 500V ...",
+                        "Horizontal pump sets DO 1000V ...",
+                        "Horizontal safety pump sets – General description",
+                        "Horizontal safety pump sets DSO 300V ... and DSO 500V ...",
+                        "Horizontal safety pump sets DSO 1000V ...",
+                        "Vertical pump sets – General description",
+                        "Vertical pump sets DV 150V ... and DV 300V ...",
+                        "Vertical pumpsets DV 500V ... and DV 1000V ...",
+                        "Vertical safety pump sets – General description",
+                        "Vertical safety pumpsets DSV 150 ... and DSV 300 ...",
+                        "Vertical safety pump sets DSV 500V ... and DSV 1000V ...",
+                        "Vertical safety pump sets DSV 2000V ...",
+                        "Special pump set products",
+                        "Support frames for two vacuum pumps",
+                        "Support frames for three vacuum pump",
+                        "Supports for switchgear",
+                        "Vacuum pump and pump set manifolds",
+                        "Mini pump set switchgear",
+                        "Switchgear for pump sets with one pump",
+                        "Switchgear for pump sets with two pumps",
+                        "Switchgear for safety pump set with two pumps",
+                        "Switchgear for safety pump sets with three pumps",
+                        "Switchgear for safety pump set with four pumps",
+                        "Switchgear for single pump",
+                        "Switchgear equipped with touch screen operator panel and plc for pump sets and safety pump sets with two or more pump"
+                ]
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/266/images/7.93%20-%207.94.jpg",
+                        "https://www.vuototecnica.co.uk/product/187/images/7_001.jpg",
+                        "https://www.vuototecnica.co.uk/product/475/images/7.03%20-%207.04.jpg",
+                        "https://www.vuototecnica.co.uk/product/188/images/7_005.jpg",
+                        "https://www.vuototecnica.co.uk/product/193/images/7.07%20-%207.08.jpg",
+                        "https://www.vuototecnica.co.uk/product/194/images/7.09%20-%207.10.jpg",
+                        "https://www.vuototecnica.co.uk/product/195/images/7.11%20-%207.12.jpg",
+                        "https://www.vuototecnica.co.uk/product/486/images/7.13.1-7.14.1.jpg",
+                        "https://www.vuototecnica.co.uk/product/487/images/7.15.1-7.16.1.jpg",
+                        "https://www.vuototecnica.co.uk/product/199/images/7.17%20-%207.18.jpg",
+                        "https://www.vuototecnica.co.uk/product/200/images/7.19%20-%207.20.jpg",
+                        "https://www.vuototecnica.co.uk/product/201/images/7.21%20-%207.22.jpg",
+                        "https://www.vuototecnica.co.uk/product/202/images/7.23%20-%207.24.jpg",
+                        "https://www.vuototecnica.co.uk/product/203/images/7.25%20-%207.26.jpg",
+                        "https://www.vuototecnica.co.uk/product/204/images/7.27%20-%207.28.jpg",
+                        "https://www.vuototecnica.co.uk/product/457/images/7.29.jpg",
+                        "https://www.vuototecnica.co.uk/product/205/images/7.30%20-%207.31.jpg",
+                        "https://www.vuototecnica.co.uk/product/206/images/7.32%20-%207.33.jpg",
+                        "https://www.vuototecnica.co.uk/product/207/images/7.34%20-%207.35.jpg",
+                        "https://www.vuototecnica.co.uk/product/208/images/7.36%20-%207.37.jpg",
+                        "https://www.vuototecnica.co.uk/product/209/images/7.38%20-%207.39.jpg",
+                        "https://www.vuototecnica.co.uk/product/211/images/7.40%20-%207.41.jpg",
+                        "https://www.vuototecnica.co.uk/product/212/images/7.42%20-%207.43.jpg",
+                        "https://www.vuototecnica.co.uk/product/216/images/7.44%20-%207.47.jpg",
+                        "https://www.vuototecnica.co.uk/product/217/images/7.48%20-%207.49.jpg",
+                        "https://www.vuototecnica.co.uk/product/219/images/7.50%20-%207.51.jpg",
+                        "https://www.vuototecnica.co.uk/product/222/images/7.56%20-%207.57.jpg",
+                        "https://www.vuototecnica.co.uk/product/223/images/7.58%20-%207.59.jpg",
+                        "https://www.vuototecnica.co.uk/product/224/images/7_066.jpg",
+                        "https://www.vuototecnica.co.uk/product/225/images/7.62.jpg",
+                        "https://www.vuototecnica.co.uk/product/226/images/7.63.jpg",
+                        "https://www.vuototecnica.co.uk/product/214/images/7.64.jpg",
+                        "https://www.vuototecnica.co.uk/product/227/images/7.65.jpg",
+                        "https://www.vuototecnica.co.uk/product/228/images/7.66.jpg",
+                        "https://www.vuototecnica.co.uk/product/229/images/7.67.jpg",
+                        "https://www.vuototecnica.co.uk/product/231/images/7.68.jpg",
+                        "https://www.vuototecnica.co.uk/product/232/images/7.69.jpg",
+                        "https://www.vuototecnica.co.uk/product/233/images/7.70.jpg",
+                        "https://www.vuototecnica.co.uk/product/234/images/7.71.jpg",
+                        "https://www.vuototecnica.co.uk/product/235/images/7.72.jpg",
+                        "https://www.vuototecnica.co.uk/product/236/images/7.73.jpg",
+                        "https://www.vuototecnica.co.uk/product/237/images/7.74.jpg",
+                        "https://www.vuototecnica.co.uk/product/238/images/7.75.jpg",
+                        "https://www.vuototecnica.co.uk/product/240/images/7.76.jpg",
+                        "https://www.vuototecnica.co.uk/product/241/images/7.77.jpg",
+                        "https://www.vuototecnica.co.uk/product/242/images/7.78.jpg",
+                        "https://www.vuototecnica.co.uk/product/243/images/7.79.jpg",
+                        "https://www.vuototecnica.co.uk/product/244/images/7.80.jpg",
+                        "https://www.vuototecnica.co.uk/product/192/images/7.81%20-%207.82.jpg",
+                        "https://www.vuototecnica.co.uk/product/255/images/7_115_3d.jpg",
+                        "https://www.vuototecnica.co.uk/product/256/images/7_116_3d.jpg",
+                        "https://www.vuototecnica.co.uk/product/218/images/7.85.jpg",
+                        "https://www.vuototecnica.co.uk/product/258/images/7.86%20-%207.87.jpg",
+                        "https://www.vuototecnica.co.uk/product/259/images/7.88.jpg",
+                        "https://www.vuototecnica.co.uk/product/260/images/7.88_.jpg",
+                        "https://www.vuototecnica.co.uk/product/261/images/7.89.jpg",
+                        "https://www.vuototecnica.co.uk/product/262/images/7.89b.jpg",
+                        "https://www.vuototecnica.co.uk/product/263/images/7.90.jpg",
+                        "https://www.vuototecnica.co.uk/product/264/images/7.90b.jpg",
+                        "https://www.vuototecnica.co.uk/product/265/images/7.91.jpg",
+                        "https://www.vuototecnica.co.uk/product/269/images/7.91.1%20-%207.92.1.jpg"
+                ];
+                let link = [
+
+                        "https://www.vuototecnica.co.uk/product/266/en/7.93%20-%207.94.pdf",
+                        "https://www.vuototecnica.co.uk/product/187/en/7.01%20-%207.02.pdf",
+                        "https://www.vuototecnica.co.uk/product/475/en/7.03%20-%207.04.pdf",
+                        "https://www.vuototecnica.co.uk/product/188/en/7.05%20-%207.06.pdf",
+                        "https://www.vuototecnica.co.uk/product/193/en/7.07%20-%207.08.pdf",
+                        "https://www.vuototecnica.co.uk/product/194/en/7.09%20-%207.10.pdf",
+                        "https://www.vuototecnica.co.uk/product/195/en/7.11%20-%207.12.pdf",
+                        "https://www.vuototecnica.co.uk/product/486/en/7.13.1%20-%207.14.1.pdf",
+                        "https://www.vuototecnica.co.uk/product/487/en/7.15.1%20-%207.16.1.pdf",
+                        "https://www.vuototecnica.co.uk/product/199/en/7.17%20-%207.18.pdf",
+                        "https://www.vuototecnica.co.uk/product/200/en/7.19%20-%207.20.pdf",
+                        "https://www.vuototecnica.co.uk/product/201/en/7.21%20-%207.22.pdf",
+                        "https://www.vuototecnica.co.uk/product/202/en/7.23%20-%207.24.pdf",
+                        "https://www.vuototecnica.co.uk/product/203/en/7.25%20-%207.26.pdf",
+                        "https://www.vuototecnica.co.uk/product/204/en/7.27%20-%207.28.pdf",
+                        "https://www.vuototecnica.co.uk/product/457/en/7.29%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/205/en/7.30%20-%207.31.pdf",
+                        "https://www.vuototecnica.co.uk/product/206/en/7.32%20-%207.33.pdf",
+                        "https://www.vuototecnica.co.uk/product/207/en/7.34%20-%207.35.pdf",
+                        "https://www.vuototecnica.co.uk/product/208/en/7.36%20-%207.37.pdf",
+                        "https://www.vuototecnica.co.uk/product/209/en/7.38%20-%207.39.pdf",
+                        "https://www.vuototecnica.co.uk/product/211/en/7.40%20-%207.41.pdf",
+                        "https://www.vuototecnica.co.uk/product/212/en/7.42%20-%207.43.pdf",
+                        "https://www.vuototecnica.co.uk/product/216/en/7.44%20-%207.47.pdf",
+                        "https://www.vuototecnica.co.uk/product/217/en/7.48%20-%207.49.pdf",
+                        "https://www.vuototecnica.co.uk/product/219/en/7.50%20-%207.51.pdf",
+                        "https://www.vuototecnica.co.uk/product/222/en/7.56%20-%207.57.pdf",
+                        "https://www.vuototecnica.co.uk/product/223/en/7.58%20-%207.59.pdf",
+                        "https://www.vuototecnica.co.uk/product/224/en/7.60%20-%207.61.pdf",
+                        "https://www.vuototecnica.co.uk/product/225/en/7.62%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/226/en/7.63%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/214/en/7.64%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/227/en/7.65%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/228/en/7.66%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/229/en/7.67%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/231/en/7.68%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/232/en/7.69%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/233/en/7.70%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/234/en/7.71%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/235/en/7.72%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/236/en/7.73%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/237/en/7.74%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/238/en/7.75%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/240/en/7.76%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/241/en/7.77%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/242/en/7.78%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/243/en/7.79%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/244/en/7.80%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/192/en/7.81%20-%207.82.pdf",
+                        "https://www.vuototecnica.co.uk/product/255/en/7.83%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/256/en/7.84%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/218/en/7.85%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/258/en/7.86%20-%207.87.pdf",
+                        "https://www.vuototecnica.co.uk/product/259/en/7.88%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/260/en/7.88%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/261/en/7.89%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/262/en/7.89%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/263/en/7.90%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/264/en/7.90%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/265/en/7.91%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/269/en/7.91.1%20-%207.92.1.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Graphic Division </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Graphic Division
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "Graphic division",
+                        "Tables for pneumatic pumps selection",
+                        "Small pneumatic suction pumps PA",
+                        "Small pneumatic suction pumps PA 10, PA 14 and PA 18",
+                        "Pneumatic suction pumps PA",
+                        "Pneumatic suction pumps PA 140, PA 170 and PA 200",
+                        "Pneumatic suction pumps PA 250 and PA 300",
+                        "Small pneumatic blowing pumps PS",
+                        "Small pneumatic blowing pumps PS 10, PS 14 and PS 18",
+                        "Pneumatic blowing pumps PS",
+                        "Pneumatic blowing pumps PS 140, PS 170 and PS 200",
+                        "Pneumatic blowing pumps PS 250 and PS 300",
+                        "Small combined pneumatic suction pumps PA and blowing pumps PS",
+                        "Small combined pneumatic suction pumps PA and blowing pumps PS",
+                        "Combined pneumatic suction pumps PA and blowing pumps PS",
+                        "Combined pneumatic suction pumps PA and blowing pumps PS",
+                        "Combined pneumatic suction pumps PA and blowing pumps PS",
+                        "Suction and blowing system AS",
+                        "Pneumatic suction and blowing pump holding supports",
+                        "Pneumatic suction and blowing pump suction filters",
+                        "Pneumatic pump spare parts",
+                        "Vacuum cylinders",
+                        "Disc cups"
+                ]
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/393/images/10_001.jpg",
+                        "https://www.vuototecnica.co.uk/product/394/images/10.02.jpg",
+                        "https://www.vuototecnica.co.uk/product/395/images/10.03.jpg",
+                        "https://www.vuototecnica.co.uk/product/396/images/10.04.jpg",
+                        "https://www.vuototecnica.co.uk/product/397/images/10.05.jpg",
+                        "https://www.vuototecnica.co.uk/product/398/images/10_006.jpg",
+                        "https://www.vuototecnica.co.uk/product/399/images/10_007.jpg",
+                        "https://www.vuototecnica.co.uk/product/400/images/10.08.jpg",
+                        "https://www.vuototecnica.co.uk/product/401/images/10.09.jpg",
+                        "https://www.vuototecnica.co.uk/product/402/images/10_010.jpg",
+                        "https://www.vuototecnica.co.uk/product/403/images/10_011.jpg",
+                        "https://www.vuototecnica.co.uk/product/404/images/10_012.jpg",
+                        "https://www.vuototecnica.co.uk/product/405/images/10.13.jpg",
+                        "https://www.vuototecnica.co.uk/product/406/images/10.14.jpg",
+                        "https://www.vuototecnica.co.uk/product/407/images/10_015.jpg",
+                        "https://www.vuototecnica.co.uk/product/408/images/10_016.jpg",
+                        "https://www.vuototecnica.co.uk/product/409/images/10_017.jpg",
+                        "https://www.vuototecnica.co.uk/product/410/images/10_018.jpg",
+                        "https://www.vuototecnica.co.uk/product/411/images/10_019.jpg",
+                        "https://www.vuototecnica.co.uk/product/412/images/10_020.jpg",
+                        "https://www.vuototecnica.co.uk/product/413/images/10_021.jpg",
+                        "https://www.vuototecnica.co.uk/product/414/images/10_023.jpg",
+                        "https://www.vuototecnica.co.uk/product/415/images/10_024.jpg"
+                ]
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/393/en/10.01%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/394/en/10.02%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/395/en/10.03%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/396/en/10.04%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/397/en/10.05%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/398/en/10.06%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/399/en/10.07%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/400/en/10.08%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/401/en/10.09%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/402/en/10.10%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/403/en/10.11%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/404/en/10.12%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/405/en/10.13%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/406/en/10.14%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/407/en/10.15%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/408/en/10.16%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/409/en/10.17%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/410/en/10.18%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/411/en/10.19%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/412/en/10.20%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/413/en/10.21%20-%2010.22.pdf",
+                        "https://www.vuototecnica.co.uk/product/414/en/10.23%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/415/en/10.24%20.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>

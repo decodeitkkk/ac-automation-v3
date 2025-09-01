@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Special Products</title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Special Products
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "Degasifiers",
+                        "Mobile system for resin vacuum infusion",
+                        "Electrical equipment for vacuum tests",
+                        "Equipment for vacuum tests",
+                        "Suction units with syphon filter GA FS 5 and GA FS 10",
+                        "Suction units with syphon filter GA FS 20 ES - GA FS 30 ES",
+                        "Safety suction units with syphon filter",
+                        "Liquid-sucking pump sets",
+                        "Samples and equipment for demonstration use - Vacuum training box - VTBOX01",
+                        "Samples and equipment for demonstration use - Test bench and tests for the selection of vacuum cups - BT01",
+                        "Samples and equipment for demonstration use - Demonstration unit for the handling of powders and granulated products with flow generators CX - CONVY01",
+                        "Samples and equipment for demonstration use - Equipped robot for gripping and handling objects with special vacuum cups and grippers - VACBOT"
+                ]
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/416/images/11.01.jpg",
+                        "https://www.vuototecnica.co.uk/product/417/images/11.02.jpg",
+                        "https://www.vuototecnica.co.uk/product/418/images/11.03.jpg",
+                        "https://www.vuototecnica.co.uk/product/419/images/11.04.jpg",
+                        "https://www.vuototecnica.co.uk/product/420/images/11.05.jpg",
+                        "https://www.vuototecnica.co.uk/product/421/images/11.06.jpg",
+                        "https://www.vuototecnica.co.uk/product/422/images/11.07.jpg",
+                        "https://www.vuototecnica.co.uk/product/423/images/11.08.jpg",
+                        "https://www.vuototecnica.co.uk/product/476/images/11.09.jpg",
+                        "https://www.vuototecnica.co.uk/product/477/images/11.09b.jpg",
+                        "https://www.vuototecnica.co.uk/product/478/images/11.09c.jpg",
+                        "https://www.vuototecnica.co.uk/product/479/images/11.09d.jpg"
+                ]
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/416/en/11.01%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/417/en/11.02%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/418/en/11.03%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/419/en/11.04%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/420/en/11.05%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/421/en/11.06%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/422/en/11.07%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/423/en/11.08%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/476/en/11.09%20-%2011.12.pdf",
+                        "https://www.vuototecnica.co.uk/product/477/en/11.09%20-%2011.12.pdf",
+                        "https://www.vuototecnica.co.uk/product/478/en/11.09%20-%2011.12.pdf",
+                        "https://www.vuototecnica.co.uk/product/479/en/11.09%20-%2011.12.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>

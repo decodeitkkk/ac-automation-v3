@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Octopus Vaccum Gripping System </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+                        Ocutopus Vacuum Gripping System
+                        
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "OCTOPUS vacuum gripping system questionnaire",
+                        "OCTOPUS vacuum gripping system - General description",
+                        "OCTOPUS gripping system composition and relative identification codes",
+                        "OCTOPUS vacuum gripping system",
+                        "OCTOPUS vacuum gripping system",
+                        "OCTOPUS vacuum gripping system",
+                        "OCTOPUS vacuum gripping system",
+                        "Small OCTOPUS vacuum gripping systems",
+                        "Round OCTOPUS vacuum gripping system",
+                        "Standard suction plates PX and P2X for OCTOPUS systems",
+                        "Special PH and P2H suction plates for octopus systems for gripping empty cans, tins, jars and vials without lids or caps",
+                        "Standard suction plates with shut-off valves PXE and P2XE for OCTOPUS systems",
+                        "Special suction plates PY and P2Y for OCTOPUS systems",
+                        "Special suction plates with shut-off valves PY2E and P2Y2E for OCTOPUS systems",
+                        "Special suction plates PZ and P2Z for OCTOPUS systems",
+                        "Vacuum cup suction plates PV for OCTOPUS systems",
+                        "Vacuum cup suction plates P2V for OCTOPUS systems",
+                        "Vacuum cup suction plates with shut-off valves PVE for OCTOPUS systems",
+                        "Vacuum cup suction plates with shut-off valves P2V2E for OCTOPUS systems",
+                        "Bag gripping suction plates PJ for OCTOPUS systems",
+                        "OCTOPUS vacuum gripping bars - General description",
+                        "Octopus vacuum gripping bars",
+                        "Octopus vacuum gripping bars",
+                        "Octopus vacuum gripping bars",
+                        "Standard suction plates PX e P2X for OCTOPUS gripping bars",
+                        "Vacuum cup suction plates PV for OCTOPUS gripping bars",
+                        "Suction plates with shut-off valves PXE and P2XE for OCTOPUS gripping bars",
+                        "Vacuum cup suction plates with shut-off valves PVE for OCTOPUS gripping bars",
+                        "Locking plates with distribuotr for OCTOPUS gripping bars without vacuum generator",
+                        "Flange fixing support for OCTOPUS systems without Vacuum generator",
+                        "Accessories and spare parts for OCTOPUS gripping systems and bars",
+                        "Special OCTOPUS gripping system products",
+                        "Special OCTOPUS gripping system products with 3D printer"
+                ]
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/484/images/9.39%20-%209.42.jpg",
+                        "https://www.vuototecnica.co.uk/product/367/images/9.00%20-%209.01.jpg",
+                        "https://www.vuototecnica.co.uk/product/480/images/9.02%20-%209.03.jpg",
+                        "https://www.vuototecnica.co.uk/product/368/images/9_003.jpg",
+                        "https://www.vuototecnica.co.uk/product/369/images/9_004.jpg",
+                        "https://www.vuototecnica.co.uk/product/370/images/9_005.jpg",
+                        "https://www.vuototecnica.co.uk/product/372/images/9_007.jpg",
+                        "https://www.vuototecnica.co.uk/product/485/images/9.08.jpg",
+                        "https://www.vuototecnica.co.uk/product/371/images/9_006.jpg",
+                        "https://www.vuototecnica.co.uk/product/373/images/9_008.jpg",
+                        "https://www.vuototecnica.co.uk/product/489/images/9.10.1.jpg",
+                        "https://www.vuototecnica.co.uk/product/374/images/9_009.jpg",
+                        "https://www.vuototecnica.co.uk/product/375/images/9_010.jpg",
+                        "https://www.vuototecnica.co.uk/product/376/images/9_011.jpg",
+                        "https://www.vuototecnica.co.uk/product/377/images/9_012.jpg",
+                        "https://www.vuototecnica.co.uk/product/378/images/9_013.jpg",
+                        "https://www.vuototecnica.co.uk/product/379/images/9_014.jpg",
+                        "https://www.vuototecnica.co.uk/product/380/images/9_015.jpg",
+                        "https://www.vuototecnica.co.uk/product/381/images/9_016.jpg",
+                        "https://www.vuototecnica.co.uk/product/382/images/9.19.jpg",
+                        "https://www.vuototecnica.co.uk/product/481/images/9.20%20-%209.21.jpg",
+                        "https://www.vuototecnica.co.uk/product/384/images/9_019.jpg",
+                        "https://www.vuototecnica.co.uk/product/385/images/9_020.jpg",
+                        "https://www.vuototecnica.co.uk/product/386/images/9_021.jpg",
+                        "https://www.vuototecnica.co.uk/product/387/images/9_022.jpg",
+                        "https://www.vuototecnica.co.uk/product/388/images/9_023.jpg",
+                        "https://www.vuototecnica.co.uk/product/389/images/9_024.jpg",
+                        "https://www.vuototecnica.co.uk/product/482/images/9.28.jpg",
+                        "https://www.vuototecnica.co.uk/product/390/images/9_025_3d.jpg",
+                        "https://www.vuototecnica.co.uk/product/383/images/9_018.jpg",
+                        "https://www.vuototecnica.co.uk/product/391/images/9_026A_3d.jpg",
+                        "https://www.vuototecnica.co.uk/product/392/images/9_029.jpg",
+                        "https://www.vuototecnica.co.uk/product/483/images/9.38.jpg"
+                ]
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/484/en/9.39%20-%209.42.pdf",
+                        "https://www.vuototecnica.co.uk/product/367/en/9.00%20-%209.01.pdf",
+                        "https://www.vuototecnica.co.uk/product/480/en/9.02%20-%209.03.pdf",
+                        "https://www.vuototecnica.co.uk/product/368/en/9.04%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/369/en/9.05%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/370/en/9.06%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/372/en/9.07%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/485/en/9.08%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/371/en/9.09%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/373/en/9.10%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/489/en/9.10.1.pdf",
+                        "https://www.vuototecnica.co.uk/product/374/en/9.11%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/375/en/9.12%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/376/en/9.13%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/377/en/9.14%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/378/en/9.15%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/379/en/9.16%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/380/en/9.17%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/381/en/9.18%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/382/en/9.19%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/481/en/9.20%20-%209.21.pdf",
+                        "https://www.vuototecnica.co.uk/product/384/en/9.22%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/385/en/9.23%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/386/en/9.24%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/387/en/9.25%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/388/en/9.26%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/389/en/9.27%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/482/en/9.28%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/390/en/9.29%20-%209.30.pdf",
+                        "https://www.vuototecnica.co.uk/product/383/en/9.31%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/391/en/9.32%20-%209.34.pdf",
+                        "https://www.vuototecnica.co.uk/product/392/en/9.35%20-%209.37.pdf",
+                        "https://www.vuototecnica.co.uk/product/483/en/9.38%20.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>

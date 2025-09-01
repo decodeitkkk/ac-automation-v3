@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Vaccum Fittings and Hoses </title>
+        <link href=" /output.css" rel="stylesheet" />
+        <link href=" /global.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 m-0">
+        <section class="bg-gray-100">
+                <div class="text-3xl font-bold text-center py-4 ">
+
+                        Vaccum Fittings and Hoses
+                </div>
+                <div id="container" class="p-4 max-w-[1080px] mx-auto flex gap-4 flex-wrap items-baseline"></div>
+        </section>
+
+        <script src=" /components/header.js"></script>
+        <script src=" /components/footer.js"></script>
+        <script src=" /components/card3.js"></script>
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+        <script>
+                // lucide Icons
+                lucide.createIcons();
+                let title = [
+                        "Hose ends",
+                        "Fittings, caps and nylon seals",
+                        "Rotating quick coupling fittings",
+                        "Compressed air and vacuum flexible hoses",
+                        "TPR flexible hose fittings"
+                ];
+                let img = [
+                        "https://www.vuototecnica.co.uk/product/182/images/6_001.jpg",
+                        "https://www.vuototecnica.co.uk/product/183/images/6_002.jpg",
+                        "https://www.vuototecnica.co.uk/product/184/images/6_004.jpg",
+                        "https://www.vuototecnica.co.uk/product/185/images/6_005.jpg",
+                        "https://www.vuototecnica.co.uk/product/186/images/6_06.jpg"
+                ];
+                let link = [
+                        "https://www.vuototecnica.co.uk/product/182/en/6.01%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/183/en/6.02%20-%206.03.pdf",
+                        "https://www.vuototecnica.co.uk/product/184/en/6.04%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/185/en/6.05%20.pdf",
+                        "https://www.vuototecnica.co.uk/product/186/en/6.06.pdf"
+                ]
+                let desc = ""
+                let img1 = "#"
+                let img2 = "#"
+                let img3 = "#"
+                let container = document.getElementById("container");
+                document.body.insertAdjacentHTML("beforeend", footer);
+                document.body.insertAdjacentHTML("afterbegin", header);
+                for (let a = 0; a < img.length; a++) {
+                        container.insertAdjacentHTML(
+                                "beforeend",
+                                card(img[a], title[a], desc, false, link[a])
+                        );
+                }
+        </script>
+</body>
+
+</html>
