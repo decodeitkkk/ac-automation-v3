@@ -531,11 +531,14 @@ ${
             ${item.categories
                 .map(
                     (scat) => `
-            <div class="w-40 sm:w-52 rounded-md bg-white shadow-lg border border-slate-300 p-1">
+            <div class="w-40 sm:w-80 rounded-md bg-white shadow-lg border border-slate-300 p-1">
                 <a href=${scat.page_link} target="_blank">
-                    <img src=${scat.img} alt="Laptop" class="h-36 w-full rounded-md object-contain" />
+                    
+                <div class="flex flex-start mt-0 ">
+                    <img src=${scat.img} alt="Product" class="h-auto w-full rounded-md object-contain mt-0" />
+                </div>  
                     <div class="p-4">
-                        <h1 class="text-sm font-medium MMedium">
+                        <h1 class="text-sm font-medium MMedium text-center ">
                             ${scat.title}
                         </h1>
                     </div>
